@@ -1,5 +1,6 @@
 <template>
-  <div class="container">
+  <main class="container">
+    <navBar />
     <div>
       <Logo />
       <h1 class="title">
@@ -24,11 +25,16 @@
         </a>
       </div>
     </div>
-  </div>
+  </main>
 </template>
 
 <script>
-export default {}
+import navBar from '@/components/navBar'
+export default {
+  components: {
+    navBar
+  }
+}
 </script>
 
 <style>
