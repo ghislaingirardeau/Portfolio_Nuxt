@@ -9,7 +9,7 @@ export default {
   head: {
     title: 'portofolio',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'fr'
     },
     meta: [
       { charset: 'utf-8' },
