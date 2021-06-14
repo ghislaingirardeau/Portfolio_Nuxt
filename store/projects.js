@@ -1,5 +1,5 @@
 export default {
-    projets: [
+    projects: [
         {
             id: '1',
             name: "reservia",
