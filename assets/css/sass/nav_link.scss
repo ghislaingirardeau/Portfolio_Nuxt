@@ -1,0 +1,16 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    &__navBar {
+        border: 2px dashed blue;
+        padding-top: 20px;
+        &--font {
+            text-decoration: none;
+            margin-left: 100px;
+            font-size: $linksize;
+        }
+    }
+    &__logo {
+        border: 2px dashed blue;
+    }
+}

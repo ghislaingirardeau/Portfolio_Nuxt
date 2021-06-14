@@ -1,11 +1,11 @@
 <template>
-  <main class="container">
+  <div class="container">
     <navBar />
 
     <h1>Présentation</h1>
     <p>{{presentation}}</p>
     
-  </main>
+  </div>
 </template>
 
 <script>
