@@ -8,13 +8,13 @@ export default {
         },
         {
             id: '2',
-            name: "Ohmyfood",
+            name: "ohmyfood",
             description: "Animation css et affichage dynamique des pages",
             tech: "html, css, sass"
         },
         {
             id: '3',
-            name: "La chouette agency",
+            name: "la chouette agency",
             description: "Utiliser les techniques d'amélioration et de référencement d'un site web",
             tech: "Aria, SEO, google analitycs"
         }
