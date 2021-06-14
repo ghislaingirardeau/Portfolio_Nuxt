@@ -1,6 +1,5 @@
 <template>
     <div class="detailProject">
-        <navBar />
         <Goback />
         <h1>{{detailProject.name}}</h1>
         <p>Description du projet et objectifs: {{detailProject.description}}</p>

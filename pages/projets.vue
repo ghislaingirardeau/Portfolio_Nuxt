@@ -1,12 +1,16 @@
 <template>
-    <main>
-        <navBar />
-        <h1>Projets</h1>
-        <ul v-for="item in project" :key="item.id">
-            <li><NuxtLink  :to="{ name: 'projet-id', params: {id: item.id}}">{{uppercase(item.name)}}</NuxtLink></li>
-        </ul>
-
-     
+    <main class="page__projet">
+        <h1>Découvrez la liste de mes projets</h1>
+        <p>Cliquer sur un projet pour en savoir plus: technologies utilisées, objectifs attendus...</p>
+        <div class="page__projet--layout">
+                <NuxtLink v-for="item in project" :key="item.id" class="page__projet--link" :to="{ name: 'projet-id', params: {id: item.id}}">
+                    <article>
+                        <img src="" alt="" class="page__projet--image">
+                        <h2>{{item.name}}</h2>
+                        <p>{{item.description}}</p>
+                    </article>
+                </NuxtLink>
+        </div>
     </main>
     
 </template>
