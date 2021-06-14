@@ -2,9 +2,9 @@
     <main>
         <navBar />
         <h1>Projets</h1>
-        <div >
-            <NuxtLink v-for="item in project" :key="item.id" :to="{ name: 'projet-id', params: {id: item.id}}">{{item.name}}</NuxtLink>
-        </div>
+        <ul v-for="item in project" :key="item.id">
+            <li><NuxtLink  :to="{ name: 'projet-id', params: {id: item.id}}">{{item.name}}</NuxtLink></li>
+        </ul>
 
      
     </main>
