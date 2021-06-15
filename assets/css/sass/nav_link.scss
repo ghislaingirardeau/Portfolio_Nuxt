@@ -1,7 +1,7 @@
 .header {
     display: flex;
     justify-content: space-between;
-    border-bottom: 2px solid black;
+    border-bottom: 3px solid $color-third;
     margin: 0px 200px 0px 200px;
 
     &__navBar {
@@ -10,6 +10,8 @@
         &--font {
             margin-left: 100px;
             font-size: $linksize;
+            font-weight: bold;
+            text-decoration: none;
         }
     }
 
