@@ -15,24 +15,25 @@ export default {
     data() {
       return {
       time: new Date(),
-      second: 0,
-      interval: 0
+      interval: ''
       }
     },
     computed: {
       date() {
         let dateFormat = "Le " + this.time.getDate() + "/" + (this.time.getMonth() + 1) + "/" + this.time.getFullYear()
-        let timeFormat = "Il est " + this.time.getHours() + "h" + this.time.getMinutes() + "m"
-        return dateFormat + " " + timeFormat
+        
+        return dateFormat 
       },
     
       
     },
     
     mounted() {
-        const self = this
-        this.second = setInterval(function() {
-              self.interval++
+        const self = this /* creer une contanste self pour se referer a la variable du store */
+        this.test = setInterval(function() { /* this.test refére a window.test qui est une variable temporaire */
+          let timeDate = new Date()
+          self.interval = " Il est " + timeDate.getHours() + "h" + timeDate.getMinutes() + "m" + timeDate.getSeconds() 
+              
          }, 1000);
       
     }
