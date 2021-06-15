@@ -1,7 +1,7 @@
 <template>
     <main class="head__page">
 
-        <h1>CV</h1>
+        <h1>Mon parcours professionnel, mes formations et mes expériences personnelles...</h1>
         <div class="page__cv">
             <a :href="downloadUrl" download>
                 <button @click="downloaded" class="page__cv--btndownload">Télécharger mon CV</button>

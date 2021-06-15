@@ -6,6 +6,19 @@
         font-size: 1.2rem;
         font-weight: bold;
         padding: 10px;
-
+        border: 3px solid $color-blue-mid;
+        border-radius: 5px 5px;
+        cursor: pointer;
+        &:hover{
+            transition: all ease 1s;
+            box-shadow: 5px 5px 5px;
+            color: $color-dark;
+            
+        }
     }
+    & > img{
+        background-color: $color-blue-mid;
+        padding: 3px;
+    }
+
 }
