@@ -1,5 +1,5 @@
 <template>
-    <main class="page__projet">
+    <main class="page__projet head__page">
         <h1>Découvrez la liste de mes projets</h1>
         <p>Cliquer sur un projet pour en savoir plus: technologies utilisées, objectifs attendus...</p>
         <div class="page__projet--layout">

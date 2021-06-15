@@ -1,5 +1,5 @@
 <template>
-    <main>
+    <main class="head__page">
         <h1>Contact</h1>
        
     </main>
