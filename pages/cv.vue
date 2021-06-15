@@ -2,9 +2,12 @@
     <main class="head__page">
 
         <h1>CV</h1>
-        <a :href="downloadUrl" download>
-        <img src="../assets/logo/cv.jpg" height="900" alt="Image preview..." id="cv" @click="downloaded">
-        </a>
+        <div class="page__cv">
+            <a :href="downloadUrl" download>
+                <button @click="downloaded" class="page__cv--btndownload">Télécharger mon CV</button>
+            </a> <br>
+            <img src="../assets/logo/cv.jpg" height="900" alt="Image preview..." id="cv" >
+        </div>
     </main>
 </template>
 
