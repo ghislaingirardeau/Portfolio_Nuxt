@@ -10,7 +10,7 @@
 export default {
     head() {
         return {
-            title : "Portofolio: Mon contact"
+            title : "Portfolio: Mon contact"
         }
     },
     data() {

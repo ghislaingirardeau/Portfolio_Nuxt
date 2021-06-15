@@ -22,7 +22,7 @@ import { uppercase } from '@/store/function.js'
 export default {
     head() {
         return {
-            title : "Portofolio: Mes projets"
+            title : "Portfolio: Mes projets"
         }
     },
     data() {

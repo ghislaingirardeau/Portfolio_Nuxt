@@ -9,7 +9,7 @@
 export default {
     head() {
         return {
-            title : "Portofolio: CV"
+            title : "Portfolio: CV"
         }
     }
 }
