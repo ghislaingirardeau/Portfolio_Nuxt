@@ -8,9 +8,9 @@
       </h1>
       <div class="block__valeur">
       <h1 class="">
-          Valeur responsable, <br> 
-          Valeur responsable, <br>
-          Valeur responsable, <br>
+          Respect et Humilité, <br> 
+          Ouvert et Communicatif, <br>
+          Responsable et Autonome, <br>
 
       </h1>
     </div>

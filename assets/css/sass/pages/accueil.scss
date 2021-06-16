@@ -10,16 +10,16 @@
     transform: rotateZ(45deg) rotateY(0deg);
     position: absolute;
     top: 40%;
-    left: 45%;
+    left: 55%;
 
 }
 .block__valeur{
+    text-align: right;
     font-size: 1.6rem;
-    text-shadow: 2px 3px black;
-    transform: rotateZ(-45deg) rotateY(30deg) rotateX(-50deg);
+    text-shadow: -2px 3px black;
+    transform: rotateZ(-45deg) rotateY(30deg) rotateX(-55deg);
     position: absolute;
-    top: 15%;
+    top: 20%;
     left: 20%;
-
 }
 
