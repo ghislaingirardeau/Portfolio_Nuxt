@@ -3,24 +3,25 @@
 }
 .block__presentation{
     height: 800px;
-    background-color: blue;
     position: relative;
     
 }
 .block__moi{
+    font-size: 3rem;
     text-shadow: 5px 3px black;
     text-align: left;
     transform: rotateZ(45deg) rotateY(0deg);
     position: absolute;
-    top: 180px;
-    left: 280px;
+    top: 40%;
+    left: 45%;
 
 }
 .block__valeur{
+    font-size: 1.6rem;
     text-shadow: 2px 1px black;
     transform: rotateZ(-45deg) rotateY(30deg) rotateX(-50deg);
     position: absolute;
-    top: 50px;
-    left: 50px;
+    top: 15%;
+    left: 20%;
 
 }
