@@ -1,8 +1,12 @@
 <template>
   <div class="container head__page">
 
-    <h1>Venez découvrir mes créations</h1>
-    {{date}}{{interval}}
+    <h1 class="presentation">Bonjour, <br> 
+        je suis Ghislain, <br>
+        Développeur web
+    </h1>
+
+    <div class="date">{{date}}{{interval}}</div>
   
     
   </div>

@@ -1,6 +1,7 @@
 body {
   font-size: 1.2rem;
   font-family: $font_paragraphe;
+  background-color: black;
 }
 
 a {
@@ -16,9 +17,6 @@ a.nuxt-link-exact-active {
   margin: 0px 200px 0px 200px;
 }
 
-.footer {
-  margin: 0px 200px 0px 200px;
-  padding-left: 60px;
-  background-color: $color-primary;
-  border: 3px solid $color-third;
+h1{
+  color:$color-primary;
 }
