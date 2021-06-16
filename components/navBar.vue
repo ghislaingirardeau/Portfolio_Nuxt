@@ -2,7 +2,7 @@
 
     <header class="header">
         <div class="header__logo">
-            <p>logo</p>
+            <p class="G">G</p> <p class="g">g</p>
         </div>
         <nav class="header__navBar">
             <NuxtLink :to="{ name: 'index'}" class="header__navBar--font">Accueil</NuxtLink> 

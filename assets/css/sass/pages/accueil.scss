@@ -1,6 +1,26 @@
 .date{
     color: $color-primary;
 }
-.presentation{
+.block__presentation{
+    height: 800px;
+    background-color: blue;
+    position: relative;
     
+}
+.block__moi{
+    text-shadow: 5px 3px black;
+    text-align: left;
+    transform: rotateZ(45deg) rotateY(0deg);
+    position: absolute;
+    top: 180px;
+    left: 280px;
+
+}
+.block__valeur{
+    text-shadow: 2px 1px black;
+    transform: rotateZ(-45deg) rotateY(30deg) rotateX(-50deg);
+    position: absolute;
+    top: 50px;
+    left: 50px;
+
 }
