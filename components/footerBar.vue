@@ -1,16 +1,38 @@
 <template>
 
-    <footer class="footer">
-        <div >
-            <h2>Contact et plateforme</h2>
-            <ul>
-                <li>Email: </li>
-                <li>Linkedin: </li>
-                <li>Malt: </li>
+    <footer >
+        <div class="footer__layout">
+            <ul>Retrouver mon profil sur :
+                <li><a href="https://www.linkedin.com/in/ghislain-girardeau-a879b2201/">Linkedin profil</a> </li>
+                <li><a href="https://www.malt.fr/profile/ghislaingirardeau">Malte profil</a></li>
+                <li class="date">{{date}}{{interval}}</li>
             </ul>
+            <div class="date">
+                
+            </div>
 
         </div>
         
     </footer>
     
 </template>
+
+<script>
+
+export default {
+  data() {
+    return {
+    time: new Date(),
+    interval: '',
+    date: ''
+    }
+  },
+  mounted() {
+      this.date = "Le " + this.time.getDate() + "/" + (this.time.getMonth() + 1) + "/" + this.time.getFullYear()
+      this.test = setInterval(() => { /* this.test refére a window.test qui est une variable temporaire */
+        let timeDate = new Date()
+        this.interval = ", Il est " + timeDate.getHours() + "h" + timeDate.getMinutes() + "m" + timeDate.getSeconds() 
+      }, 1000);
+  }
+}
+</script>

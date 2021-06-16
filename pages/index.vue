@@ -15,35 +15,11 @@
       </h1>
     </div>
     </div>
-    
-    
 
-    <div class="date">{{date}}{{interval}}</div>
-  
-    
   </div>
 </template>
 
-<script>
 
-
-export default {
-  data() {
-    return {
-    time: new Date(),
-    interval: '',
-    date: ''
-    }
-  },
-  mounted() {
-      this.date = "Le " + this.time.getDate() + "/" + (this.time.getMonth() + 1) + "/" + this.time.getFullYear()
-      this.test = setInterval(() => { /* this.test refére a window.test qui est une variable temporaire */
-        let timeDate = new Date()
-        this.interval = " Il est " + timeDate.getHours() + "h" + timeDate.getMinutes() + "m" + timeDate.getSeconds() 
-      }, 1000);
-  }
-}
-</script>
 
 <style>
 

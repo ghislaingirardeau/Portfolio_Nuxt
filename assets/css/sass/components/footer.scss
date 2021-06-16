@@ -1,6 +1,21 @@
-.footer {
-    margin: 0px 200px 0px 200px;
-    padding-left: 60px;
-    background-color: $color-primary;
-    border: 3px solid $color-third;
+.footer__layout {
+  margin: 0px 200px 0px 200px;
+  padding-left: 60px;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+
+  & > ul{
+    font-size: 1.6rem;
+    & > li{
+      display: inline-block;
+      margin-left: 30px;
+      
+    }
   }
+}
+
+.date{
+  text-align: right;
+  text-shadow: 2px 1px black;
+}
