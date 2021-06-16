@@ -10,7 +10,7 @@
 }
 .block__moi{
     font-size: 3rem;
-    text-shadow: 5px 3px black;
+    text-shadow: 10px 3px black;
     text-align: left;
     transform: rotateZ(45deg) rotateY(0deg);
     position: absolute;
@@ -20,10 +20,11 @@
 }
 .block__valeur{
     font-size: 1.6rem;
-    text-shadow: 2px 1px black;
+    text-shadow: 2px 3px black;
     transform: rotateZ(-45deg) rotateY(30deg) rotateX(-50deg);
     position: absolute;
     top: 15%;
     left: 20%;
 
 }
+

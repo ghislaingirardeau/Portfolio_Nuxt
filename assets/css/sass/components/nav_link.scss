@@ -12,6 +12,15 @@
             font-size: $linksize;
             font-weight: bold;
             text-decoration: none;
+            border-top: solid $color-primary 0px;
+            text-shadow: 1px 1px black;
+            padding: 5px;
+            transition: all 0.3s ease;
+            &:hover {
+                text-shadow: 7px 30px black;
+                border-top: solid $color-primary 2px;
+            }
+            
         }
     }
 
@@ -20,3 +29,4 @@
         height: 150px;
     }
 }
+
