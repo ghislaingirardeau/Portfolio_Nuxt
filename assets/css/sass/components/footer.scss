@@ -15,8 +15,10 @@
       & > a{
         color: $color-primary;
         transition: all 0.3s ease;
+        text-decoration: none;
         &:hover {
           text-shadow: 7px 30px black;
+          text-decoration: underline;
         }
       }
       

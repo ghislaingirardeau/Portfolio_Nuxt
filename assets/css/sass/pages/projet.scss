@@ -4,6 +4,7 @@
     }
     & > p{
         color: $color-primary;
+        font-size: $paragraphesize;
     }
     &--layout{
         display: flex;
