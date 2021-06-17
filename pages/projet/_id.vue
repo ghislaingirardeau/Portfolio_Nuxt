@@ -1,16 +1,22 @@
 <template>
-    <div class="detailProject">
-        <Goback />
-        <h1>{{detailProject.name}}</h1>
-        <p>Description du projet et objectifs: {{detailProject.description}}</p>
-        <p>Les technologies utilisées : {{detailProject.tech}}</p>
+    <main class="head__page detail_project">
+        <div class="block_projet">
+            <h1>{{detailProject.name}}</h1>
+            <h2>Description du projet et objectifs :</h2>
+            <p> {{detailProject.description}}</p>
+            <h2>Les technologies utilisées :</h2>
+            <p> {{detailProject.tech}}</p>
+            <h2>Galerie du projet :</h2>
+            <Goback />
+        </div>
 
-        <aside class="autre_projet">
+        <aside class="autres_projets">
+            <h2>Ma liste de projets</h2>
             <ul v-for="item in relatedProject" :key="item.id">
-                <li><NuxtLink :to="{ name: 'projet-id', params: {id: item.id}}">{{item.name}}</NuxtLink></li>
+                <li><NuxtLink :to="{ name: 'projet-id', params: {id: item.id}}" class="liste--orange">{{item.name}} </NuxtLink></li>
             </ul>
         </aside>
-    </div>
+    </main>
 </template>
 
 <script>

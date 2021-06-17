@@ -1,0 +1,58 @@
+.detail_project{
+    position: relative;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.block_projet{
+    width: 65%;
+    border: 2px solid $color-blue-mid;
+    border-radius: 5px 5px;
+    & > h1, h2{
+        text-shadow: 2px 2px black;
+    }
+    & > h2{
+        color: $color-primary;
+        text-decoration: underline;
+    }
+    & > p {
+        font-size: $paragraphesize;
+        color: $color-bright;
+    }
+    &::after{
+        content: "";
+        width: 65%;
+        height: 100%;
+        border: 2px solid $color-blue-mid;
+        border-radius: 5px 5px;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+    }
+}
+
+.autres_projets{
+    width: 30%;
+    & > h2{
+        text-shadow: 2px 2px black;
+        color: $color-third;
+    }
+    & > ul {
+        list-style: none;
+        & > li {
+            margin-top: 50px;
+        }
+        
+    }
+}
+
+.liste--orange{
+    color: $color-third;
+    text-decoration: none;
+    font-size: $linksize;
+    transition: all 0.3s ease;
+    &:hover {
+        text-shadow: 7px 30px black;
+    }
+}

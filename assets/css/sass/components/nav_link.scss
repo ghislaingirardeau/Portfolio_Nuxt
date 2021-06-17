@@ -15,6 +15,7 @@
             text-shadow: 1px 1px black;
             padding: 5px;
             transition: all 0.3s ease;
+            color: $color-primary;
             &:hover {
                 text-shadow: 27px 30px black;
             }
