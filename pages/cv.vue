@@ -1,8 +1,8 @@
 <template>
-    <main class="head__page">
+    <main class="head__page page__cv">
 
         <h1>Mon parcours professionnel, mes formations et mes expériences personnelles...</h1>
-        <div class="page__cv">
+        <div class="">
             <a href="../assets/logo/CV_développeur_web.pdf" download>
                 <button class="btn btn--download">Télécharger mon CV</button>
             </a> <br>

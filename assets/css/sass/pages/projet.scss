@@ -1,4 +1,7 @@
 .page__projet{
+    & > h1{
+        text-shadow: 2px 2px black;
+    }
     & > p{
         color: $color-primary;
     }
@@ -11,8 +14,8 @@
 
 .page__projet--link {
     border-radius: 5px 5px;
-    width: 40%;
-    margin: 10px 10px 10px 10px;
+    width: 35%;
+    margin: 30px;
     text-decoration: none;
     @include anim-btn($color-lien);
     

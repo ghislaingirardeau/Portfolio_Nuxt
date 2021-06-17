@@ -7,3 +7,11 @@
     @include anim-btn($color-btn);
 }
 
+.btn__goback {
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px 5px;
+    @include anim-btn($color-btn);
+}
