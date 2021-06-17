@@ -20,7 +20,7 @@
         font-size: $paragraphesize;
         color: $color-bright;
     }
-    &::after{
+    &:before{
         content: "";
         width: 65%;
         height: 100%;

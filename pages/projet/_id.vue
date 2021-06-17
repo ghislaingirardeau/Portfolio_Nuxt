@@ -1,6 +1,7 @@
 <template>
     <main class="head__page detail_project">
         <div class="block_projet">
+            
             <h1>{{detailProject.name}}</h1>
             <h2>Description du projet et objectifs :</h2>
             <p> {{detailProject.description}}</p>
@@ -8,6 +9,7 @@
             <p> {{detailProject.tech}}</p>
             <h2>Galerie du projet :</h2>
             <Goback />
+            
         </div>
 
         <aside class="autres_projets">
