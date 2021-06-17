@@ -3,10 +3,9 @@
 
         <h1>Mon parcours professionnel, mes formations et mes expériences personnelles...</h1>
         <div class="page__cv">
-            <a :href="downloadUrl" download>
-                <button @click="downloaded" class="page__cv--btndownload">Télécharger mon CV</button>
+            <a href="../assets/logo/CV_développeur_web.pdf" download>
+                <button class="page__cv--btndownload">Télécharger mon CV</button>
             </a> <br>
-            <img src="../assets/logo/cv.jpg" height="900" alt="Image preview..." id="cv" >
         </div>
     </main>
 </template>
@@ -23,11 +22,11 @@ export default {
             downloadUrl: ''
         }
     },
-    methods: {
+    /* methods: {
         downloaded: function() {
             const url = document.getElementById('cv').src
             this.downloadUrl = url
         }
-    }
+    } */
 }
 </script>
