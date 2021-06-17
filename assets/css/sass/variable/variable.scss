@@ -4,6 +4,9 @@ $color-third: #f78228;
 $color-dark: #16261c;
 $color-blue-mid: #517c77;
 $color-bright:white;
+$color-lien: white;
+$color-btn: white;
+
 
 $linksize: 1.6rem;
 
@@ -13,3 +16,17 @@ $linksize: 1.6rem;
 
 $font_paragraphe: 'Kalam', cursive;
 $font_logo: 'Kaushan Script', cursive;
+
+@mixin anim-btn ($color) {
+    transition: all ease 400ms;
+    cursor: pointer;
+    background-color: transparent;
+    box-shadow: 3px 3px 5px $color-primary, -3px -3px 5px $color-blue-mid;
+    border: 3px solid $color-blue-mid;    
+    color: $color;
+    &:hover{
+        border: 3px solid $color-blue-mid;
+        color: $color-primary;
+        box-shadow: none;
+    }
+}

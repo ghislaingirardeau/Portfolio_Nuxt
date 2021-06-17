@@ -4,7 +4,7 @@
         <h1>Mon parcours professionnel, mes formations et mes expériences personnelles...</h1>
         <div class="page__cv">
             <a href="../assets/logo/CV_développeur_web.pdf" download>
-                <button class="page__cv--btndownload">Télécharger mon CV</button>
+                <button class="btn btn--download">Télécharger mon CV</button>
             </a> <br>
         </div>
     </main>

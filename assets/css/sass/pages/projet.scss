@@ -1,19 +1,19 @@
-.page__projet--layout {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.page__projet{
+    & > p{
+        color: $color-primary;
+    }
+    &--layout{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 .page__projet--link {
-    background-color: $color-primary;
-    border: 4px solid $color-third;
     border-radius: 5px 5px;
-    box-shadow: 5px 5px 5px $color-secondary;
     width: 40%;
     margin: 10px 10px 10px 10px;
-    color: $color-dark;
     text-decoration: none;
-    &:hover {
-        text-decoration: underline;
-    }
+    @include anim-btn($color-lien);
+    
 }

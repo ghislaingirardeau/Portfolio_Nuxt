@@ -3,7 +3,7 @@
         <h1>Découvrez la liste de mes projets</h1>
         <p>Cliquer sur un projet pour en savoir plus: technologies utilisées, objectifs attendus...</p>
         <div class="page__projet--layout">
-                <NuxtLink v-for="item in project" :key="item.id" class="page__projet--link" :to="{ name: 'projet-id', params: {id: item.id}}">
+                <NuxtLink v-for="item in project" :key="item.id" class="page__projet--link btn--projets" :to="{ name: 'projet-id', params: {id: item.id}}">
                     <article>
                         <img src="" alt="" class="page__projet--image">
                         <h2>{{item.name}}</h2>
