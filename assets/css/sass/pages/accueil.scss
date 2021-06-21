@@ -1,8 +1,9 @@
 .block__presentation{
-    height: 900px;
+
 	display: flex;
 	flex-wrap: nowrap;
-    
+	perspective: 400px;
+	perspective-origin: 50% 50px;
 }
 .block__moi{
     font-size: 3rem;
@@ -10,35 +11,51 @@
     text-shadow: 10px 3px black;
     text-align: left;
     padding-top: 30%;
-	border: 2px solid blue;
-
 	& > h1 {
-		transform: rotateZ(45deg) rotateY(0deg);
-		border: 2px solid blue;
-		margin-left: -150px;
+		transform: rotateZ(45deg);
 	}
 }
 .block__valeur{
     text-align: right;
 	width: 50%;
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-shadow: -3px 3px black;
-	padding-top: 13%;
-	border: 2px solid blue;
-
+	padding-top: 16%;
 	& > h1 {
 		width: 130%;
-		transform: rotateZ(-45deg) rotateY(30deg) rotateX(-55deg);
-		border: 2px solid blue;
+		transform: rotateZ(-35deg) rotateY(20deg) rotateX(-35deg) translateX(70px);
 	}
 }
 
 @media screen and (max-width: 1080px) {
 	.block__moi{
-		top: 40%;
-		left: 55%;
+		font-size: 2.3rem;
+		padding-top: 40%;
+	}
+	.block__valeur{
+		font-size: 1.9rem;
+		padding-top: 20%;
+
+		& > h1 {
+			width: 150%;
+			transform: rotateZ(-35deg) rotateY(20deg) rotateX(-35deg) translateX(40px);
+		}
 	}
 }
+
+@media screen and (max-width: 700px) {
+	.block__presentation{
+		flex-wrap: wrap;
+	}
+	.block__moi{
+		width: 100%;
+		font-size: 2rem;
+		padding-top: 0%;
+		padding-left: 20%;
+	}
+}
+
+
 
 /* TEST PAGE ACCUEIL 2 */
 
