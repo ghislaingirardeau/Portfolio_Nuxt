@@ -7,7 +7,7 @@
                     <article>
                         <img src="" alt="" class="page__projet--image">
                         <h2>{{item.name}}</h2>
-                        <p>{{item.description}}</p>
+                        <p>{{item.summary}}</p>
                     </article>
                 </NuxtLink>
         </div>

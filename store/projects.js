@@ -3,38 +3,44 @@ export default {
         {
             id: '1',
             name: "Reservia",
-            description: "integration de maquette",
-            tech: "html, css"
+            summary: "Intégration d'une maquette en site web",
+            description: "Implémenter une interface responsive, Utiliser un système de gestion de versions pour le suivi du projet",
+            tech: "HTML, CSS, GitHub"
         },
         {
             id: '2',
             name: "Ohmyfood",
-            description: "Animation css et affichage dynamique des pages",
-            tech: "html, css, sass"
+            summary: "Mise en œuvre une structure de navigation web",
+            description: "Mettre en œuvre des effets CSS graphiques avancés en assurant une cohérence graphique ",
+            tech: "HTML, CSS, SASS, GitHub"
         },
         {
             id: '3',
             name: "La chouette agence",
-            description: "Utiliser les techniques d'amélioration et de référencement d'un site web",
-            tech: "Aria, SEO, google analitycs"
+            summary: "Utiliser les techniques d'amélioration et de référencement d'un site web",
+            description: "Sur la base d'un site web existant, Assurer son accessibilité, Optimiser son référencement, sa taille et son temps de chargement",
+            tech: "Aria, SEO, google analitycs, GitHub"
         },
         {
             id: '4',
             name: "Orinoco",
-            description: "Création d'un MVP pour un site e-commerce",
-            tech: "Javascript, bootstrap"
+            summary: "Création d'un MVP pour un site e-commerce",
+            description: "Interagir avec une API avec JavaScript, Valider des données issues de sources externes, Créer un plan de test pour une application, Gérer des événements JavaScript",
+            tech: "Javascript, bootstrap, GitHub"
         },
         {
             id: '5',
             name: "So Peckoko",
-            description: "Création d'une API Rest",
-            tech: "Node js, Express, MongoDb"
+            summary: "Construction d'une API Rest",
+            description: "Mettre en œuvre des opérations CRUD de manière sécurisée, Stocker des données de manière sécurisée, Implémenter un modèle logique de données conformément à la réglementation OWASP",
+            tech: "Node js, Express, MongoDb, GitHub"
         },
         {
             id: '6',
             name: "Groupomania",
-            description: "Création d'un MVP d'un forum interne à une entreprise",
-            tech: "Mysql, Node js, Express, bootstrap, Vue js"
+            summary: "Création d'un réseau social interne à une entreprise",
+            description: "Personnaliser le contenu envoyé à un client web, Gérer un stockage de données à l'aide de SQL, Implémenter un stockage de données sécurisé en utilisant SQL, Authentifier un utilisateur et maintenir sa session",
+            tech: "Mysql, Node js, Express, bootstrap, Vue js, GitHub"
         }
     ]
 }
