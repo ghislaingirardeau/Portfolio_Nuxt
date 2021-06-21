@@ -9,12 +9,13 @@
 	width: 50%;
     text-shadow: 10px 3px black;
     text-align: left;
-    padding-top: 350px;
+    padding-top: 30%;
 	border: 2px solid blue;
 
 	& > h1 {
 		transform: rotateZ(45deg) rotateY(0deg);
 		border: 2px solid blue;
+		margin-left: -150px;
 	}
 }
 .block__valeur{
@@ -22,13 +23,13 @@
 	width: 50%;
     font-size: 3rem;
     text-shadow: -3px 3px black;
-	padding-top: 150px;
+	padding-top: 13%;
 	border: 2px solid blue;
-    
 
 	& > h1 {
-		width: 120%;
+		width: 130%;
 		transform: rotateZ(-45deg) rotateY(30deg) rotateX(-55deg);
+		border: 2px solid blue;
 	}
 }
 
