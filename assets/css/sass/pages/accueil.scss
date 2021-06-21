@@ -22,9 +22,16 @@
     left: 20%;
 }
 
-/* Test 2 page accueil */
+@media screen and (max-width: 1080px) {
+	.block__moi{
+		top: 40%;
+		left: 55%;
+	}
+}
 
-.wrap_index {
+/* TEST PAGE ACCUEIL 2 */
+
+/* .wrap_index {
 	z-index: 0;
 	display: flex;
 	justify-content: center;
@@ -68,3 +75,4 @@
 		font-size: 3rem;
 	}
 }
+ */
