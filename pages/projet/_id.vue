@@ -3,11 +3,17 @@
         <div class="block_projet">
             
             <h1>{{detailProject.name}}</h1>
-            <h2>Description du projet et objectifs :</h2>
-            <p> {{detailProject.description}}</p>
-            <h2>Les technologies utilisées :</h2>
-            <p> {{detailProject.tech}}</p>
-            <h2>Galerie du projet :</h2>
+                <h2>Description du projet et objectifs :</h2>
+                <p> {{detailProject.description}}</p>
+
+                <h2>Les technologies utilisées :</h2>
+                <p> {{detailProject.tech}}</p>
+
+                <h2>Galerie du projet :</h2>
+                <div>
+                    <img :src="detailProject.imageURL" :alt="detailProject.name">
+                </div>
+
             <Goback />
             
         </div>
