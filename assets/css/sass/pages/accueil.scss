@@ -1,25 +1,35 @@
 .block__presentation{
-    height: 800px;
-    position: relative;
+    height: 900px;
+	display: flex;
+	flex-wrap: nowrap;
     
 }
 .block__moi{
     font-size: 3rem;
+	width: 50%;
     text-shadow: 10px 3px black;
     text-align: left;
-    transform: rotateZ(45deg) rotateY(0deg);
-    position: absolute;
-    top: 40%;
-    left: 55%;
+    padding-top: 350px;
+	border: 2px solid blue;
+
+	& > h1 {
+		transform: rotateZ(45deg) rotateY(0deg);
+		border: 2px solid blue;
+	}
 }
 .block__valeur{
     text-align: right;
+	width: 50%;
     font-size: 3rem;
     text-shadow: -3px 3px black;
-    transform: rotateZ(-45deg) rotateY(30deg) rotateX(-55deg);
-    position: absolute;
-    top: 20%;
-    left: 20%;
+	padding-top: 150px;
+	border: 2px solid blue;
+    
+
+	& > h1 {
+		width: 120%;
+		transform: rotateZ(-45deg) rotateY(30deg) rotateX(-55deg);
+	}
 }
 
 @media screen and (max-width: 1080px) {

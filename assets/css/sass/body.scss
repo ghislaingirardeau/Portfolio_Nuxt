@@ -1,17 +1,16 @@
 body {
+  margin: auto;
   font-size: 1.2rem;
   font-family: $font_paragraphe;
   background: linear-gradient(to top left, rgb(37, 35, 35), 80%, rgb(190, 190, 190)) no-repeat;
+  width: 95%;
 }
 
 a.nuxt-link-exact-active {
   color: #f78228;
 }
 
-.head__page {
-  text-align: center;
-  margin: 0px 200px 0px 200px;
-}
+
 
 h1{
   color:$color-primary;
