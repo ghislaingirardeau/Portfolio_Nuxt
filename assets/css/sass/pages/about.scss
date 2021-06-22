@@ -1,21 +1,24 @@
 .page__cv {
+    color: $color-bright;
     & > h1{
         text-shadow: 2px 2px black;
     }
+    & h2{
+        color: $color-primary;
+        text-decoration: underline;
+    }
     & .btndownload{
         margin-bottom: 30px;
-        
         background-color: transparent;
         font-size: 1.2rem;
         font-weight: bold;
         padding: 10px;
-        
         border-radius: 5px 5px;
         transition: all ease 400ms;
         cursor: pointer;
         box-shadow: 3px 3px 5px $color-primary, -3px -3px 5px $color-blue-mid;
-            border: 3px solid $color-blue-mid;    
-            color: white;
+        border: 3px solid $color-blue-mid;    
+        color: white;
         &:hover{
             border: 3px solid $color-blue-mid;
             color: $color-primary;

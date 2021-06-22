@@ -10,8 +10,9 @@
                 <p> {{detailProject.tech}}</p>
 
                 <h2>Galerie du projet :</h2>
+              
                 <div>
-                    <img :src="detailProject.imageURL" :alt="detailProject.name">
+                    <img :src="imageUrl" :alt="detailProject.name">
                 </div>
 
             <Goback />
@@ -36,12 +37,19 @@ export default {
             id : this.$route.params.id,
             project: projects.projects,
             detailProject: {},
-            relatedProject: []
+            relatedProject: [],
+            imageUrl: ''
         }
     },
     mounted () {
         this.detailProject = this.project.find(element => element.id === this.id)
         this.relatedProject = this.project.filter(element => element.id != this.id)
-    },   
+
+        const filename = this.detailProject.imageURL
+        this.imageUrl = require(`~/assets/images/${filename}`);
+    },
+    computed: {
+        
+    }
 }
 </script>

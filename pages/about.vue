@@ -22,7 +22,7 @@
 
         </article>
         <article>
-            <h2>Mes valeurs</h2>
+            <h2>Mes valeurs et mes atouts</h2>
             <p>Honnête | Respect | Humilité | Ouverture | Juste
             Courageux | Autonome | Curieux | Adaptabilité | Communication | Autodidacte | Anticipation
             </p>
