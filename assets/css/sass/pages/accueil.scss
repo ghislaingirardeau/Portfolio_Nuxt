@@ -1,58 +1,60 @@
 .block__presentation{
-
 	display: flex;
 	flex-wrap: nowrap;
 	perspective: 400px;
 	perspective-origin: 50% 50px;
 }
 .block__moi{
-    font-size: 3rem;
+    font-size: 2vw;
 	width: 50%;
     text-shadow: 10px 3px black;
     text-align: left;
-    padding-top: 30%;
+    padding-top: 22%;
 	& > h1 {
-		transform: rotateZ(45deg);
+		transform: rotateZ(47deg);
 	}
 }
 .block__valeur{
     text-align: right;
 	width: 50%;
-    font-size: 2.5rem;
+    font-size: 2vw;
     text-shadow: -3px 3px black;
-	padding-top: 16%;
+	padding-top: 13%;
 	& > h1 {
 		width: 130%;
-		transform: rotateZ(-35deg) rotateY(20deg) rotateX(-35deg) translateX(70px);
+		transform: rotateZ(-35deg) rotateY(20deg) rotateX(-35deg) ;
 	}
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 780px) {
 	.block__moi{
-		font-size: 2.3rem;
+		font-size: 3.5vw;
 		padding-top: 40%;
-	}
-	.block__valeur{
-		font-size: 1.9rem;
-		padding-top: 20%;
-
 		& > h1 {
-			width: 150%;
-			transform: rotateZ(-35deg) rotateY(20deg) rotateX(-35deg) translateX(40px);
+			transform: rotateZ(45deg);
 		}
 	}
+	.block__valeur{
+		padding-top: 20%;
+		font-size: 3.5vw;
+	}
 }
 
-@media screen and (max-width: 700px) {
-	.block__presentation{
-		flex-wrap: wrap;
-	}
+@media screen and (max-width: 500px) {
 	.block__moi{
-		width: 100%;
-		font-size: 2rem;
-		padding-top: 0%;
-		padding-left: 20%;
+		font-size: 4vw;
+		padding-top: 50%;
 	}
+	.block__valeur{
+		padding-top: 20%;
+		font-size: 4vw;
+
+		& > h1 {
+			width: 160%;
+			transform: rotateZ(-35deg) rotateY(20deg) rotateX(-35deg) ;
+		}
+	}
+	
 }
 
 
