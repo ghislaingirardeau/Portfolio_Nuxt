@@ -37,12 +37,19 @@ export default {
     methods: {
         spinLogo: function() {
             
-            let cube = document.querySelector(".cube")        
+            let cube = document.querySelector(".cube")
             let time = 1 + Math.floor( Math.random()* 10) + 's'
             cube.setAttribute("style",`animation: spin ${time} linear;`);
             console.log(cube)
-            this.componentKey += 1 /* pour faire un re-render du cube */
+            return this.componentKey += 1 /* pour faire un re-render du cube */
         }
-    }
+    },
+    /* mounted() {
+        let cube = document.querySelector(".cube")        
+        cube.setAttribute("style",`animation: spin 6s linear;`);
+        console.log(cube)
+        
+
+    } */
 }
 </script>

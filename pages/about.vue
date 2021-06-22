@@ -2,6 +2,11 @@
     <main class="head__page page__cv">
 
         <h1>En savoir plus sur moi</h1>
+        <div class="">
+            <a href="../assets/logo/CV_développeur_web.pdf" download>
+                <button class="btn btn--download">Télécharger mon CV</button>
+            </a> <br>
+        </div>
         <article>
             <h2>Qui suis-je...</h2>
                 <h3>...Personnellement</h3>
@@ -41,11 +46,6 @@
             </p>
         </article>
         
-        <div class="">
-            <a href="../assets/logo/CV_développeur_web.pdf" download>
-                <button class="btn btn--download">Télécharger mon CV</button>
-            </a> <br>
-        </div>
     </main>
 </template>
 
