@@ -43,7 +43,6 @@
         & > li {
             margin-top: 50px;
         }
-        
     }
 }
 
@@ -54,5 +53,32 @@
     transition: all 0.3s ease;
     &:hover {
         text-shadow: 7px 30px black;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .detail_project{
+        flex-wrap: wrap;
+    }
+    .block_projet{
+        width: 100%;
+        &:before{
+            display: none;
+        }
+    }
+    .autres_projets{
+        width: 100%;
+        & > ul {            
+            & > li {
+                display: inline-block;
+                margin: 20px;
+            }
+        }
+    }
+    .liste--orange{
+        &:hover {
+            text-shadow: 7px 30px white;
+        }
     }
 }

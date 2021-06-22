@@ -20,9 +20,9 @@
         </div>
 
         <aside class="autres_projets">
-            <h2>Ma liste de projets</h2>
-            <ul v-for="item in relatedProject" :key="item.id">
-                <li><NuxtLink :to="{ name: 'projet-id', params: {id: item.id}}" class="liste--orange">{{item.name}} </NuxtLink></li>
+            <h2>Mes autres projets</h2>
+            <ul >
+                <li v-for="item in relatedProject" :key="item.id"><NuxtLink :to="{ name: 'projet-id', params: {id: item.id}}" class="liste--orange">{{item.name}} </NuxtLink></li>
             </ul>
         </aside>
         
