@@ -1,6 +1,6 @@
 <template>
     <div>
-        <button @click="goBack" class="btn__goback">go back</button>
+        <button @click="goBack" class="btn__goback">RETOUR</button>
     </div>
 </template>
 
