@@ -6,7 +6,7 @@ export default {
             summary: "Intégration d'une maquette en site web",
             description: "Implémenter une interface responsive, Utiliser un système de gestion de versions pour le suivi du projet",
             tech: "HTML, CSS, GitHub",
-            imageURL: "reservia.png"
+            imageURL: ["reservia.png", "ohmyfood.png"]
         },
         {
             id: '2',
