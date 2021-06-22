@@ -2,7 +2,7 @@ body {
   margin: auto;
   font-size: 1.2rem;
   font-family: $font_paragraphe;
-  background: linear-gradient(to top left, rgb(37, 35, 35), 80%, rgb(190, 190, 190)) no-repeat;
+  background: linear-gradient(to top left, rgb(37, 35, 35), 85%, rgb(231, 230, 230)) no-repeat;
   width: 95%;
   text-align: center;
 }
@@ -10,8 +10,6 @@ body {
 a.nuxt-link-exact-active {
   color: #f78228;
 }
-
-
 
 h1{
   color:$color-primary;
