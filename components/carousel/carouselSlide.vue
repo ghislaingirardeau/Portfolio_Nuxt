@@ -1,6 +1,5 @@
 <template>
     <div v-show="visible">
-        index: {{index}}
          <slot></slot>
     </div>
 </template>
@@ -13,9 +12,12 @@ export default {
             index: 0,
         }
     },
+    props: {
+        numImg : Number
+    },
     computed: {
         visible () {/* Etapes 2: je rends l'element visible si l'index du slide correspond a celui du parent carousel */
-            return this.index === this.$parent.index 
+            return this.numImg === this.$parent.index 
         }
     }
 }

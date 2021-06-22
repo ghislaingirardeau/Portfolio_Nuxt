@@ -10,25 +10,13 @@
                 <p> {{detailProject.tech}}</p>
 
                 <h2>Galerie du projet :</h2>
-              
-                <div>
-                    
-                </div>
-             
-            <carousel >
-            <carousel-slide v-for="(item,i) in slides" :key="item.id">
-                <!-- <img :src="imageUrl" :alt="detailProject.name" width="400px"> -->
-                {{item}}
-                {{i}}
-            </carousel-slide>
-            <!-- <carousel-slide>
-                au revoir
-            </carousel-slide>
-            <carousel-slide>
-                rebonjour
-            </carousel-slide> -->
-        </carousel>      
-        <Goback />     
+                           
+                <carousel :ImageCount="slides.length"> <!-- envoie le nombre d'image en props -->
+                    <carousel-slide v-for="(item,i) in slides" :key="item.id" :numImg="i"> <!-- envoie index de l'image a afficher en props -->
+                        <img :src="require(`~/assets/images/${item}`)" :alt="detailProject.name" width="400px"> <!-- passe la src en dynamique avec item defined -->
+                    </carousel-slide>
+                </carousel>      
+            <Goback />     
         </div>
 
         <aside class="autres_projets">
@@ -54,14 +42,14 @@ export default {
             project: projects.projects,
             detailProject: {},
             relatedProject: [],
-            imageUrl: '',
-            slides: []
+            imageUrl: '', /* si on passe directement url dans le mounted */
+            slides: [],
         }
     },
     mounted () {
         this.detailProject = this.project.find(element => element.id === this.id)
         this.relatedProject = this.project.filter(element => element.id != this.id)
-        this.slides = this.detailProject.imageURL
+        this.slides = this.detailProject.imageURL /* recupere aussi le tableau d'images */
         /* const filename = this.detailProject.imageURL
         this.imageUrl = require(`~/assets/images/${filename}`); */
     },
