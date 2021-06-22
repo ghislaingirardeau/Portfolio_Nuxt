@@ -8,7 +8,7 @@
 }
 
 .btn__goback {
-    margin-bottom: 30px;
+    margin: 30px 0px 30px;
     font-size: 1.2rem;
     font-weight: bold;
     padding: 10px;
@@ -17,10 +17,18 @@
 }
 
 .btn__slide {
-    margin-bottom: 30px;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: bold;
-    padding: 10px;
+    padding: 5px;
     border-radius: 5px 5px;
     @include anim-btn($color-btn);
+    position: absolute;
+    top: 45%;
+    background-color: $color-blue-mid;
+    &--next{
+        right: 20px;
+    }
+    &--prev{
+        left: 20px;
+    }
 }

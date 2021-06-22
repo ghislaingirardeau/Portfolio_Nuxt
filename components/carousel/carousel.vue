@@ -1,8 +1,8 @@
 <template>
-    <div>
+    <div class="carousel">
         <slot></slot>
-        <button @click.prevent="previousSlide" class="btn__slide">precedent</button>
-        <button @click.prevent="nextSlide" class="btn__slide">suivant</button>
+        <button @click.prevent="previousSlide" class="btn__slide btn__slide--prev" v-show="ImageCount > 1"> < </button>
+        <button @click.prevent="nextSlide" class="btn__slide btn__slide--next" v-show="ImageCount > 1"> > </button>
 
     </div>
 </template>
