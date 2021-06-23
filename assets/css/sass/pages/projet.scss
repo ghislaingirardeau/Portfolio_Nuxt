@@ -21,6 +21,15 @@
     @include anim-btn($color-lien);
 }
 
+.slide-fade-enter-active{
+    transition: opacity .5s ease, transform .5s ease;
+    transition-delay: calc(0.2s * var(--i));
+}
+.slide-fade-enter{
+    opacity: 0;
+    transform: translateY(60px);
+}
+
 @media screen and (max-width: 700px) {
 
     .page__projet--link {
