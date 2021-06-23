@@ -1,8 +1,8 @@
 <template>
     <div class="carousel">
         <slot></slot>
-        <button @click.prevent="previousSlide" class="btn__slide btn__slide--prev" v-show="ImageArray.length > 1"> < </button>
-        <button @click.prevent="nextSlide" class="btn__slide btn__slide--next" v-show="ImageArray.length > 1"> > </button>
+        <button @click.prevent="previousSlide" class="btn__slide btn__slide--prev" v-show="ImageArray.length > 1"> &lt; </button>
+        <button @click.prevent="nextSlide" class="btn__slide btn__slide--next" v-show="ImageArray.length > 1"> &gt; </button>
         
         <div class="btn__index" v-show="ImageArray.length > 1">
             <button v-for="i,l in ImageArray" :key="i" @click.prevent="indexSlide(l)" :class="{active: l === index}"></button>
