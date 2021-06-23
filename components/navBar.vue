@@ -15,7 +15,6 @@
             <NuxtLink :to="{ name: 'index'}" class="header__navBar--font" >Accueil</NuxtLink> 
             <NuxtLink :to="{ name: 'projets'}" class="header__navBar--font" >Mes projets</NuxtLink> 
             <NuxtLink :to="{ name: 'about'}" class="header__navBar--font" >A propos de moi</NuxtLink> 
-            <!-- <NuxtLink :to="{ name: 'test'}" class="header__navBar--font">test</NuxtLink>  -->
         </nav>
         
     </header>

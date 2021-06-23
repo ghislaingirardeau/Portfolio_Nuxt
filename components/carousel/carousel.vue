@@ -16,6 +16,7 @@ export default {
     data() {
         return {
             index: 0,
+            direction: null
         }
     },
     props: {
@@ -28,12 +29,14 @@ export default {
             if(this.index === (this.ImageArray.length - 1)) {
                 this.index = -1
             }
+            this.direction = "right"
             this.index++
         },
         previousSlide() {
             if(this.index === 0) {
                 this.index = (this.ImageArray.length)
             }
+            this.direction = "left"
             this.index--
         },
         indexSlide(i) {
