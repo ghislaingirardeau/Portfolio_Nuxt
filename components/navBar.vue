@@ -2,7 +2,7 @@
 
     <header class="header">
         <div class="header__logo wrap" >
-	        <div class="cube" @click="spinLogo" :key="componentKey">
+	        <div class="cube" @click="spinLogo" :key="componentKey" :style="{animation: animCube}">
 		        <div class="front">g</div>
 		        <div class="back">dev</div>
 		        <div class="top"></div>
@@ -32,15 +32,15 @@ export default {
     data() {
         return{
             componentKey: 0, /* pour faire un re-render du cube avec :key */
+            animCube: 'spin 7s linear'
         }
     },
     methods: {
         spinLogo: function() {
             
-            let cube = document.querySelector(".cube")
-            let time = 1 + Math.floor( Math.random()* 10) + 's'
-            cube.setAttribute("style",`animation: spin ${time} linear;`);
-            console.log(cube)
+            let time = 2 + Math.floor( Math.random()* 10) + 's'
+            this.animCube = 'spin ' + time + ' linear'
+            console.log(this.animCube)
             return this.componentKey += 1 /* pour faire un re-render du cube */
         }
     },
