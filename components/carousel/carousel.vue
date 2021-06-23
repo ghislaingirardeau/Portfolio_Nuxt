@@ -39,7 +39,12 @@ export default {
             this.direction = "left"
             this.index--
         },
-        indexSlide(i) {
+        indexSlide(i) { /* changer la direction de l'animation suivant la pagination */
+            if(i > this.index) {
+                this.direction = "right"
+            } else if(i < this.index) {
+                this.direction = "left"
+            }
             this.index = i
         }
     }

@@ -1,7 +1,8 @@
 <template>
     <main class="head__page detail_project">
+        <transition name="opacity" appear> 
         <div class="block_projet">
-            
+             
             <h1>{{detailProject.name}}</h1>
                 <h2>Description du projet et objectifs :</h2>
                 <p> {{detailProject.description}}</p>
@@ -13,14 +14,15 @@
                          
                 <carousel :ImageCount="slides.length" :ImageArray="slides"> <!-- envoie le nombre d'image en props -->
                     <carousel-slide v-for="(item,i) in slides" :key="item.id" :numImg="i"> <!-- envoie index de l'image a afficher en props -->
-                        <transition name="opacity" appear>  
+                        
                         <img :src="require(`~/assets/images/${item}`)" :alt="detailProject.name" class="carousel--img"> <!-- passe la src en dynamique avec item defined -->
-                        </transition> 
                     </carousel-slide>
                 </carousel>
                      
-            <Goback />     
+            <Goback />  
+             
         </div>
+        </transition>  
 
         <aside class="autres_projets">
             <h2>Mes autres projets</h2>
