@@ -1,6 +1,6 @@
 <template>
-  <main class="container head__page ">
-    <article class="block__presentation">
+  <main class="container head__page" >
+    <article class="block__presentation" v-show="show">
             
       <div class="block__valeur">
         <h1 class="">
@@ -21,8 +21,18 @@
   </main>
 </template>
 
+<script>
 
-
-<style>
-
-</style>
+export default {
+  data() {
+    return{
+      show: false
+    }
+  },
+  mounted() {
+    window.setTimeout(() => {
+      this.show = true
+    }, 2000)
+  }
+}
+</script>

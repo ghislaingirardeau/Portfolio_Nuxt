@@ -7,7 +7,7 @@
                 <NuxtLink v-for="item,l in project" :key="item.id" :style="{'--i': l}" class="page__projet--link btn--projets" :to="{ name: 'projet-id', params: {id: item.id}}">
                     <article>
                         <img src="" alt="" class="page__projet--image">
-                        <h2>{{item.name}}</h2>
+                        <h2>{{uppercase(item.name)}}</h2>
                         <p>{{item.summary}}</p>
                     </article>
                 </NuxtLink>
