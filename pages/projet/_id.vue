@@ -11,7 +11,7 @@
 
                 <h2>Galerie du projet :</h2>
                            
-                <carousel :ImageCount="slides.length"> <!-- envoie le nombre d'image en props -->
+                <carousel :ImageCount="slides.length" :ImageArray="slides"> <!-- envoie le nombre d'image en props -->
                     <carousel-slide v-for="(item,i) in slides" :key="item.id" :numImg="i"> <!-- envoie index de l'image a afficher en props -->
                         <img :src="require(`~/assets/images/${item}`)" :alt="detailProject.name" class="carousel--img"> <!-- passe la src en dynamique avec item defined -->
                     </carousel-slide>

@@ -1,6 +1,7 @@
 <template>
     <div v-show="visible">
          <slot></slot>
+         
     </div>
 </template>
 
