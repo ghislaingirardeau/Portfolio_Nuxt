@@ -3,14 +3,13 @@
 	flex-wrap: nowrap;
 	perspective: 400px;
 	perspective-origin: 50% 50px;
-	position: relative;
 }
 .block__moi{
     font-size: 2vw;
 	width: 50%;
     text-shadow: 10px 3px black;
     text-align: left;
-    padding-top: 25%;
+    padding-top: 20%;
 	
 	& > h1 {
 		transform: rotateZ(47deg);
