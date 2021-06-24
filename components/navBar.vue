@@ -31,7 +31,7 @@ export default {
     data() {
         return{
             componentKey: 0, /* pour faire un re-render du cube avec :key */
-            animCube: 'spin 7s linear running' /* anime par default au load */
+            animCube: 'spin 7s linear', /* anime par default au load */
         }
     },
     methods: {
@@ -41,5 +41,11 @@ export default {
             this.componentKey += 1 /* pour faire un re-render du cube */
         }
     },
+    mounted() {
+    setInterval(() =>{
+      this.componentKey++
+      this.animCube = 'spin 7s linear'
+    }, 15000)
+  }
 }
 </script>

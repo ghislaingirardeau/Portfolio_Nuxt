@@ -10,7 +10,7 @@
           Responsable et Autonome, <br>
         </h1>
       </div>
-      <div class="block__moi">
+      <div class="block__moi" :key="render">
         <h1>
           <p class="block__moi--animation1">Bonjour,</p>
           <p class="block__moi--animation2">je suis Ghislain,</p>
@@ -34,7 +34,7 @@ export default {
   mounted() {
     setInterval(() =>{
       this.render++
-    }, 5000)
+    }, 15000)
   }
 }
 </script>
