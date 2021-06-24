@@ -30,8 +30,8 @@ export default {
   mounted() {
       this.date = "Le " + this.time.getDate() + "/" + (this.time.getMonth() + 1) + "/" + this.time.getFullYear()
       this.test = setInterval(() => { /* this.test refére a window.test qui est une variable temporaire */
-        let timeDate = new Date()
-        this.interval = ", Il est " + timeDate.getHours() + "h" + timeDate.getMinutes() + "m" + timeDate.getSeconds() 
+      let timeDate = new Date()
+      this.interval = ", Il est " + timeDate.getHours() + "h" + timeDate.getMinutes() + "m" + timeDate.getSeconds() 
       }, 1000);
   }
 }

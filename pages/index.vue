@@ -1,8 +1,9 @@
 <template>
   <main class="container head__page" >
+
     <article class="block__presentation" v-show="show">
             
-      <div class="block__valeur">
+      <div class="block__valeur" :key="render">
         <h1 class="">
           Respect et Humilité, <br> 
           Ouvert et Communicatif, <br>
@@ -10,13 +11,13 @@
         </h1>
       </div>
       <div class="block__moi">
-        <h1 class="">
-          Bonjour,<br> 
-          je suis Ghislain,<br>
-          Développeur web
+        <h1>
+          <p class="block__moi--animation1">Bonjour,</p>
+          <p class="block__moi--animation2">je suis Ghislain,</p>
+          <p class="block__moi--animation3">Développeur web</p>
         </h1>
       </div>
-      
+     
     </article>
   </main>
 </template>
@@ -26,13 +27,14 @@
 export default {
   data() {
     return{
-      show: false
+      show: true,
+      render: 0
     }
   },
   mounted() {
-    window.setTimeout(() => {
-      this.show = true
-    }, 2000)
+    setInterval(() =>{
+      this.render++
+    }, 5000)
   }
 }
 </script>
