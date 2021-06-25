@@ -20,11 +20,12 @@
   }
 
 .loader {
-    @include position_abs_top_left (35%, 20%);
-    width: 60%;
+    cursor: pointer;
+    margin: auto;
+    width: 40%;
     @include flex_layout (row, wrap, space-between);
-    border: 2px solid $col_degrade_fonce;
-    @include box_contour (unset, 5px, $col_degrade_fonce);
+    border: 2px solid grey;
+    @include box_contour (unset, 5px, grey);
     animation: loader-out 300ms 2400ms both ease-in;
  
     > div {
@@ -48,14 +49,13 @@
         animation: logo4 400ms 1000ms both ease-in;
     }
 }
-/* Animation du logo1, creation d'un after pour animer le texte */
 .contain_logo {
     position: relative;
     width: 30%;
     &::after{
         content: "OHMYFOOD";
-        color: $text_footer;
-        @include position_abs_top_left (60%, 10%);
+        color: white;
+        @include position_abs_top_left (60%, 30%);
         opacity: 0;
         animation: logo1 2400ms forwards ease-in-out;
     }

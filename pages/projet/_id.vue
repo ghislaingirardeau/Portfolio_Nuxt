@@ -11,14 +11,17 @@
                 <p> {{detailProject.tech}}</p>
 
                 <h2>Galerie du projet :</h2>
+                <div v-if="detailProject.loader" class="block_projet--loader">
+                    <p>Creation du loader :</p>
+                    <loaderOhmyfood />
+                </div>
                          
                 <carousel :ImageCount="slides.length" :ImageArray="slides"> <!-- envoie le nombre d'image en props -->
                     <carousel-slide v-for="(item,i) in slides" :key="item.id" :numImg="i"> <!-- envoie index de l'image a afficher en props -->
-                        
                         <img :src="require(`~/assets/images/${item}`)" :alt="detailProject.name" class="carousel--img"> <!-- passe la src en dynamique avec item defined -->
                     </carousel-slide>
                 </carousel>
-                     
+
             <Goback />  
              
         </div>

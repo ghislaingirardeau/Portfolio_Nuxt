@@ -14,7 +14,8 @@ export default {
             summary: "Mise en œuvre une structure de navigation web",
             description: "Mettre en œuvre des effets CSS graphiques avancés en assurant une cohérence graphique. Mise en place d'animation Keyframes et transitions pour rendre enrichir l'expérience utilisateur",
             tech: "HTML, CSS, SASS, GitHub, méthode BEM pour un code clair",
-            imageURL: ["ohmyfood.png", "ohmyfood_menu.png", "ohmyfood_menu1.png", "ohmyfood_loader.png"]
+            imageURL: ["ohmyfood.png", "ohmyfood_menu.png", "ohmyfood_menu1.png"],
+            loader: 'true'
         },
         {
             id: '3',

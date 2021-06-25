@@ -31,6 +31,13 @@
         top: 5px;
         left: 5px;
     }
+    &--loader{
+        margin-bottom: 20px;
+        & > p {
+            font-size: $paragraphesize;
+            color: $color-bright;
+        }
+    }
 }
 
 .autres_projets{
