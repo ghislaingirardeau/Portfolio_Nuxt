@@ -1,19 +1,16 @@
 <template>
-    <div class="wrap_index">
-	        <div class="cube_index">
-		        <div class="back_index"> 
-                    <h1>Bonjour,<br> 
-                        je suis Ghislain,<br>
-                        Développeur web
-                        </h1> 
-                    </div>
-		        <div class="left_index"> 
-                    <h1 class="left_index--rotation">
-                        Respect et Humilité, <br> 
-                        Ouvert et Communicatif, <br>
-                        Responsable et Autonome, <br>
-                        </h1> 
-                    </div>
-	        </div>
+    <div class="loader">
+        <div class="contain_logo">
+            <img src="@/assets/logo/background-1206941__340.png" alt="" class="logo1">
         </div>
+        <div>
+            <img src="@/assets/logo/icon-2073974__340.png" alt="" class="logo2">
+        </div>
+        <div>
+            <img src="@/assets/logo/label-2780146__340.png" alt="" class="logo3">
+        </div>
+        <div>
+            <img src="@/assets/logo/shop-5890185__340.png" alt="" class="logo4">
+        </div>
+    </div>
 </template>
