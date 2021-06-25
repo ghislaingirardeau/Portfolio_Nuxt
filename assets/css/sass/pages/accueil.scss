@@ -26,7 +26,8 @@
 			background: white;
 			filter: blur(2px);
 			opacity: 0;
-			animation: loadBorderBlockMoi 2s 2s ease forwards;
+			animation: loadBorderBlockMoi 1.5s 2s ease forwards;
+			animation-iteration-count: 2;
 		}
 	}
 	&--animation1{
@@ -69,6 +70,7 @@
 			filter: blur(1px);
 			opacity: 0;
 			animation: loadBorderRight 1s 6s cubic-bezier(0,.8,.5,.66) forwards ;
+			animation-iteration-count: 7;
 		}
 		&:before{
 			position: absolute;
@@ -83,31 +85,39 @@
 			filter: blur(4px);
 			opacity: 0;
 			animation: loadBorderBottom 1s 5s cubic-bezier(.56,.12,.04,1);
+			animation-iteration-count: 7;
 		}
 	}
 }
 
 @media screen and (max-width: 1080px) {
+	.block__presentation{
+		margin-bottom: 50px;
+	}
+	
 	.block__moi{
 		font-size: 3.5vw;
-		padding-top: 40%;
+		padding-top: 25%;
 		& > h1 {
 			transform: rotateZ(45deg);
 		}
 	}
 	.block__valeur{
-		padding-top: 20%;
+		padding-top: 10%;
 		font-size: 3.5vw;
 	}
 }
 
 @media screen and (max-width: 500px) {
+	.block__presentation{
+		margin-bottom: 0px;
+	}
 	.block__moi{
 		font-size: 4vw;
-		padding-top: 50%;
+		padding-top: 35%;
 	}
 	.block__valeur{
-		padding-top: 20%;
+		padding-top: 12%;
 		font-size: 4vw;
 
 		& > h1 {

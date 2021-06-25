@@ -1,16 +1,16 @@
 <template>
   <main class="container head__page" >
 
-    <article class="block__presentation" v-show="show">
+    <article class="block__presentation" :key="render">
             
-      <div class="block__valeur" :key="render">
-        <h1 class="">
+      <div class="block__valeur" >
+        <h1>
           Respect et Humilité, <br> 
           Ouvert et Communicatif, <br>
           Responsable et Autonome, <br>
         </h1>
       </div>
-      <div class="block__moi" :key="render">
+      <div class="block__moi">
         <h1>
           <p class="block__moi--animation1">Bonjour,</p>
           <p class="block__moi--animation2">je suis Ghislain,</p>
@@ -27,8 +27,7 @@
 export default {
   data() {
     return{
-      show: true,
-      render: 0
+      render: 0,
     }
   },
   mounted() {
