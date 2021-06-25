@@ -51,12 +51,14 @@
 }
 .contain_logo {
     position: relative;
-    width: 30%;
     &::after{
         content: "OHMYFOOD";
         color: white;
-        @include position_abs_top_left (60%, 30%);
-        opacity: 0;
+        position: absolute;
+        top: 40%;
+        left: 20px;
+        font-size: 1.5vw;
+        opacity: 1;
         animation: logo1 2400ms forwards ease-in-out;
     }
 }
