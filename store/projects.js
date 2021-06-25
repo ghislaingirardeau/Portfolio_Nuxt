@@ -2,7 +2,7 @@ export default {
     projects: [
         {
             id: '1',
-            name: "reservia",
+            name: "Reservia",
             summary: "Intégration d'une maquette en site web",
             description: "Implémenter une interface responsive, Utiliser un système de gestion de versions pour le suivi du projet",
             tech: "HTML, CSS, GitHub",
@@ -10,7 +10,7 @@ export default {
         },
         {
             id: '2',
-            name: "ohmyfood",
+            name: "Ohmyfood",
             summary: "Mise en œuvre une structure de navigation web",
             description: "Mettre en œuvre des effets CSS graphiques avancés en assurant une cohérence graphique. Mise en place d'animation Keyframes et transitions pour rendre enrichir l'expérience utilisateur",
             tech: "HTML, CSS, SASS, GitHub, méthode BEM pour un code clair",
