@@ -49,7 +49,7 @@
     & > ul {
         list-style: none;
         &  li {
-            margin-top: 50px;
+            margin-top: 30px;
         }
     }
 }
@@ -81,13 +81,15 @@
         &:before{
             display: none;
         }
+        & > p {
+            font-size: 1.2rem;
+        }
     }
     .autres_projets{
         width: 100%;
         & > ul {            
             & > li {
                 display: inline-block;
-                margin: 20px;
             }
         }
     }
