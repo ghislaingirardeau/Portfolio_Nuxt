@@ -37,9 +37,9 @@ export default {
             id: '5',
             name: "So Peckoko",
             summary: "Construction d'une API Rest",
-            description: "Mettre en œuvre des opérations CRUD de manière sécurisée. Construire l'API en stockant des données de manière sécurisée, Implémenter un modèle logique de données conformément à la réglementation OWASP",
+            description: "Mettre en œuvre des opérations CRUD de manière sécurisée. Construire l'API en stockant des données (data personnel, image, texte...) de manière sécurisée, Implémenter un modèle logique de données conformément à la réglementation OWASP",
             tech: "Node js, Express, bcrypt, multer, MongoDb, GitHub",
-            imageURL: ["reservia.png", "ohmyfood.png", "orinoco.png"]
+            imageURL: ["so_peckoko_log.PNG", "so_peckoko_sauce.PNG", "so_peckoko_create.PNG", "so_peckoko_CRUD.PNG"]
         },
         {
             id: '6',
