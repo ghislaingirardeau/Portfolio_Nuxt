@@ -7,7 +7,7 @@
                 <h2>Description du projet et objectifs :</h2>
                 <p> {{detailProject.description}}</p>
 
-                <h2>Les technologies utilisées :</h2>
+                <h2>Les technologies et outils utilisés :</h2>
                 <p> {{detailProject.tech}}</p>
 
                 <h2>Galerie du projet :</h2>
