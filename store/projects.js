@@ -6,7 +6,7 @@ export default {
             summary: "Intégration d'une maquette en site web",
             description: "Implémenter une interface responsive, Utiliser un système de gestion de versions pour le suivi du projet",
             tech: "HTML, CSS, GitHub",
-            imageURL: ["reservia.png", "ohmyfood.png", "orinoco.png"]
+            imageURL: ["reservia.png"]
         },
         {
             id: '2',
@@ -14,7 +14,7 @@ export default {
             summary: "Mise en œuvre une structure de navigation web",
             description: "Mettre en œuvre des effets CSS graphiques avancés en assurant une cohérence graphique ",
             tech: "HTML, CSS, SASS, GitHub",
-            imageURL: ["orinoco.png", "ohmyfood.png"]
+            imageURL: ["ohmyfood.png", "ohmyfood_menu.png", "ohmyfood_menu1.png", "ohmyfood_loader.png"]
         },
         {
             id: '3',
