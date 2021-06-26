@@ -52,5 +52,8 @@ export default {
     name: 'circle',
     color: 'white',
     background: 'linear-gradient(to top left, rgb(37, 35, 35), 85%, rgb(231, 230, 230)) no-repeat'
+  },
+  router: {
+    base: '/'
   }
 }
