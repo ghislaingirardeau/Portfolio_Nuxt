@@ -39,7 +39,7 @@ export default {
             summary: "Construction d'une API Rest",
             description: "Mettre en œuvre des opérations CRUD de manière sécurisée. Construire l'API en stockant des données (data personnel, image, texte...) de manière sécurisée, Implémenter un modèle logique de données conformément à la réglementation OWASP",
             tech: "Node js, Express, bcrypt, multer, MongoDb, GitHub",
-            imageURL: ["so_peckoko_log.PNG", "so_peckoko_sauce.PNG", "so_peckoko_create.PNG", "so_peckoko_CRUD.PNG"]
+            imageURL: ["so_peckoko_log.PNG", "so_peckoko_create.PNG", "so_peckoko_CRUD.PNG"]
         },
         {
             id: '6',
