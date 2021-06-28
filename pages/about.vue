@@ -4,7 +4,7 @@
 
         <h1>En savoir plus sur moi</h1>
         <div class="">
-            <a href="../assets/logo/CV_développeur_web.pdf" download>
+            <a href="~/assets/logo/CV_développeur_web.pdf" download>
                 <button class="btn btn--download">Télécharger mon CV</button>
             </a> <br>
         </div>
