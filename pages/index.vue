@@ -5,9 +5,10 @@
             
       <div class="block__valeur" >
         <h1>
-          Respect et Humilité, <br> 
-          Ouvert et Communicatif, <br>
-          Responsable et Autonome, <br>
+          Respect & Humilité, <br> 
+          Ouvert & Communicatif, <br>
+          Responsable & Autonome, <br>
+
         </h1>
       </div>
       <div class="block__moi">
