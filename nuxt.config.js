@@ -2,8 +2,23 @@ export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
 
+  /* router: {
+    base: '/app/'
+  }, */
+
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
+
+  generate: {
+    routes: [
+      '/projet/1',
+      '/projet/2',
+      '/projet/3',
+      '/projet/4',
+      '/projet/5',
+      '/projet/6',
+    ]
+  },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -53,7 +68,5 @@ export default {
     color: 'white',
     background: 'linear-gradient(to top left, rgb(37, 35, 35), 85%, rgb(231, 230, 230)) no-repeat'
   },
-  router: {
-    base: '/'
-  }
+
 }
