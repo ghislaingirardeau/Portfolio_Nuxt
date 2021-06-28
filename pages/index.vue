@@ -5,9 +5,9 @@
             
       <div class="block__valeur" >
         <h1>
-          Respect & Humilité, <br> 
-          Ouvert & Communicatif, <br>
-          Responsable & Autonome, <br>
+          <p class="block__valeur--animation1">Respect & Humilité,</p>
+          <p class="block__valeur--animation2">Ouvert & Communicatif, </p>
+          <p class="block__valeur--animation3">Responsable & Autonome,</p>
 
         </h1>
       </div>

@@ -53,10 +53,10 @@
 
 	& > h1 {
 		width: 130%;
-		opacity: 0;
+		line-height: 25px;
 		transform: rotateZ(-35deg) rotateY(20deg) rotateX(-35deg);
-		animation: loadingValeur 3s 2.1s ease forwards;
-		position: relative;
+/* 		animation: loadingValeur 3s 2.1s ease forwards;
+ */		position: relative;
 		&:after{
 			position: absolute;
 			content: '';
@@ -69,8 +69,8 @@
 			background: white;
 			filter: blur(1px);
 			opacity: 0;
-			animation: loadBorderRight 1s 3s cubic-bezier(0,.8,.5,.66) forwards ;
-			animation-iteration-count: 4;
+			animation: loadBorderRight 0.5s 2.5s cubic-bezier(0,.8,.5,.66) forwards ;
+			animation-iteration-count: 3;
 		}
 		&:before{
 			position: absolute;
@@ -84,9 +84,21 @@
 			background: white;
 			filter: blur(4px);
 			opacity: 0;
-			animation: loadBorderBottom 1s 2s cubic-bezier(.56,.12,.04,1);
-			animation-iteration-count: 4;
+			animation: loadBorderBottom 0.5s 2s cubic-bezier(.56,.12,.04,1);
+			animation-iteration-count: 3;
 		}
+	}
+	&--animation1{
+		opacity: 0;
+		animation: loadingValeurText 0.5s 2.1s ease-out forwards;
+	}
+	&--animation2{
+		opacity: 0;
+		animation: loadingValeurText 0.5s 2.6s ease-out forwards;
+	}
+	&--animation3{
+		opacity: 0;
+		animation: loadingValeurText 0.5s 3.1s ease-out forwards;
 	}
 }
 
