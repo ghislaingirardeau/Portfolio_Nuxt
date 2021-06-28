@@ -3,7 +3,8 @@ export default {
   ssr: false,
 
   router: {
-    base: '/dist/'
+    base: './',
+    mode: 'hash'
   },
 
   // Target: https://go.nuxtjs.dev/config-target
