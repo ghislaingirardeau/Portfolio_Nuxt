@@ -45,7 +45,7 @@ export default {
     setInterval(() =>{
       this.componentKey++
       this.animCube = 'spin 7s linear'
-    }, 15000)
+    }, 25000)
   }
 }
 </script>

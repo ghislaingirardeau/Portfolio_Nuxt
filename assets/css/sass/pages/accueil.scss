@@ -70,7 +70,7 @@
 			filter: blur(1px);
 			opacity: 0;
 			animation: loadBorderRight 1s 6s cubic-bezier(0,.8,.5,.66) forwards ;
-			animation-iteration-count: 7;
+			animation-iteration-count: 4;
 		}
 		&:before{
 			position: absolute;
@@ -85,7 +85,7 @@
 			filter: blur(4px);
 			opacity: 0;
 			animation: loadBorderBottom 1s 5s cubic-bezier(.56,.12,.04,1);
-			animation-iteration-count: 7;
+			animation-iteration-count: 4;
 		}
 	}
 }
