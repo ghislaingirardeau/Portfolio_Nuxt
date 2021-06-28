@@ -41,11 +41,11 @@ export default {
             this.componentKey += 1 /* pour faire un re-render du cube */
         }
     },
-    mounted() {
-    setInterval(() =>{
-      this.componentKey++
-      this.animCube = 'spin 7s linear'
-    }, 25000)
-  }
+    /* mounted() {
+        setInterval(() =>{
+          this.componentKey++
+          this.animCube = 'spin 7s linear'
+        }, 25000)
+    } */
 }
 </script>
