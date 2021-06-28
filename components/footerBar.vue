@@ -4,7 +4,7 @@
         <div class="footer__layout">
             <ul>Retrouver mon profil sur :
                 <li><a href="https://www.linkedin.com/in/ghislain-girardeau-a879b2201/" target="_blank">Linkedin profil</a> </li>
-                <li><a href="https://www.malt.fr/profile/ghislaingirardeau" target="_blank">Malte profil</a></li>
+                <li><a href="https://www.malt.fr/profile/ghislaingirardeau" target="_blank">Malt profil</a></li>
                 <li class="date">{{date}}{{interval}}</li>
             </ul>
             <div class="date">
