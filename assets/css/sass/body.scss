@@ -5,6 +5,22 @@ body {
   background: linear-gradient(to top left, rgb(37, 35, 35), 85%, rgb(231, 230, 230)) no-repeat;
   width: 95%;
   text-align: center;
+  position: relative;
+  &:before{
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow:
+    0 0 60px 30px #fff,  /* inner white */
+    0 0 100px 60px rgb(77, 77, 77), /* middle magenta */
+    0 0 140px 90px rgb(255, 255, 255); /* outer cyan */
+    animation: body_light 2s ease forwards;
+  }
 }
 
 a.nuxt-link-exact-active {
@@ -13,6 +29,17 @@ a.nuxt-link-exact-active {
 
 h1{
   color:$color-primary;
+}
+
+@keyframes body_light {
+  from {
+    opacity: 0;
+    transform: translateX(-100px) translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px) translateY(0px);
+  }
 }
 
 
