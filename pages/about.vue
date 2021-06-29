@@ -32,13 +32,6 @@
                         </p>
                 </article>
                 <article>
-                    <h2>Mes valeurs et mes atouts</h2>
-                    
-                    <p>Honnête | Respect | Humilité | Ouverture | Juste
-                    Courageux | Autonome | Curieux | Adaptabilité | Communication | Autodidacte | Anticipation
-                    </p>
-                </article>
-                <article>
                     <h2>Mes souhaits d'engagements</h2>
                     
                     <p>Parce que les nouvelles technologies ont aussi un impact sur l'environnement... J'ai le souhait de 
