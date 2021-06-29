@@ -4,7 +4,7 @@
 
         <h1>En savoir plus sur moi</h1>
         <div class="">
-            <a href="~/assets/logo/CV_développeur_web.pdf" download>
+            <a href="./_nuxt/public/CV_développeur_web.pdf" download>
                 <button class="btn btn--download">Télécharger mon CV</button>
             </a> <br>
         </div>
@@ -50,6 +50,10 @@
                     <p>Parce que les nouvelles technologies nous facilitent la vie... Il ne faut pas oublier qu'il y a des individus
                         derrières celles-ci : utilisateurs, clients, employés, développeurs, entrepreneur... Faire que la relation entre les 
                         différents acteurs soient la plus saine, équitable, juste et constructive est une notion indispensables pour moi. 
+                    </p>
+                    <p>Parce que le métier de freelance nécessite une relation de confiance et de l'autonomie... Je fais des points réguliers 
+                        sur l'avancée du projet, planifie mes objectifs pour tenir les délais, discute des feedbacks constructifs pour 
+                        faire aboutir le projet.
                     </p>
                 </article>
             </div>
