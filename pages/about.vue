@@ -3,11 +3,11 @@
     <main class="head__page page__cv">
 
         <h1>En savoir plus sur moi</h1>
-        <div class="">
+        <!-- <div class="">
             <a href="./_nuxt/public/CV_développeur_web.pdf" download>
                 <button class="btn btn--download">Télécharger mon CV</button>
             </a> <br>
-        </div>
+        </div> -->
         <transition name="opacity" appear> 
             <div>
                 <article>
@@ -41,7 +41,7 @@
                 <article>
                     <h2>Mes souhaits d'engagements</h2>
                     
-                    <p>Parce que les nouvelles technologies ont aussi un impact sur l'environnement, j'ai le souhait de 
+                    <p>Parce que les nouvelles technologies ont aussi un impact sur l'environnement... J'ai le souhait de 
                         m'engager sur des projets ou des entreprises partageant l'idée de réduire notre consommation en énergie.
                     </p>
                     <p>Parce que la protection des données est un enjeu très important dans un monde oú tout va plus vite,
