@@ -3,7 +3,7 @@ export default {
   ssr: false,
 
   router: { 
-    base: '/', /* passer en ./ pour le deploy static */
+    base: '/', /* test sans sinon passer en ./ pour le deploy static */
     mode: 'hash'
   },
 
@@ -33,7 +33,7 @@ export default {
       { hid: 'description', name: 'description', content: '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/PNG', href: '/favicon.PNG' }
     ]
   },
 
