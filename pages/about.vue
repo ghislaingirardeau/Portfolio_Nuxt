@@ -57,11 +57,7 @@
 
 <script>
 export default {
-    head() {
-        return {
-            title : "Portfolio: CV",
-        }
-    },
+
     data() {
         return {
             downloadUrl: ''

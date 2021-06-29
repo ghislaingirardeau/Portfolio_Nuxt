@@ -22,11 +22,6 @@ import projects from '@/store/projects.js'
 import { uppercase } from '@/store/function.js'
 
 export default {
-    head() {
-        return {
-            title : "Portfolio: Mes projets"
-        }
-    },
     data() {
         return{
             project: projects.projects
