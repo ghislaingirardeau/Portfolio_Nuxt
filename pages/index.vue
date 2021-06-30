@@ -34,7 +34,7 @@ export default {
   mounted() {
     setInterval(() =>{
       this.render++
-    }, 25000)
+    }, 15000)
   }
 }
 </script>
