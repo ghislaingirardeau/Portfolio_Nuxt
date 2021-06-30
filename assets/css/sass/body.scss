@@ -5,7 +5,7 @@ body {
   width: 95%;
   text-align: center;
   position: relative;
-  background: linear-gradient(to top left, rgb(37, 35, 35), 95%, rgb(231, 230, 230)) no-repeat;
+  background: linear-gradient(to top left, rgb(37, 35, 35), 99%, rgb(231, 230, 230)) no-repeat;
   &:before{
     content: '';
     position: absolute;
@@ -14,7 +14,9 @@ body {
     width: 110%;
     height: 100%;
     z-index: -1;
-    animation: background_body .8s ease forwards;
+    background-position: left;
+    background: linear-gradient(to top left, rgb(37, 35, 35), 85%, rgb(231, 230, 230)) no-repeat;
+    animation: background_body 6s ease forwards;
   }
   &:after{
     content: '';
@@ -29,7 +31,7 @@ body {
     0 0 60px 30px #fff, 
     0 0 100px 60px rgb(77, 77, 77), 
     0 0 140px 90px rgb(255, 255, 255); 
-    animation: body_light 1s cubic-bezier(0, 0, 0, 0.99) forwards;
+    animation: body_light 6s cubic-bezier(0, 0, 0, 0.99) forwards;
   }
 }
 
@@ -54,10 +56,10 @@ h1{
 
 @keyframes background_body {
   from{
-    background: linear-gradient(to top left, rgb(37, 35, 35), 95%, rgb(231, 230, 230)) no-repeat;
+    background-position: -100px -100px;
   }
   to{
-    background: linear-gradient(to top left, rgb(37, 35, 35), 85%, rgb(231, 230, 230)) no-repeat;
+    background-position: 0px 0px;
   }
 }
 
