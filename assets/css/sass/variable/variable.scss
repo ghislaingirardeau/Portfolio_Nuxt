@@ -32,3 +32,14 @@ $font_logo: 'Kaushan Script', cursive;
         transform: scale(1.08);
     }
 }
+
+@mixin layout_page () {
+    color: $color-bright;
+    & > h1{
+        text-shadow: 2px 2px black;
+    }
+    & h2{
+        color: $color-primary;
+        text-decoration: underline;
+    }
+}
