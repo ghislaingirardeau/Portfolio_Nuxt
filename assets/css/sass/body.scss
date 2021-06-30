@@ -5,20 +5,9 @@ body {
   width: 95%;
   text-align: center;
   position: relative;
-  background: linear-gradient(to top left, rgb(37, 35, 35), 99%, rgb(231, 230, 230)) no-repeat;
+  background: linear-gradient(to top left, rgb(37, 35, 35), 85%, rgb(231, 230, 230)) no-repeat;
+ 
   &:before{
-    content: '';
-    position: absolute;
-    top: 0px;
-    left: -5%;
-    width: 110%;
-    height: 100%;
-    z-index: -1;
-    background-position: left;
-    background: linear-gradient(to top left, rgb(37, 35, 35), 85%, rgb(231, 230, 230)) no-repeat;
-    animation: background_body 6s ease;
-  }
-  &:after{
     content: '';
     position: absolute;
     top: 20px;
@@ -29,8 +18,8 @@ body {
     background-color: #fff;
     box-shadow:
     0 0 60px 30px #fff, 
-    0 0 100px 60px rgb(77, 77, 77), 
-    0 0 140px 90px rgb(255, 255, 255); 
+    0 0 100px 80px rgb(77, 77, 77), 
+    0 0 740px 290px rgb(255, 255, 255); 
     animation: body_light 6s cubic-bezier(0, 0, 0, 0.99) forwards;
   }
 }
@@ -51,18 +40,14 @@ h1{
   to {
     filter: invert(0);
     transform: translateX(0px) translateY(0px);
+    opacity: .8;
   }
 }
 
-@keyframes background_body {
-  from{
-    background-position: -100px -100px;
-    filter: blur(40px);
-  }
-  to{
-    background-position: 0px 0px;
-
+@media (prefers-reduced-motion: reduce) {
+  body {
+    &:before{
+      animation: none;
+    }
   }
 }
-
-
