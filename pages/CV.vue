@@ -4,7 +4,7 @@
 
         <h1>Mon CV</h1>
      
-        <transition name="opacity" appear> 
+        <transition name="cv--animation" appear> 
             <div class="cv--layout">
                 <img :src="require(`~/assets/images/CV_developpeur_web.jpg`)" alt="cv developpeur web">
             </div>
