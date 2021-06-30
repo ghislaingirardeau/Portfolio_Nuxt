@@ -8,30 +8,26 @@
                 <button class="btn btn--download">Télécharger mon CV</button>
             </a> <br>
         </div> -->
-        <transition name="opacity-slide" appear> 
             <div>
                 <article>
-                    <h2>Qui suis-je...</h2>
+                    <h2 class="reveal-1">Qui suis-je...</h2>
 
-                    <h3>...Personnellement</h3>
-                        <p>{{personal}}
-
-                        </p>
-                    <h3>...Professionnellement</h3>
-                        <p> {{experience.id1}}</p>
-                        <p> {{experience.id2}}</p>
+                    <h3 class="reveal-2">...Personnellement</h3>
+                        <p class="reveal-3">{{personal}}</p>
+                    <h3 class="reveal-2">...Professionnellement</h3>
+                        <p class="reveal-3"> {{experience.id1}}</p>
+                        <p class="reveal-3"> {{experience.id2}}</p>
                 </article>
-                <article class="reveal ">
-                    <h2>Mes souhaits d'engagements</h2>
-                    
-                    <p>{{willingness.id1}}</p>
-                    <p>{{willingness.id2}}</p>
-                    <p>{{willingness.id3}}</p>
-                    <p>{{willingness.id4}}</p>
+                <article>
+                    <h2 class="reveal-1">Mes souhaits d'engagements</h2>
+                        
+                    <p class="reveal-2">{{willingness.id1}}</p>
+                    <p class="reveal-2">{{willingness.id2}}</p>
+                    <p class="reveal-2">{{willingness.id3}}</p>
+                    <p class="reveal-2">{{willingness.id4}}</p>
 
                 </article>
             </div>
-        </transition>
     </main>
     
 </template>
@@ -47,7 +43,6 @@ export default {
             personal: about.personaly.text,
             experience: about.professionaly,
             willingness: about.willingness,
-            test: ""
         }
     },
     mounted () {
@@ -58,7 +53,7 @@ export default {
             threshold: ratio
         }
 
-        const element = document.querySelector('.reveal')
+        const element = document.querySelectorAll('[class*="reveal-"]')
 
         const handleIntersect = function(entries, observer) {
             entries.forEach(entry => {
@@ -70,8 +65,10 @@ export default {
         }
 
         const observer = new IntersectionObserver(handleIntersect, options);
-        observer.observe(element)
-
+        /* si on souhaite appliquer effet revealsur plusieurs element */
+        element.forEach(function(r) {
+            observer.observe(r)
+        })
     }
     /* methods: {
         downloaded: function() {
