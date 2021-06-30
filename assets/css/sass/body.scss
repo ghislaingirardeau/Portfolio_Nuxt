@@ -26,10 +26,10 @@ body {
     border-radius: 50%;
     background-color: #fff;
     box-shadow:
-    0 0 60px 30px #fff,  /* inner white */
-    0 0 100px 60px rgb(77, 77, 77), /* middle magenta */
-    0 0 140px 90px rgb(255, 255, 255); /* outer cyan */
-    animation: body_light .8s cubic-bezier(0, 0, 0, 0.99) forwards;
+    0 0 60px 30px #fff, 
+    0 0 100px 60px rgb(77, 77, 77), 
+    0 0 140px 90px rgb(255, 255, 255); 
+    animation: body_light 1s cubic-bezier(0, 0, 0, 0.99) forwards;
   }
 }
 
@@ -43,11 +43,11 @@ h1{
 
 @keyframes body_light {
   from {
-    opacity: 0;
+    filter: invert(1);
     transform: translateX(-100px) translateY(-100px);
   }
   to {
-    opacity: 1;
+    filter: invert(0);
     transform: translateX(0px) translateY(0px);
   }
 }
