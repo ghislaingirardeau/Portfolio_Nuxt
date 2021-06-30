@@ -8,7 +8,7 @@
                 <button class="btn btn--download">Télécharger mon CV</button>
             </a> <br>
         </div> -->
-        <transition name="opacity" appear> 
+        <transition name="opacity-slide" appear> 
             <div>
                 <article>
                     <h2>Qui suis-je...</h2>
@@ -21,7 +21,7 @@
                         <p> {{experience.id1}}</p>
                         <p> {{experience.id2}}</p>
                 </article>
-                <article>
+                <article class="reveal ">
                     <h2>Mes souhaits d'engagements</h2>
                     
                     <p>{{willingness.id1}}</p>
@@ -38,6 +38,7 @@
 
 <script>
 import about from "@/store/about"
+
 export default {
 
     data() {
@@ -45,9 +46,33 @@ export default {
             downloadUrl: '',
             personal: about.personaly.text,
             experience: about.professionaly,
-            willingness: about.willingness
+            willingness: about.willingness,
+            test: ""
         }
     },
+    mounted () {
+        const ratio = .1
+        const options = {
+            root: null,
+            rootMargin: '0px',
+            threshold: ratio
+        }
+
+        const element = document.querySelector('.reveal')
+
+        const handleIntersect = function(entries, observer) {
+            entries.forEach(entry => {
+                if(entry.intersectionRatio > ratio) {
+                    entry.target.classList.add('reveal-visible')
+                    observer.unobserve(entry.target)
+                } 
+            });
+        }
+
+        const observer = new IntersectionObserver(handleIntersect, options);
+        observer.observe(element)
+
+    }
     /* methods: {
         downloaded: function() {
             const url = document.getElementById('cv').src
