@@ -140,4 +140,47 @@
 	
 }
 
-
+@media (prefers-reduced-motion: reduce) {
+	.block__moi{
+		& > h1 {
+			&:after{
+				animation: none;
+			}
+		}
+		&--animation1{
+			opacity: 1;
+			animation: none;
+		}
+		&--animation2{
+			opacity: 1;
+			animation: none;
+		}
+		&--animation3{
+			opacity: 1;
+			animation: none;
+		}
+	}
+	
+	.block__valeur{
+		& > h1 {
+			&:after{
+				animation: none;
+			}
+			&:before{
+				animation: none;
+			}
+		}
+		&--animation1{
+			opacity: 1;
+			animation: none;
+		}
+		&--animation2{
+			opacity: 1;
+			animation: none;
+		}
+		&--animation3{
+			opacity: 1;
+			animation: none;
+		}
+	}
+}
