@@ -31,11 +31,19 @@
   text-shadow: 2px 1px black;
 }
 
+/* @media screen and (max-width: 1080px) {
+  .footer__layout {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+} */
+
 @media screen and (max-width: 700px) {
   .footer__layout {
     margin-top: 20px;
+    margin-bottom: 20px;
     & > ul{
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       & > li{
         margin-left: 0px;
         display: block;
@@ -48,5 +56,4 @@
     text-shadow: 2px 1px black;
     margin-top: 40px;
   }
-  
 }
