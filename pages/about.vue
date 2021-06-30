@@ -1,6 +1,6 @@
 <template>
     
-    <main class="head__page page__cv">
+    <main class="head__page page__cv reveal-0">
 
         <h1>En savoir plus sur moi</h1>
         <!-- <div class="">
@@ -34,6 +34,7 @@
 
 <script>
 import about from "@/store/about"
+import { reveal } from "@/store/function"
 
 export default {
 
@@ -46,29 +47,7 @@ export default {
         }
     },
     mounted () {
-        const ratio = .1
-        const options = {
-            root: null,
-            rootMargin: '0px',
-            threshold: ratio
-        }
-
-        const element = document.querySelectorAll('[class*="reveal-"]')
-
-        const handleIntersect = function(entries, observer) {
-            entries.forEach(entry => {
-                if(entry.intersectionRatio > ratio) {
-                    entry.target.classList.add('reveal-visible')
-                    observer.unobserve(entry.target)
-                } 
-            });
-        }
-
-        const observer = new IntersectionObserver(handleIntersect, options);
-        /* si on souhaite appliquer effet revealsur plusieurs element */
-        element.forEach(function(r) {
-            observer.observe(r)
-        })
+        reveal()
     }
     /* methods: {
         downloaded: function() {
