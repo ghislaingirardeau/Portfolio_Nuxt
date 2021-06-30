@@ -2,13 +2,23 @@
     
     <main class="head__page page__cv">
 
-        <h1>Mon CV</h1>
-     
-        <transition name="cv--animation" appear> 
-            <div class="cv--layout">
+            <h1 class="reveal-0">Mon CV</h1>
+
+            <div class="cv--layout reveal-3">
                 <img :src="require(`~/assets/images/CV_developpeur_web.jpg`)" alt="cv developpeur web">
             </div>
-        </transition>
     </main>
     
 </template>
+
+<script>
+import { reveal } from "@/store/function"
+
+export default {
+
+    mounted () {
+        reveal()
+    }
+
+}
+</script>

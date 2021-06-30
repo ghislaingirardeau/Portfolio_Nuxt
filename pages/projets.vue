@@ -1,7 +1,7 @@
 <template>
     <main class="page__projet head__page">
-        <h1>Découvrez la liste de mes projets</h1>
-        <p>Cliquer sur un projet pour en savoir plus: technologies utilisées, objectifs attendus...</p>
+        <h1 class="reveal-0">Découvrez la liste de mes projets</h1>
+        <p class="reveal-1">Cliquer sur un projet pour en savoir plus: technologies utilisées, objectifs attendus...</p>
         <div >
             <transition-group class="page__projet--layout" name="slide-fade" tag="article" appear>
                 <NuxtLink v-for="item,l in project" :key="item.id" :style="{'--i': l}" class="page__projet--link btn--projets" :to="{ name: 'projet-id', params: {id: item.id}}">
@@ -19,7 +19,7 @@
 
 <script>
 import projects from '@/store/projects.js'
-import { uppercase } from '@/store/function.js'
+import { uppercase, reveal } from '@/store/function.js'
 
 export default {
     data() {
@@ -29,6 +29,9 @@ export default {
     },
     methods: {
         uppercase
+    },
+    mounted() {
+        reveal()
     }
     
 }
