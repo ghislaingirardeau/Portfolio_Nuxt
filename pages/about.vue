@@ -21,10 +21,25 @@
                 <article>
                     <h2 class="reveal-1">Mes souhaits d'engagements</h2>
                         
-                    <p class="reveal-2">{{willingness.id1}}</p>
-                    <p class="reveal-2">{{willingness.id2}}</p>
-                    <p class="reveal-2">{{willingness.id3}}</p>
-                    <p class="reveal-2">{{willingness.id4}}</p>
+                        <div class="reveal-2 about__wish">
+                            <img class="about__wish--img" src="~/assets/images/environement_respect.jpg" alt="ecology">
+                            <p class="about__wish--text">{{willingness.id1}}</p>
+                        </div>
+
+                        <div class="reveal-2 about__wish reverse">
+                            <img class="about__wish--img" src="~/assets/images/data_protection.jpg" alt="data protection">
+                            <p class="about__wish--text">{{willingness.id2}}</p>
+                        </div>
+
+                        <div class="reveal-2 about__wish">
+                            <img class="about__wish--img" src="~/assets/images/business_relationship.jpg" alt="business relationship">
+                            <p class="about__wish--text">{{willingness.id3}}</p>
+                        </div>
+
+                        <div class="reveal-2 about__wish reverse">
+                            <img class="about__wish--img" src="~/assets/images/freelance.jpg" alt="freelance">
+                            <p class="about__wish--text">{{willingness.id4}}</p>
+                        </div>
 
                 </article>
             </div>
