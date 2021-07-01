@@ -13,9 +13,11 @@
         </div>
         <nav class="header__navBar" @click="spinLogo" :key="componentKey">
             <NuxtLink :to="{ name: 'index'}" class="header__navBar--font" >Accueil</NuxtLink> 
-            <NuxtLink :to="{ name: 'projets'}" class="header__navBar--font" >Mes projets</NuxtLink> 
+            <NuxtLink :to="{ name: 'projets'}" class="header__navBar--font" >Mes projets</NuxtLink>
+            <NuxtLink :to="{ name: 'service'}" class="header__navBar--font" >Mes services</NuxtLink> 
             <NuxtLink :to="{ name: 'about'}" class="header__navBar--font" >A propos de moi</NuxtLink>
-            <NuxtLink :to="{ name: 'CV'}" class="header__navBar--font" >Mon CV</NuxtLink> 
+            
+            <!-- <NuxtLink :to="{ name: 'CV'}" class="header__navBar--font" >Mon CV</NuxtLink> --> 
         </nav>
         
     </header>
