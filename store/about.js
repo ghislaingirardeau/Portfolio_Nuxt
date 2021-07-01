@@ -11,5 +11,10 @@ export default {
         id2: "Parce que la protection des données est un enjeu très important dans un monde oú tout va plus vite, oú tout devient dématérialisé... la confiance, le respect, la confidentialité sont des valeurs indispensables.",
         id3: "Parce que les nouvelles technologies nous facilitent la vie... Il ne faut pas oublier qu'il y a des individus derrières celles-ci : utilisateurs, clients, employés, développeurs, entrepreneur... Faire que la relation entre les différents acteurs soient la plus saine, équitable, juste et constructive, est une notion indispensable pour moi. ",
         id4: "Parce que le métier de freelance nécessite une relation de confiance et de l'autonomie... Je fais des points réguliers sur l'avancée du projet, planifie mes objectifs pour tenir les délais, discute des feedbacks constructifs pour faire aboutir le projet."
-    }
+    },
+    quote: 
+        [{ from: "Winston Churchill",
+            text: "Le succès n'est pas final, L'échec n'est pas fatal, C'est le courage de continuer qui compte"
+        }]
+    
 }

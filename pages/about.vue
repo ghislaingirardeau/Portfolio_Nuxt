@@ -13,10 +13,16 @@
                     <h2 class="reveal-1">Qui suis-je...</h2>
 
                     <h3 class="reveal-2">...Personnellement</h3>
-                        <p class="reveal-3">{{personal}}</p>
+                        <div class="reveal-2 about__personal">
+                            <img class="about__personal--img" src="~/assets/images/moi2.jpg" alt="photo de Ghislain montagne">
+                            <p class="reveal-3 about__personal--text">{{personal}}</p>
+                        </div>
+                        
                     <h3 class="reveal-2">...Professionnellement</h3>
-                        <p class="reveal-3"> {{experience.id1}}</p>
-                        <p class="reveal-3"> {{experience.id2}}</p>
+                        <div class="reveal-2 about__personal reverse">
+                            <img class="about__personal--img" src="~/assets/images/moi.jpg" alt="photo de Ghislain montagne">
+                            <p class="reveal-3 about__personal--text"> {{experience.id1}} <br> <br> {{experience.id2}}</p>
+                        </div>
                 </article>
                 <article>
                     <h2 class="reveal-1">Mes souhaits d'engagements</h2>

@@ -2,10 +2,10 @@
     @include layout_page
 }
 
-.about__wish{
+.about__wish, .about__personal{
     display: flex;
     justify-content: center;
-    margin: 20px 0 20px 0;
+    margin: 20px 0 40px 0;
     align-items: center;
 
     &--text{
@@ -16,6 +16,8 @@
     &--img{
         width: 30%;
         border-radius: 5px;
+        opacity: .7;
+        filter: drop-shadow(0 0 0.75rem $color-blue-mid);
     }
 }
 
@@ -25,13 +27,15 @@
 
 @media screen and (max-width: 700px) {
 
-    .about__wish{
+    .about__wish, .about__personal{
         flex-wrap: wrap;
         &--text{
             width: 100%;
+            padding-top: 20px;
         }
         &--img{
             width: 70%;
+            
         }
     }
 }
