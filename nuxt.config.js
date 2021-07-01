@@ -1,9 +1,11 @@
+require('dotenv').config() /* appeler le fichier .env */
+
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
 
   router: { 
-    base: './', /* test sans sinon passer en ./ pour le deploy static */
+    base: '/', /* test sans sinon passer en ./ pour le deploy static */
     mode: 'hash'
   },
 
