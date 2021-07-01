@@ -28,7 +28,7 @@ export default {
         {
             id: '4',
             name: "Orinoco",
-            summary: "Création d'un MVP pour un site e-commerce",
+            summary: "Création d'un 1er projet pour un site e-commerce",
             description: "Interagir avec une API avec JavaScript. Valider des données issues de sources externes avant leur envoie vers API. Créer un plan de test pour une application et gérer des événements JavaScript",
             tech: "Javascript, bootstrap, Regex, GitHub",
             imageURL: ["orinoco_accueil.PNG", "orinoco_produit.PNG", "orinoco_basket.PNG", "orinoco_forms.PNG", "orinoco_confirm.PNG"]
@@ -36,7 +36,7 @@ export default {
         {
             id: '5',
             name: "So Peckoko",
-            summary: "Construction d'une API Rest",
+            summary: "Construction d'une interface de programmation applicative (API Rest)",
             description: "Mettre en œuvre des opérations CRUD de manière sécurisée. Construire l'API en stockant des données (data personnel, image, texte...) de manière sécurisée, Implémenter un modèle logique de données conformément à la réglementation OWASP",
             tech: "Node js, Express, bcrypt, multer, MongoDb, GitHub",
             imageURL: ["so_peckoko_log.PNG", "so_peckoko_create.PNG", "so_peckoko_CRUD.PNG"]

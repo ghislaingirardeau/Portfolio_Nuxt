@@ -1,16 +1,19 @@
 <template>
     <article>
         <h1>Mon accompagnement dans votre projet de digitalisation</h1>
-            <p>Une plannification de rendez vous en visio conférence suivant nos disponibilités</p>
+            <p>Chaque étapes est plannifié avec un rendez vous visio pour échanger</p>
+            <p>Une plannification des rendez vous en visio suivant nos disponibilités grace à Calendfy</p>
+            <p>30 à 60min de visio suivant votre projet</p>
 
-        <h2>Des étapes personnalisés, individualisés gratuits</h2>
+        <h2>Des étapes personnalisées et gratuites jusqu'à votre validation finale du devis</h2>
 
-            <h3>Présentation et échange sur votre projet (30 à 60min)</h3>
+            <h3>Présentation et échange sur votre projet</h3>
                 <p>Définir ensemble votre stratégie, vos ressources et vos besoins</p>
+                <p>Ce que je peux vous apporter dans votre digitalisation</p>
                 <p>Premier retour sur la faisabilité et la viabilité de votre projet</p>
-                <p>Réponse à vos interrogations et questionnement</p>
+                <p>Réponse à vos interrogations et questionnements</p>
 
-            <h3>Etudes personnalisés de votre projet</h3>
+            <h3>Etude individualisée de votre projet</h3>
                 <p>Evaluation des possibilités, recommendation et solutions adaptées</p>
                 <p>Proposition de devis, délai et cahier des charges reprenant le résultat convenu</p>
 
