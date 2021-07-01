@@ -7,7 +7,7 @@ body {
   position: relative;
   background: linear-gradient(to top left, rgb(37, 35, 35), 85%, rgb(231, 230, 230)) no-repeat;
  
-  &:before{
+  /* &:before{
     content: '';
     position: absolute;
     top: 20px;
@@ -21,7 +21,7 @@ body {
     0 0 100px 80px rgb(77, 77, 77), 
     0 0 740px 290px rgb(255, 255, 255); 
     animation: body_light 6s cubic-bezier(0, 0, 0, 0.99) forwards;
-  }
+  } */
 }
 
 a.nuxt-link-exact-active {
@@ -32,7 +32,7 @@ h1{
   color:$color-primary;
 }
 
-@keyframes body_light {
+/* @keyframes body_light {
   from {
     filter: invert(1);
     transform: translateX(-100px) translateY(-100px);
@@ -46,7 +46,6 @@ h1{
 
 @media screen and (max-width: 900px) {
   body {
-   
     &:before{
       box-shadow:
       0 0 60px 30px #fff, 
@@ -62,4 +61,4 @@ h1{
       animation: none;
     }
   }
-}
+} */
