@@ -1,5 +1,5 @@
 <template>
-    <article>
+    <main class="page__service">
         <h1>Mon accompagnement dans votre projet de digitalisation</h1>
             <p>Chaque étapes est plannifié avec un rendez vous visio pour échanger</p>
             <p>Une plannification des rendez vous en visio suivant nos disponibilités grace à Calendfy</p>
@@ -22,7 +22,17 @@
                 <p>Un rapport hebdomadaire sur l'avancement du projet</p>
                 <p>Un échange visio pour avoir les impressions du rendu</p>
 
-        <h2>Consulter mes disponibilités et prenez rendez-vous sur : </h2>
+        <h2>Consulter mes disponibilités et prenez rendez-vous sur : <a :href="calendfy" target="blank">calendfy</a></h2>
                 
-    </article>
+    </main>
 </template>
+
+<script>
+export default {
+    data() {
+        return {
+            calendfy: 'http://calendly.com/gg-webdev'
+        }
+    },
+}
+</script>

@@ -1,5 +1,5 @@
 <template>
-    <main class="head__page detail_project">
+    <main class="detail_project">
         <transition name="opacity" appear> 
         <div class="block_projet">
              

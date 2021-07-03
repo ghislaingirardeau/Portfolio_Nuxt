@@ -1,5 +1,5 @@
 <template>
-  <main class="container head__page" >
+  <main class="container" >
 
     <article class="block__presentation" :key="render">
             
