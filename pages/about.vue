@@ -43,7 +43,7 @@
                         </div>
 
                         <div class="reveal-2 about__wish reverse">
-                            <img class="about__wish--img" src="~/assets/images/freelance.jpg" alt="freelance">
+                            <img class="about__wish--img" src="~/assets/images/freelance_me.jpg" alt="freelance">
                             <p class="about__wish--text">{{willingness.id4}}</p>
                         </div>
 

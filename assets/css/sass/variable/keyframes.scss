@@ -80,13 +80,14 @@
 
 @keyframes animBorder {
 	from{
-		box-shadow: 0px 0px 0px white;
-		color: white;
+		box-shadow: 0px 0px 2px white;
+		color: $color-primary;
 		opacity: 0;
 	}
 	to{
 		box-shadow: 5px 5px 5px $color-blue-mid;
-		color: $color-primary;
+		color: white;
+		
 		opacity: 1;
 	}
 }
