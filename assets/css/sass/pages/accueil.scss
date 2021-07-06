@@ -47,12 +47,12 @@
     text-align: left;
 	width: 50%;
     font-size: $accueil;
-    text-shadow: -2px 2px black;
+    
 	padding-left: 10%;
 	
 	&__service {
 		position: relative;
-		animation: animBorder 2s 2.1s ease both;
+		animation: animBorder 1s 2.1s ease both;
 		padding: 5px;
 		margin: 20px 0 20px 0;
 		&:before{
@@ -70,7 +70,7 @@
 	}
 	&__projet {
 		position: relative;
-		animation: animBorder 2s 3.2s ease both;
+		animation: animBorder 1s 3.2s ease both;
 		padding: 5px;
 		margin: 40px 0 20px 0;
 		&:before{

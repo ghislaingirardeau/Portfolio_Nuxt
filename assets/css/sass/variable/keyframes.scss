@@ -79,15 +79,20 @@
 }
 
 @keyframes animBorder {
-	from{
+	0%{
 		box-shadow: 0px 0px 2px white;
-		color: $color-primary;
+		color: transparent;
 		opacity: 0;
 	}
-	to{
+	50%{
+		box-shadow: 5px 5px 5px $color-blue-mid;
+		color: transparent;
+		opacity: 1;
+	}
+	100%{
 		box-shadow: 5px 5px 5px $color-blue-mid;
 		color: white;
-		
+		text-shadow: -2px 2px black;
 		opacity: 1;
 	}
 }
