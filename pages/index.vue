@@ -23,9 +23,9 @@
       
       <div class="block__moi">
         <h1>
-          <p class="block__moi--animation1">Bonjour,</p>
-          <p class="block__moi--animation2">je suis Ghislain,</p>
-          <p class="block__moi--animation3">Développeur web</p>
+          <span class="block__moi--animation1">Bonjour,</span> <br>
+          <span class="block__moi--animation2">je suis Ghislain,</span><br>
+          <span class="block__moi--animation3">Développeur web</span>
         </h1>
       </div>
      

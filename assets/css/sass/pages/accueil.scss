@@ -9,9 +9,9 @@
 	width: 50%;
     text-align: left;
     padding-top: 5%;
+	position: relative;
 	& > h1 {
 		transform: rotateZ(47deg);
-		line-height: 25px;
 		padding: 10px 0px 10px 20%;
 		
 		&:after{
@@ -47,7 +47,6 @@
     text-align: left;
 	width: 50%;
     font-size: $accueil;
-    
 	padding-left: 10%;
 	
 	&__service {
