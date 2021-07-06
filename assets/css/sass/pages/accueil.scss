@@ -47,7 +47,6 @@
     text-align: left;
 	width: 50%;
     font-size: $accueil;
-	
     text-shadow: -2px 2px black;
 	padding-left: 10%;
 	
@@ -66,8 +65,7 @@
 			background: white;
 			filter: blur(2px);
 			opacity: 0;
-			animation: loadBorderBottom 0.5s 2.1s cubic-bezier(.56,.12,.04,1);
-			animation-iteration-count: 2;
+			animation: loadBorderBottom 1s 2.1s cubic-bezier(.56,.12,.04,1);
 		}
 	}
 	&__projet {
@@ -85,8 +83,7 @@
 			background: white;
 			filter: blur(2px);
 			opacity: 0;
-			animation: loadBorderBottom 0.5s 3.2s cubic-bezier(.56,.12,.04,1);
-			animation-iteration-count: 2;
+			animation: loadBorderBottom 1s 3.2s cubic-bezier(.56,.12,.04,1);
 		}
 
 	}
