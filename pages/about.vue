@@ -1,6 +1,6 @@
 <template>
     
-    <main class="page__about reveal-0">
+    <main class="page__about">
 
         <h1>En savoir plus sur moi</h1>
         <!-- <div class="">
