@@ -3,14 +3,24 @@
 
     <article class="block__presentation" :key="render">
             
-      <div class="block__valeur" >
-        <h1>
-          <p class="block__valeur--animation1">Respect & Humilité,</p>
-          <p class="block__valeur--animation2">Ouvert & Communicatif, </p>
-          <p class="block__valeur--animation3">Responsable & Autonome,</p>
+      <div class="block__cible" >
+          <article class="block__cible__service">
+            <h2>Mes services</h2>
+            <p>Envie de vous lancer dans un projet digital web... <br>
+            Mais vous ne savez pas par oú commencer ?<br>
+            Retrouver le détail de l'accompagnement je peux vous proposer ! 
+            </p>
+          </article>
 
-        </h1>
+          <article class="block__cible__projet">
+            <h2>Mes projets</h2>
+            <p>Vous êtes déja initié au technologie du web... <br>
+            Et vous souhaitez en savoir plus sur mes compétences et mes réalisations ?<br>
+            Découvrez les technologies que je maitrise et les projets sur lesquels j'ai travaillé ! 
+            </p>
+          </article>
       </div>
+      
       <div class="block__moi">
         <h1>
           <p class="block__moi--animation1">Bonjour,</p>
