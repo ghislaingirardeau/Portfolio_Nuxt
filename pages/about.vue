@@ -25,7 +25,7 @@
                         </div>
                 </article>
                 <article>
-                    <h2 class="reveal-1">Mes souhaits d'engagements</h2>
+                    <h2 class="reveal-1">Mes souhaits d'engagements...</h2>
                         
                         <div class="reveal-2 about__wish">
                             <img class="about__wish--img" src="~/assets/images/environement_respect.jpg" alt="ecology">
