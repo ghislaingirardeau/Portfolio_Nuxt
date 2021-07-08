@@ -7,16 +7,16 @@
                 <article>
                     <h2 class="reveal-1">{{$t('about.h2who')}}</h2>
 
-                    <h3 class="reveal-2">...Personnellement</h3>
+                    <h3 class="reveal-2">{{$t('about.personal.h3')}}</h3>
                         <div class="reveal-2 about__personal">
                             <img class="about__personal--img" src="~/assets/images/moi2.jpg" alt="photo de Ghislain montagne">
-                            <p class="reveal-3 about__personal--text">{{$t('personal')}}</p>
+                            <p class="reveal-3 about__personal--text">{{$t('about.personal.text')}}</p>
                         </div>
                         
-                    <h3 class="reveal-2">...Professionnellement</h3>
+                    <h3 class="reveal-2">{{$t('about.professionaly.h3')}}</h3>
                         <div class="reveal-2 about__personal reverse">
                             <img class="about__personal--img" src="~/assets/images/moi.jpg" alt="photo de Ghislain montagne">
-                            <p class="reveal-3 about__personal--text"> {{experience.id1}} <br> <br> {{experience.id2}}</p>
+                            <p class="reveal-3 about__personal--text"> {{$t('about.professionaly.id1')}} <br> <br> {{$t('about.professionaly.id2')}}</p>
                         </div>
                 </article>
                 <article>
@@ -24,22 +24,22 @@
                         
                         <div class="reveal-2 about__wish">
                             <img class="about__wish--img" src="~/assets/images/environement_respect.jpg" alt="ecology">
-                            <p class="about__wish--text">{{willingness.id1}}</p>
+                            <p class="about__wish--text">{{$t('about.willingness.id1')}}</p>
                         </div>
 
                         <div class="reveal-2 about__wish reverse">
                             <img class="about__wish--img" src="~/assets/images/data_protection.jpg" alt="data protection">
-                            <p class="about__wish--text">{{willingness.id2}}</p>
+                            <p class="about__wish--text">{{$t('about.willingness.id2')}}</p>
                         </div>
 
                         <div class="reveal-2 about__wish">
                             <img class="about__wish--img" src="~/assets/images/business_relationship.jpg" alt="business relationship">
-                            <p class="about__wish--text">{{willingness.id3}}</p>
+                            <p class="about__wish--text">{{$t('about.willingness.id3')}}</p>
                         </div>
 
                         <div class="reveal-2 about__wish reverse">
                             <img class="about__wish--img" src="~/assets/images/freelance_me.jpg" alt="freelance">
-                            <p class="about__wish--text">{{willingness.id4}}</p>
+                            <p class="about__wish--text">{{$t('about.willingness.id4')}}</p>
                         </div>
 
                 </article>
@@ -49,7 +49,6 @@
 </template>
 
 <script>
-import about from "@/store/about"
 import { reveal } from "@/store/function"
 
 export default {
@@ -57,9 +56,6 @@ export default {
     data() {
         return {
             downloadUrl: '',
-            personal: about.personaly.text,
-            experience: about.professionaly,
-            willingness: about.willingness,
         }
     },
     mounted () {
