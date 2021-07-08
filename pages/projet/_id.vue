@@ -31,7 +31,7 @@
             <h2>Mes autres projets</h2>
             <ul >
                 <transition-group class="autres_projets--liste" name="slide-fade" tag="article" appear>
-                <li v-for="item,l in relatedProject" :key="item.id" :style="{'--i': l}"><NuxtLink :to="{ name: 'projet-id', params: {id: item.id}}" class="liste--orange">{{item.name}} </NuxtLink></li>
+                <li v-for="item,l in relatedProject" :key="item.id" :style="{'--i': l}"><NuxtLink :to="localePath({ name: 'projet-id', params: {id: item.id}})" class="liste--orange">{{item.name}} </NuxtLink></li>
                 </transition-group>
             </ul>
         </aside>

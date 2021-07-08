@@ -2,6 +2,8 @@
 
     <footer >
         <div class="footer__layout">
+            <nuxt-link :to="switchLocalePath('en')">English</nuxt-link>
+            <nuxt-link :to="switchLocalePath('fr')">Français</nuxt-link>
             <ul>Retrouver mon profil sur :
                 <li><a href="https://www.linkedin.com/in/ghislain-girardeau-a879b2201/" target="_blank">Linkedin profil</a> </li>
                 <li><a href="https://www.malt.fr/profile/ghislaingirardeau" target="_blank">Malt profil</a></li>

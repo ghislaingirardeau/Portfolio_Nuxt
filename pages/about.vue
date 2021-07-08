@@ -1,21 +1,16 @@
 <template>
     
     <main class="page__about">
-
-        <h1>En savoir plus sur moi</h1>
-        <!-- <div class="">
-            <a href="./_nuxt/public/CV_développeur_web.pdf" download>
-                <button class="btn btn--download">Télécharger mon CV</button>
-            </a> <br>
-        </div> -->
+        <h1 >{{$t('about.h1')}}</h1>
+       
             <div>
                 <article>
-                    <h2 class="reveal-1">Qui suis-je...</h2>
+                    <h2 class="reveal-1">{{$t('about.h2who')}}</h2>
 
                     <h3 class="reveal-2">...Personnellement</h3>
                         <div class="reveal-2 about__personal">
                             <img class="about__personal--img" src="~/assets/images/moi2.jpg" alt="photo de Ghislain montagne">
-                            <p class="reveal-3 about__personal--text">{{personal}}</p>
+                            <p class="reveal-3 about__personal--text">{{$t('personal')}}</p>
                         </div>
                         
                     <h3 class="reveal-2">...Professionnellement</h3>
@@ -25,7 +20,7 @@
                         </div>
                 </article>
                 <article>
-                    <h2 class="reveal-1">Mes souhaits d'engagements...</h2>
+                    <h2 class="reveal-1">{{$t('about.h2commit')}}</h2>
                         
                         <div class="reveal-2 about__wish">
                             <img class="about__wish--img" src="~/assets/images/environement_respect.jpg" alt="ecology">

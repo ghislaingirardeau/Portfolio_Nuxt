@@ -1,4 +1,5 @@
 require('dotenv').config() /* appeler le fichier .env */
+import i18n from './config/i18n'
 
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
@@ -57,8 +58,18 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
+  
   modules: [
+    'nuxt-i18n'
   ],
+  
+  i18n: {
+    locales: [{ code: 'en', iso: 'en-US', file: 'en.js', dir: 'ltr' },
+   
+    { code: 'fr', iso: 'fr-FR', file: 'fr.js' },],
+    defaultLocale: 'en',
+    vueI18n: i18n
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

@@ -1,5 +1,6 @@
 <template>
     <main class="page__service">
+        
         <h1>Mon accompagnement dans votre projet de digitalisation</h1>
             <p>Chaque étapes est plannifié avec un rendez vous visio (30 ou 60 min) pour échanger</p>
 
