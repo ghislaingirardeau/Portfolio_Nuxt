@@ -1,6 +1,11 @@
 export default{
-    home: "Salut",
-    welcome: "Bienvenue",
+    navBar: {
+        index: "accueil",
+        projects: "Mes projets",
+        services: "Mes services",
+        aboutMe: "A propos de moi"
+
+    },
     about: {
         h1: "En savoir plus sur moi",
         h2who: "Qui suis-je...",

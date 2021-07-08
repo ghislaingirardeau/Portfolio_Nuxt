@@ -12,13 +12,14 @@
 	        </div>
         </div>
         <nav class="header__navBar" @click="spinLogo" :key="componentKey">
-            <NuxtLink :to="localePath('index')" class="header__navBar--font" >Accueil</NuxtLink> 
-            <NuxtLink :to="localePath('projets')" class="header__navBar--font" >Mes projets</NuxtLink>
-            <NuxtLink :to="localePath('service')" class="header__navBar--font" >Mes services</NuxtLink> 
-            <NuxtLink :to="localePath('about')" class="header__navBar--font" >A propos de moi</NuxtLink>
+            <NuxtLink :to="localePath('index')" class="header__navBar--font" >{{$t('navBar.index')}}</NuxtLink> 
+            <NuxtLink :to="localePath('projets')" class="header__navBar--font" >{{$t('navBar.projects')}}</NuxtLink>
+            <NuxtLink :to="localePath('service')" class="header__navBar--font" >{{$t('navBar.services')}}</NuxtLink> 
+            <NuxtLink :to="localePath('about')" class="header__navBar--font" >{{$t('navBar.aboutMe')}}</NuxtLink>
             
-            <!-- <NuxtLink :to="{ name: 'CV'}" class="header__navBar--font" >Mon CV</NuxtLink> --> 
         </nav>
+        <nuxt-link :to="switchLocalePath('en')">English</nuxt-link>
+        <nuxt-link :to="switchLocalePath('fr')">Français</nuxt-link>
         
     </header>
     
