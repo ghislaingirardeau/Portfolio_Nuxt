@@ -6,6 +6,23 @@ export default{
         aboutMe: "About me"
 
     },
+    index: {
+        me: {
+            p1: "Hello,",
+            p2: "I'm Ghislain,",
+            p3: "Web Developer",
+        },
+        offer: {
+            hService: "My services",
+            textService: "Envie de vous lancez dans un projet digital web... <br> Mais vous ne savez pas, par oú commencer ?<br>Retrouver le détail de l'accompagnement je peux vous proposer ! ",
+            hWork: "My works",
+            textWork: "Vous êtes déja initié au technologie du web... <br> Et vous souhaitez en savoir plus sur mes compétences et mes réalisations ? <br> Découvrez les technologies que je maitrise et les projets sur lesquels j'ai travaillé !"
+        }
+    },
+    footer: {
+        title: "Follow me on :",
+        contact: "My email :"
+    },
     about: {
         h1: "More about me",
         h2who: "Who I am...",

@@ -67,7 +67,7 @@ export default {
     locales: [{ code: 'en', iso: 'en-US', file: 'en.js', dir: 'ltr' },
    
     { code: 'fr', iso: 'fr-FR', file: 'fr.js' },],
-    defaultLocale: 'en',
+    defaultLocale: 'fr',
     vueI18n: i18n
   },
 
