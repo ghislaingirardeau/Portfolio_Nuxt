@@ -45,8 +45,24 @@ export default{
         },
 
     },
-    detail: {
-        one: 'un',
-        two: 'deux'
-    }  
+    services: {
+        header: {
+            h1: "Mon accompagnement dans votre projet de digitalisation",
+            h2: "Des étapes personnalisées et gratuites jusqu'à votre validation finale du devis...",
+            p: "Chaque étapes est plannifié avec un rendez vous visio (30 ou 60 min) pour échanger",
+        },
+        stepOne: {
+            h3: "Etapes 1",
+            description: "<ul> <li>Présentation et échange sur votre projet</li> <li>Définir ensemble votre stratégie, vos ressources et vos besoins</li><li>Ce que je peux vous apporter dans votre digitalisation</li><li>Premier retour sur la faisabilité et la viabilité de votre projet</li> </ul>"
+        },
+        stepTwo: {
+            h3: "Etapes 2",
+            description: "<ul> <li>Etude individualisée de votre projet</li> <li>Evaluation des possibilités, recommendations et solutions adaptées</li><li> Proposition de devis, délai et cahier des charges reprenant le résultat convenu</li><li>Réponse à vos interrogations et questionnements</li> </ul>"
+        },
+        stepThree: {
+            h3: "Etapes 3",
+            description: "<ul> <li>Lancement et développement du projet</li> <li>Plannification des étapes pour le développement</li><li> Un rapport hebdomadaire sur l'avancement du projet</li><li>Un échange visio pour avoir les impressions du rendu</li> </ul>"
+        },
+        footer: "Cliquer pour prendre un rendez-vous",
+    }
 }
