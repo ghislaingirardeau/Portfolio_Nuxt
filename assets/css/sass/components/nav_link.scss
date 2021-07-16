@@ -1,11 +1,11 @@
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     border-bottom: 3px solid $color-third;
 
     &__navBar {
-        width: 75%;
+        width: 65%;
         padding: 55px 0px 0px 0px;
 
         &--font {
@@ -14,7 +14,7 @@
             font-weight: bold;
             text-decoration: none;
             text-shadow: 1px 1px black;
-            padding: 5px 55px 25px 55px;
+            padding: 5px 45px 25px 45px;
             transition: all 0.3s ease;
             color: $color-primary;
             &:hover {
@@ -23,17 +23,22 @@
         }
     }
 
+    &__lang{
+        width: 10%;
+        padding: 55px 0px 0px 0px;
+    }
+
     &__logo {
         width: 10%;
         height: 100px;
         padding: 20px 0px 30px 12%;
     }
 }
-.toogleLang{
-    font-size: 1.2rem;
+.toogleLang {
+    text-decoration: none;
+    font-size: 1rem;
     font-family: $font_logo;
-    font-weight: bold;
-    padding: 10px;
+    padding: 5px;
     border-radius: 5px 5px;
     @include anim-btn($color-btn);
 }
@@ -42,7 +47,7 @@
 
     .header {
         &__navBar {
-            width: 100%;
+            width: 75%;
             
             &--font {
                 padding: 5px 35px 15px 35px;
@@ -63,16 +68,28 @@
 
     .header {
         &__navBar {
+            width: 100%;
+            order: 2;
             padding: 25px 0px 0px 0px;
             &--font {
                 font-size: 1.2rem;
+                padding: 5px 5px 25px 5px;
             }
+        }
+        &__lang{
+            width: 100%;
+            padding: 20px 0px 0px 0px;
+            order: 1;
         }
     
         &__logo {
             width: 100%;
+            order: 0;
             padding: 40px 0px 30px 40%;
         }
+    }
+    .toogleLang {
+        font-size: 1rem;
     }
 }
 

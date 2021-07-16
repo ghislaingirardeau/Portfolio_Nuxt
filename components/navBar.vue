@@ -16,11 +16,13 @@
             <NuxtLink :to="localePath('projets')" class="header__navBar--font" >{{$t('navBar.projects')}}</NuxtLink>
             <NuxtLink :to="localePath('service')" class="header__navBar--font" >{{$t('navBar.services')}}</NuxtLink> 
             <NuxtLink :to="localePath('about')" class="header__navBar--font" >{{$t('navBar.aboutMe')}}</NuxtLink>
-            <button class="toogleLang" @click="toogleShow">
-                <nuxt-link :to="switchLocalePath(lang)" v-show="lang === 'en'">English</nuxt-link>
-                <nuxt-link :to="switchLocalePath(lang)" v-show="lang === 'fr'">French</nuxt-link>
-            </button>
+            
         </nav>
+
+        <div class="header__lang" @click="toogleShow">
+            <nuxt-link class="toogleLang" :to="switchLocalePath(lang)" v-show="lang === 'en'">English</nuxt-link>
+            <nuxt-link class="toogleLang" :to="switchLocalePath(lang)" v-show="lang === 'fr'">French</nuxt-link>
+        </div>
         
         
     </header>
@@ -38,7 +40,7 @@ export default {
         return{
             componentKey: 0, /* pour faire un re-render du cube avec :key */
             animCube: 'spin 7s 1.7s linear', /* anime par default au load */
-            lang: "fr"
+            lang: "en"
         }
     },
     methods: {
