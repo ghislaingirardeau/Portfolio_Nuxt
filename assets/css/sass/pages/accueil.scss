@@ -5,12 +5,12 @@
 	perspective-origin: 50% 50px;
 }
 .block__moi{
-    font-size: 2.5vw;
 	width: 50%;
     text-align: left;
-    padding-top: 5%;
+    padding-top: 9%;
 	position: relative;
 	& > h1 {
+		font-size: 3rem;
 		transform: rotateZ(47deg);
 		padding: 10px 0px 10px 20%;
 		
@@ -93,22 +93,22 @@
 		flex-wrap: wrap-reverse;
 	}
 	.block__moi{
+		width: 80%;
 		margin: auto;
-		font-size: 3.5vw;
-		padding-bottom: 10%;
 	}
 	.block__cible{
 		width: 95%;
 		padding-left: 0%;
 		text-align: center;
-
 	}
 }
 
 @media screen and (max-width: 500px) {
 	.block__moi{
-		font-size: 5.5vw;
-		padding: unset;
+		padding-bottom: 10%;
+		& > h1 {
+			font-size: 1.8rem;
+		}
 	}
 	.block__cible{
 		margin-top: -30px;

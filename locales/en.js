@@ -14,9 +14,9 @@ export default{
         },
         offer: {
             hService: "My services",
-            textService: "You have a web project or a business to digitalize... <br> but you don't know where and how to start... ?<br> Find here, what's solution and assistance I can bring to you ! ",
+            textService: "You have a web project or a business to digitalize... <br> but you don't know where and how to start... ?<br> Find here, what kind of solution and assistance I can bring to you ! ",
             hWork: "My works",
-            textWork: "You already know about web technology... <br> And you want to know more about my skills and my works ? <br> Look at my projects and see which tools I work with !"
+            textWork: "You are probably familiar with the web technology... <br> And if you want to know what I can offer <br> Look at my projects and see which tools I work with !"
         }
     },
     footer: {
@@ -28,31 +28,31 @@ export default{
         h2who: "Who I am...",
         h2commit: "My work commitment...",        
         personal: {
-            h3: "...Personaly",
-            text: "After more than 10 years working as a manager of international sport brand (Intersport), I deciced to realize my childhood dream to explore the world for 2 years. The exciting and rich adventure allowed me to cultivate certain value such as autonomous, open-minded, curious, respect. And also allowed me to train and graduate through an other passion to become a web developer. Sports practician, interested in web development, I'm eager today to bring my skill and knowledge toward interested project.",
+            h3: "...Personally",
+            text: "After more than 10 years working as a manager of international sport brand (Intersport), I decided to realize my childhood dream to explore the world. The two years of this exciting and rich adventure have allowed me to strengthen certain things that I value most those are: being independent, open-minded, curious, and respect. Yearning to continue exploring the World, I decided to attend six months of training to be a web developer. As a sports practitioner and a web developer, I'm eager to work on any interesting projects that I can bring about this intersection of my skills and knowledge (sport and web development).",
         },
         professionaly : {
-            h3: "...Profesionaly",
-            id1: "Freelancer, I'm self-employed since june 2021 as a web developer : I realized this e-portfolio via Vue et Nuxt Js, 2 js framework that I particulary like to work with !",
-            id2: "OPEN CLASSROOM : 6 months Web developer graduation. AGILE methods practician, all my training come from real-work projects. This projects was approved and asset by a tutor, a professor and a jury commity composed by profesional developer. I used to organize my work in autonomous regarding the project's deadline defined with the customer."
+            h3: "...Professionally",
+            id1: "Freelancer, I'm self-employed since june 2021 as a web developer : I realized this e-portfolio via Vue et Nuxt Js, 2 js framework that I particularly like to work with !",
+            id2: "OPEN CLASSROOM : attended intensive six months training as a Web developer. AGILE methods practitioner, all my training come from real-work projects. These projects were approved and assessed by a tutor, a professor and a jury committee composed by professional web developers. I am used to organize my work autonomously regarding to the project's deadline, which is defined by customers."
         },
         willingness: {
-            id1: "Because digitalisation get also an impact on the environment... I would like to work on project sharing the idea to consume less and used recycle energy.",
-            id2: "Because in a fastest and dematerialized world, the personal data protection is an important stake... Be trustable and respectful are the main values for a confident relationship in order to warranty customer data security.",
-            id3: "Because technology also ease our casual life through none physcial connection... I like to keep in mind, there's always humain behind. Made clear, fair, constructive trade is the key of my work. ",
-            id4: "Because be freelancer mean be autonomous, responsible, and organisate... Plan my work, have a schedules, put deadlines report and present regulary the forward of the project are my work's commitment."
+            id1: "Because digitalisation can has an impact on the environment... I would like to work on projects, which share my vision of being ecological.",
+            id2: "Because in a fast and dematerialized world, where the personal data are being exposed, the data protection is at stake... Be trustful and respectful are the main values for a confident relationship in order to warranty customer data security.",
+            id3: "Because technology also ease our daily life through none physcial connection... I like to keep in mind, there's always human behind. Made clear, fair, constructive trade are the core values of my work. ",
+            id4: "Because being a freelancer means to be autonomous, responsible, and organized... Plan my work, have clear schedules, put deadlines report and present regularly the forward of the project are my work's commitment."
         },
 
     },
     services: {
         header: {
-            h1: "Be at your side for your web project",
-            h2: "Free and personal advise and management until a complete quotation...",
+            h1: "Be at your side for your web projects",
+            h2: "Free advise until the project contracts are signed...",
             p: "Each steps are made through a web meeting (30 to 60 min) to discuss about your project",
         },
         stepOne: {
             h3: "Step 1",
-            description: "<ul> <li> Projects presentation and willingness</li> <li>Define your need, strategy and ressource</li><li> What and how can I help you in your digitalisation process</li><li>First feddback on your projects sharing about my knowledge/skills fitting or not your project</li> </ul>"
+            description: "<ul> <li> Projects presentation and willingness</li> <li>Define your need, strategy and resource</li><li> What and how can I help you in your digitalisation process</li><li>First feedback on your projects sharing about my knowledge/skills fitting or not your project</li> </ul>"
         },
         stepTwo: {
             h3: "Step 2",
@@ -117,7 +117,7 @@ export default{
     ],
     projectsPage: {
         title: "Find all project's descriptions",
-        description: "Click on a projects to get more details: technology used, features scoped expected..."
+        description: "Click on a projects to get more details: web development tools, features scoped expected..."
     },
     projectsIdPage: {
         description: "Details and objectives :",

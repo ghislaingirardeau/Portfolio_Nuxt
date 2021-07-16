@@ -6,22 +6,6 @@ body {
   text-align: center;
   position: relative;
   background: linear-gradient(to top left, rgb(37, 35, 35), 85%, rgb(231, 230, 230)) no-repeat;
- 
-  /* &:before{
-    content: '';
-    position: absolute;
-    top: 20px;
-    left: 0px;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: #fff;
-    box-shadow:
-    0 0 60px 30px #fff, 
-    0 0 100px 80px rgb(77, 77, 77), 
-    0 0 740px 290px rgb(255, 255, 255); 
-    animation: body_light 6s cubic-bezier(0, 0, 0, 0.99) forwards;
-  } */
 }
 
 a.nuxt-link-exact-active {
@@ -30,35 +14,24 @@ a.nuxt-link-exact-active {
 
 h1{
   color:$color-primary;
+  font-size: $h1size;
 }
 
-/* @keyframes body_light {
-  from {
-    filter: invert(1);
-    transform: translateX(-100px) translateY(-100px);
-  }
-  to {
-    filter: invert(0);
-    transform: translateX(0px) translateY(0px);
-    opacity: .8;
-  }
+h2{
+  font-size: $h2size;
 }
 
-@media screen and (max-width: 900px) {
-  body {
-    &:before{
-      box-shadow:
-      0 0 60px 30px #fff, 
-      0 0 100px 80px rgb(77, 77, 77), 
-      0 0 540px 190px rgb(255, 255, 255); 
-    }
+@media screen and (max-width: 600px) {
+
+  body{
+    font-size: 1rem;
+  }
+
+  h1{
+    font-size: $h1sizeresponsive;
+  }
+  
+  h2{
+    font-size: $h2sizeresponsive;
   }
 }
-
-@media (prefers-reduced-motion: reduce) {
-  body {
-    &:before{
-      animation: none;
-    }
-  }
-} */
