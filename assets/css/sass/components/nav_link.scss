@@ -24,8 +24,9 @@
     }
 
     &__lang{
-        width: 10%;
-        padding: 55px 0px 0px 0px;
+        width: 60px;
+        height: 30px;
+        margin-top: 55px;
     }
 
     &__logo {
@@ -77,8 +78,7 @@
             }
         }
         &__lang{
-            width: 100%;
-            padding: 20px 0px 0px 0px;
+            margin-top: 20px;
             order: 1;
         }
     

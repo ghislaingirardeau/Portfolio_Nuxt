@@ -19,7 +19,7 @@
             
         </nav>
 
-        <div class="header__lang" @click="toogleShow">
+        <div class="header__lang" @click="toogleShow" :key="lang">
             <nuxt-link class="toogleLang" :to="switchLocalePath(lang)" v-show="lang === 'en'">English</nuxt-link>
             <nuxt-link class="toogleLang" :to="switchLocalePath(lang)" v-show="lang === 'fr'">French</nuxt-link>
         </div>
