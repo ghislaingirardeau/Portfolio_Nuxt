@@ -6,7 +6,7 @@ export default {
   ssr: false,
 
   router: { 
-    base: '/', /* test sans sinon passer en ./ pour le deploy static */
+    base: './', /* test sans sinon passer en ./ pour le deploy static */
     mode: 'hash'
   },
 
