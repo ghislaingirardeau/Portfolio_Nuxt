@@ -13,6 +13,7 @@
                 </NuxtLink>
             </transition-group>
         </div>
+    
     </main>
     
 </template>
@@ -27,6 +28,11 @@ export default {
             project: projects.projects
         }
     },
+    computed: {
+  availableLocales () {
+    return this.$i18n
+  }
+},
     methods: {
         uppercase
     },

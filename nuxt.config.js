@@ -64,9 +64,10 @@ export default {
   ],
   
   i18n: {
-    locales: [{ code: 'en', iso: 'en-US', file: 'en.js', dir: 'ltr' },
-   
-    { code: 'fr', iso: 'fr-FR', file: 'fr.js' },],
+    locales: [
+      { code: 'en', iso: 'en-US', file: 'en.js' },
+      { code: 'fr', iso: 'fr-FR', file: 'fr.js' },
+  ],
     defaultLocale: 'fr',
     vueI18n: i18n
   },
