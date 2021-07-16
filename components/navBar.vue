@@ -16,10 +16,12 @@
             <NuxtLink :to="localePath('projets')" class="header__navBar--font" >{{$t('navBar.projects')}}</NuxtLink>
             <NuxtLink :to="localePath('service')" class="header__navBar--font" >{{$t('navBar.services')}}</NuxtLink> 
             <NuxtLink :to="localePath('about')" class="header__navBar--font" >{{$t('navBar.aboutMe')}}</NuxtLink>
-            
+            <button class="toogleLang" @click="toogleShow">
+                <nuxt-link :to="switchLocalePath(lang)" v-show="lang === 'en'">English</nuxt-link>
+                <nuxt-link :to="switchLocalePath(lang)" v-show="lang === 'fr'">French</nuxt-link>
+            </button>
         </nav>
-        <nuxt-link :to="switchLocalePath('en')">English</nuxt-link>
-        <nuxt-link :to="switchLocalePath('fr')">Français</nuxt-link>
+        
         
     </header>
     
@@ -36,6 +38,7 @@ export default {
         return{
             componentKey: 0, /* pour faire un re-render du cube avec :key */
             animCube: 'spin 7s 1.7s linear', /* anime par default au load */
+            lang: "fr"
         }
     },
     methods: {
@@ -43,6 +46,10 @@ export default {
             let time = 2 + Math.floor( Math.random()* 10) + 's'
             this.animCube = 'spin ' + time + ' linear ' 
             this.componentKey += 1 /* pour faire un re-render du cube */
+        },
+        toogleShow() {
+            let langChange = this.$i18n.localeCodes.find(element => element != this.lang);
+            this.lang = langChange
         }
     },
     /* mounted() {

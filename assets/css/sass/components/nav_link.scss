@@ -29,6 +29,14 @@
         padding: 20px 0px 30px 12%;
     }
 }
+.toogleLang{
+    font-size: 1.2rem;
+    font-family: $font_logo;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px 5px;
+    @include anim-btn($color-btn);
+}
 
 @media screen and (max-width: 1200px) {
 

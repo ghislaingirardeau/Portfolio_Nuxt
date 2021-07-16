@@ -1,23 +1,23 @@
 <template>
     <main class="page__service">
         
-        <h1>{{$t('services.header.h1')}}</h1>
-            <p>{{$t('services.header.p')}}</p>
+        <h1 class="reveal-0">{{$t('services.header.h1')}}</h1>
+            <p class="reveal-0">{{$t('services.header.p')}}</p>
 
-        <h2>{{$t('services.header.h2')}}</h2>
+        <h2 class="reveal-0">{{$t('services.header.h2')}}</h2>
         <div class="container__etape">
 
-            <article class="container__etape__block reveal-0">
+            <article class="container__etape__block reveal-1">
                 <h3>{{$t('services.stepOne.h3')}}</h3>
                 <p v-html="$t('services.stepOne.description')"></p>
                 
             </article>
-            <article class="container__etape__block reveal-1">
+            <article class="container__etape__block reveal-2">
                 <h3>{{$t('services.stepTwo.h3')}}</h3>
                 <p v-html="$t('services.stepTwo.description')"></p>
             </article>
 
-            <article class="container__etape__block reveal-2">
+            <article class="container__etape__block reveal-3">
                 <h3>{{$t('services.stepThree.h3')}}</h3>
                 <p v-html="$t('services.stepThree.description')"></p>
             </article>

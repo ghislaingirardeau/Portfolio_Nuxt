@@ -14,9 +14,9 @@ export default{
         },
         offer: {
             hService: "My services",
-            textService: "You have a web project or a business to digitalize... <br> but you don't know where and how to start... ?<br> Find here, whats solution and accompany can I bring to you ! ",
+            textService: "You have a web project or a business to digitalize... <br> but you don't know where and how to start... ?<br> Find here, what's solution and assistance I can bring to you ! ",
             hWork: "My works",
-            textWork: "You already know about web technology... <br> And you want to know more about my skills and my works ? <br> Look at my projects and see which technology I like and used to work with !"
+            textWork: "You already know about web technology... <br> And you want to know more about my skills and my works ? <br> Look at my projects and see which tools I work with !"
         }
     },
     footer: {
@@ -29,11 +29,11 @@ export default{
         h2commit: "My work commitment...",        
         personal: {
             h3: "...Personaly",
-            text: "After more than 10 years working as sport shop manager, I deciced to realize my child's dream to travel around the worl for 2 years. The exciting and rich adventure open my mind for values like autonomous, open-minded, curious, respect. And also allowed me to train and graduate through an other passion to become web developer. Sports practician, interested in web development, I'm eager today to bring my skill and knowledge toward interested project.",
+            text: "After more than 10 years working as a manager of international sport brand (Intersport), I deciced to realize my childhood dream to explore the world for 2 years. The exciting and rich adventure allowed me to cultivate certain value such as autonomous, open-minded, curious, respect. And also allowed me to train and graduate through an other passion to become a web developer. Sports practician, interested in web development, I'm eager today to bring my skill and knowledge toward interested project.",
         },
         professionaly : {
             h3: "...Profesionaly",
-            id1: "Freelancer, I'm self-employed since june 2021 as web developer : I realized this e-portfolio via Vue et Nuxt Js, 2 js framework that I particulary like to work with !",
+            id1: "Freelancer, I'm self-employed since june 2021 as a web developer : I realized this e-portfolio via Vue et Nuxt Js, 2 js framework that I particulary like to work with !",
             id2: "OPEN CLASSROOM : 6 months Web developer graduation. AGILE methods practician, all my training come from real-work projects. This projects was approved and asset by a tutor, a professor and a jury commity composed by profesional developer. I used to organize my work in autonomous regarding the project's deadline defined with the customer."
         },
         willingness: {

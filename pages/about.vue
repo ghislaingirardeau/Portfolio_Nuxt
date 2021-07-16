@@ -1,7 +1,7 @@
 <template>
     
     <main class="page__about">
-        <h1 >{{$t('about.h1')}}</h1>
+        <h1 class="reveal-0">{{$t('about.h1')}}</h1>
        
             <div>
                 <article>
