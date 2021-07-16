@@ -4,15 +4,15 @@
         <div class="block_projet">
              
             <h1>{{detailProject.name}}</h1>
-                <h2>Description du projet et objectifs :</h2>
+                <h2>{{$t('projectsIdPage.description')}} </h2>
                 <p> {{detailProject.description}}</p>
 
-                <h2>Les technologies et outils utilisés :</h2>
+                <h2>{{$t('projectsIdPage.tech')}}</h2>
                 <p> {{detailProject.tech}}</p>
 
-                <h2>Galerie du projet :</h2>
+                <h2>{{$t('projectsIdPage.gallery')}}</h2>
                 <div v-if="detailProject.loader" class="block_projet--loader">
-                    <p>Creation du loader :</p>
+                    <p>{{$t('projectsIdPage.loader')}}</p>
                     <loaderOhmyfood />
                 </div>
                          
@@ -28,7 +28,7 @@
         </transition>  
 
         <aside class="autres_projets">
-            <h2>Mes autres projets</h2>
+            <h2>{{$t('projectsIdPage.other')}}</h2>
             <ul >
                 <transition-group class="autres_projets--liste" name="slide-fade" tag="article" appear>
                 <li v-for="item,l in relatedProject" :key="item.id" :style="{'--i': l}"><NuxtLink :to="localePath({ name: 'projet-id', params: {id: item.id}})" class="liste--orange">{{item.name}} </NuxtLink></li>
@@ -41,7 +41,6 @@
 </template>
 
 <script>
-import projects from '@/store/projects.js'
 import carousel from '@/components/carousel/carousel'
 import carouselSlide from '@/components/carousel/carouselSlide'
 
@@ -49,7 +48,6 @@ export default {
     data() {
         return{
             id : this.$route.params.id,
-            project: projects.projects,
             detailProject: {},
             relatedProject: [],
             imageUrl: '', /* si on passe directement url dans le mounted */
@@ -57,8 +55,8 @@ export default {
         }
     },
     mounted () {
-        this.detailProject = this.project.find(element => element.id === this.id)
-        this.relatedProject = this.project.filter(element => element.id != this.id)
+        this.detailProject = this.$t('projects').find(element => element.id === this.id)
+        this.relatedProject = this.$t('projects').filter(element => element.id != this.id)
         this.slides = this.detailProject.imageURL /* recupere aussi le tableau d'images */
         /* const filename = this.detailProject.imageURL
         this.imageUrl = require(`~/assets/images/${filename}`); */

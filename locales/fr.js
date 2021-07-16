@@ -116,6 +116,18 @@ export default{
             imageURL: ["groupomania_log.png", "groupomania_signup.png", "groupomania_home.png", "groupomania_delete.png", "groupomania_forum.png", "groupomania_update.png", "groupomania_empty.png"]
         }
     ],
+    projectsPage: {
+        title: "Découvrez la liste de mes projets",
+        description: "Cliquer sur un projet pour en savoir plus: technologies utilisées, objectifs attendus..."
+    },
+    projectsIdPage: {
+        description: "Description du projet et objectifs :",
+        tech: "Les technologies et outils utilisés :",
+        gallery: "Galerie du projet :",
+        loader: "Creation du loader :",
+        other: "Mes autres projets",
+        backButton: "RETOUR"
+    },
     date: {
         day: "Nous sommes le ",
         time: ', il est '

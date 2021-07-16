@@ -1,6 +1,6 @@
 <template>
     <div>
-        <button @click="goBack" class="btn__goback">RETOUR</button>
+        <button @click="goBack" class="btn__goback">{{$t('projectsIdPage.backButton')}}</button>
     </div>
 </template>
 
