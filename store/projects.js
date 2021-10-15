@@ -48,6 +48,14 @@ export default {
             description: "Personnaliser le contenu envoyé à un client web, Gérer un stockage de données à l'aide de SQL, Implémenter un stockage de données sécurisé en utilisant SQL, Authentifier un utilisateur et maintenir sa session, Définir des rôles et des privilèges suivant l'utilisateur",
             tech: "Mysql, Node js, Express, bcrypt, multer, bootstrap, Vue js, GitHub",
             imageURL: ["groupomania_log.png", "groupomania_signup.png", "groupomania_home.png", "groupomania_delete.png", "groupomania_forum.png", "groupomania_update.png", "groupomania_empty.png"]
+        },
+        {
+            id: '7',
+            name: "BeToFeel",
+            summary: "Création d'un réseau social interne à une entreprise",
+            description: "Personnaliser le contenu envoyé à un client web, Gérer un stockage de données à l'aide de SQL, Implémenter un stockage de données sécurisé en utilisant SQL, Authentifier un utilisateur et maintenir sa session, Définir des rôles et des privilèges suivant l'utilisateur",
+            tech: "Mysql, Node js, Express, bcrypt, multer, bootstrap, Vue js, GitHub",
+            imageURL: ["groupomania_log.png", "groupomania_signup.png", "groupomania_home.png", "groupomania_delete.png", "groupomania_forum.png", "groupomania_update.png", "groupomania_empty.png"]
         }
     ]
 }

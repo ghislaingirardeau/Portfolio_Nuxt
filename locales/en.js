@@ -113,6 +113,14 @@ export default{
             description: "Analyze a client’s needs to define the scope and features of a new application. With the help of a front-end framework, build a full-stack solution, including a SQL database.",
             tech: "Mysql, Node js, Express, bcrypt, multer, bootstrap, Vue js, GitHub",
             imageURL: ["groupomania_log.png", "groupomania_signup.png", "groupomania_home.png", "groupomania_delete.png", "groupomania_forum.png", "groupomania_update.png", "groupomania_empty.png"]
+        },
+        {
+            id: '7',
+            name: "BeToFeel",
+            summary: "Build a Full-Stack website : sharing and visualizing dynamic emotions",
+            description: "SVG image dynamic and personalized front render based on user data, Including a SQL database and an authentification user control. Offer the possibility to share your personal image to other users",
+            tech: "Mysql, Node js, Express, Axios, bcrypt, multer, Figma, bootstrap, Vue & Nuxt js, GitHub",
+            imageURL: ["beToFeelsign.PNG", "beToFeelMenu.PNG", "beToFeeling.PNG", "beToFeelShare.PNG", "beToFeelShareAsk.PNG", "beToFeelTree.PNG", "beToFeelUser.PNG"]
         }
     ],
     projectsPage: {

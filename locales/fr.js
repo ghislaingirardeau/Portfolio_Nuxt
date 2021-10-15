@@ -114,6 +114,14 @@ export default{
             description: "Personnaliser le contenu envoyé à un client web, Gérer un stockage de données à l'aide de SQL, Implémenter un stockage de données sécurisé en utilisant SQL, Authentifier un utilisateur et maintenir sa session, Définir des rôles et des privilèges suivant l'utilisateur",
             tech: "Mysql, Node js, Express, bcrypt, multer, bootstrap, Vue js, GitHub",
             imageURL: ["groupomania_log.png", "groupomania_signup.png", "groupomania_home.png", "groupomania_delete.png", "groupomania_forum.png", "groupomania_update.png", "groupomania_empty.png"]
+        },
+        {
+            id: '7',
+            name: "BeToFeel",
+            summary: "Développement d'un siteweb fullstack de visualisation et de partage d'émotions",
+            description: "Personnaliser le rendu d'une image SVG, rendre dynamique une image en fonction de la base de donnée de l'utilisateur, Gérer un stockage de données à l'aide de SQL, Implémenter un stockage de données sécurisé en utilisant SQL, Authentifier un utilisateur et maintenir sa session",
+            tech: "Mysql, Node js, Express, Axios, bcrypt, multer, Figma, bootstrap, Nuxt js, GitHub",
+            imageURL: ["beToFeelsign.PNG", "beToFeelMenu.PNG", "beToFeeling.PNG", "beToFeelShare.PNG", "beToFeelShareAsk.PNG", "beToFeelTree.PNG", "beToFeelUser.PNG"]
         }
     ],
     projectsPage: {
