@@ -66,48 +66,18 @@ export default{
     },
     projects: [
         {
-            id: '1',
-            name: "Reservia",
-            summary: "Turn Mock-ups into a Web Page",
-            description: "Get started with HTML & CSS by implementing a travel booking platform's website from scratch.",
-            tech: "HTML, CSS, GitHub",
-            imageURL: ["reservia.png"]
-        },
-        {
-            id: '2',
-            name: "Ohmyfood",
-            summary: "Integrate a mobile website with animations in CSS",
-            description: "Implement the mobile version of this foodtech website with CSS animations.",
-            tech: "HTML, CSS, SASS, GitHub, BEM methods for a clear code",
-            imageURL: ["ohmyfood.png", "ohmyfood_menu.png", "ohmyfood_menu1.png"],
-            loader: 'true'
-        },
-        {
-            id: '3',
-            name: "La chouette agence",
-            summary: "Optimize an existing Website",
-            description: "Research and implement current best practices and standards in web development, including SEO, size and speed, and accessibility.",
-            tech: "Aria, SEO, google analytics, google search console, wave evaluation, headingMap  GitHub",
-            imageURL: ["chouette_agence_loading.png", "chouette_agence_titre.png", "chouette_agence_responsive.png"]
-        },
-        {
-            id: '4',
-            name: "Orinoco",
-            summary: "Build an eCommerce Website",
-            description: "Use the JavaScript programming language to interact with users and external services. Apply a test-driven approach to web development.",
-            tech: "Javascript, bootstrap, Regex, GitHub",
-            imageURL: ["orinoco_accueil.PNG", "orinoco_produit.PNG", "orinoco_basket.PNG", "orinoco_forms.PNG", "orinoco_confirm.PNG"]
-        },
-        {
-            id: '5',
-            name: "So Peckoko",
-            summary: "Build a Secure API for a review app",
-            description: "Hot Takes is a new app for customer reviews of specialty hot sauces. Use Node.js, Express, and MongoDB to build its NoSQL database. Secure customer data by applying the OWASP web security standards.",
-            tech: "Node js, Express, bcrypt, multer, MongoDb, GitHub",
-            imageURL: ["so_peckoko_log.PNG", "so_peckoko_create.PNG", "so_peckoko_CRUD.PNG"]
+            id: '7',
+            date: 'aout 2021',
+            name: "BeToFeel",
+            summary: "Build a Full-Stack website : sharing and visualizing dynamic emotions",
+            description: "SVG image dynamic, motion and personalized front render based on user data, Including a SQL database and an authentification user control. Offer the possibility to share your personal image to other users, Full stack deployement api server on Heroku / app on Netlify",
+            tech: "Node js, Express, Axios, bcrypt, Figma, bootstrap vue, Nuxt js, GitHub, Mysql workbench",
+            imageURL: ["beToFeelsign.PNG", "beToFeelMenu.PNG", "beToFeeling.PNG", "beToFeelShare.PNG", "beToFeelShareAsk.PNG", "beToFeelTree.PNG", "beToFeelUser.PNG"],
+            link: 'https://betofeel.netlify.app/'
         },
         {
             id: '6',
+            date: 'mai 2021',
             name: "Groupomania",
             summary: "Build a Full-Stack Solution",
             description: "Analyze a client’s needs to define the scope and features of a new application. With the help of a front-end framework, build a full-stack solution, including a SQL database.",
@@ -115,13 +85,54 @@ export default{
             imageURL: ["groupomania_log.png", "groupomania_signup.png", "groupomania_home.png", "groupomania_delete.png", "groupomania_forum.png", "groupomania_update.png", "groupomania_empty.png"]
         },
         {
-            id: '7',
-            name: "BeToFeel",
-            summary: "Build a Full-Stack website : sharing and visualizing dynamic emotions",
-            description: "SVG image dynamic and personalized front render based on user data, Including a SQL database and an authentification user control. Offer the possibility to share your personal image to other users",
-            tech: "Mysql, Node js, Express, Axios, bcrypt, multer, Figma, bootstrap, Vue & Nuxt js, GitHub",
-            imageURL: ["beToFeelsign.PNG", "beToFeelMenu.PNG", "beToFeeling.PNG", "beToFeelShare.PNG", "beToFeelShareAsk.PNG", "beToFeelTree.PNG", "beToFeelUser.PNG"]
-        }
+            id: '4',
+            date: 'avril 2021',
+            name: "Orinoco",
+            summary: "Build an eCommerce Website",
+            description: "Use the JavaScript programming language to interact with users and external services. Apply a test-driven approach to web development.",
+            tech: "Javascript, bootstrap, Regex, GitHub",
+            imageURL: ["orinoco_accueil.PNG", "orinoco_produit.PNG", "orinoco_basket.PNG", "orinoco_forms.PNG", "orinoco_confirm.PNG"]
+        },
+        {
+            id: '1',
+            date: 'dec 2020',
+            name: "Reservia",
+            summary: "Turn Mock-ups into a Web Page",
+            description: "Get started with HTML & CSS by implementing a travel booking platform's website from scratch.",
+            tech: "HTML, CSS, GitHub",
+            imageURL: ["reservia.png"],
+            link: 'https://ghislaingirardeau.github.io/GhislainGirardeau_2_23122020/'
+        },
+        {
+            id: '2',
+            date: 'janv 2021',
+            name: "Ohmyfood",
+            summary: "Integrate a mobile website with animations in CSS",
+            description: "Implement the mobile version of this foodtech website with CSS animations.",
+            tech: "HTML, CSS, SASS, GitHub, BEM methods for a clear code",
+            imageURL: ["ohmyfood.png", "ohmyfood_menu.png", "ohmyfood_menu1.png"],
+            loader: 'true',
+            link: 'https://ghislaingirardeau.github.io/GirardeauGhislain_3_13012021/index.html'
+        },
+        {
+            id: '3',
+            date: 'fev 2021',
+            name: "La chouette agence",
+            summary: "Optimize an existing Website",
+            description: "Research and implement current best practices and standards in web development, including SEO, size and speed, and accessibility.",
+            tech: "Aria, SEO, google analytics, google search console, wave evaluation, headingMap  GitHub",
+            imageURL: ["chouette_agence_loading.png", "chouette_agence_titre.png", "chouette_agence_responsive.png"],
+            link: 'https://ghislaingirardeau.github.io/GirardeauGhislain_4_02022021/index.html'
+        },
+        {
+            id: '5',
+            date: 'mars 2021',
+            name: "So Peckoko",
+            summary: "Build a Secure API for a review app",
+            description: "Hot Takes is a new app for customer reviews of specialty hot sauces. Use Node.js, Express, and MongoDB to build its NoSQL database. Secure customer data by applying the OWASP web security standards.",
+            tech: "Node js, Express, bcrypt, multer, MongoDb, GitHub",
+            imageURL: ["so_peckoko_log.PNG", "so_peckoko_create.PNG", "so_peckoko_CRUD.PNG"]
+        },
     ],
     projectsPage: {
         title: "Find all project's descriptions",

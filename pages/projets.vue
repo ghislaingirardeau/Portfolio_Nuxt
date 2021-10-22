@@ -8,6 +8,7 @@
                     <article>
                         <h2>{{uppercase(item.name)}}</h2>
                         <p>{{item.summary}}</p>
+                        <p class="date--text">Date de réalisation: {{item.date}}</p>
                     </article>
                 </NuxtLink>
             </transition-group>

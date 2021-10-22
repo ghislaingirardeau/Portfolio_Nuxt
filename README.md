@@ -1,4 +1,11 @@
 # portofolio
+dans nuxt.config :
+    desactiver base: './' pour lancer npm run dev
+pour deploy sur netlify :
+    reactiver base: './' 
+    puis npm run generate
+    met a jour le dossier dist => commit => puis push master
+    update auto sur netlify
 
 ## Build Setup
 

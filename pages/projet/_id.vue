@@ -6,6 +6,9 @@
             <h1>{{detailProject.name}}</h1>
                 <h2>{{$t('projectsIdPage.description')}} </h2>
                 <p> {{detailProject.description}}</p>
+                <button v-if="detailProject.link" class="btn__link">
+                    <a :href="detailProject.link" target="_blank">Lien vers {{detailProject.name}}</a>
+                </button>
 
                 <h2>{{$t('projectsIdPage.tech')}}</h2>
                 <p> {{detailProject.tech}}</p>
@@ -64,6 +67,8 @@ export default {
     components: {
         carousel,
         carouselSlide
+    },
+    methods: {
     }
 }
 </script>

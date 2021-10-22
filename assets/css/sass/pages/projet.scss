@@ -10,6 +10,9 @@
         flex-wrap: wrap;
         justify-content: center;
     }
+    & .date--text{
+        text-decoration: underline;
+    }
 }
 
 .page__projet--link {
