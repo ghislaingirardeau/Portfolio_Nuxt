@@ -26,17 +26,21 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "WebDev",
+    title: "GG Web Dev",
     htmlAttrs: {
       lang: 'fr'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
+      { hid: 'description', name: 'description', content: 'GG web dev est une auto entreprise de création et de développement de site web, appartenant à Mr GIRARDEAU ghislain' }
     ],
     link: [
-      { rel: 'icon', type: 'image/PNG', href: '/favicon.PNG' }
+      { rel: 'icon', type: 'image/PNG', href: '/favicon.PNG' },
+/*       {
+        rel: 'canonical',
+        href: 'https://ghislain-girardeau-portfolio.netlify.app/#/'
+      } */
     ]
   },
 
