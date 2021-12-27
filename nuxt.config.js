@@ -6,14 +6,14 @@ export default {
   ssr: false,
 /* test sans sinon passer en ./ pour le deploy static */
   router: { 
-    base: './', 
-    mode: 'hash'
+    /* base: './',  */
+    /* mode: 'hash' */
   },
 
-  // Target: https://go.nuxtjs.dev/config-target
+  // Target: https://go.nuxtjs.dev/config-target 
   target: 'static',
 
-  /* generate: {
+  generate: {
     routes: [
       '/projet/1',
       '/projet/2',
@@ -21,11 +21,13 @@ export default {
       '/projet/4',
       '/projet/5',
       '/projet/6',
+      '/projet/7',
     ]
-  }, */
+  },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
-  head: {
+ 
+  /* head: {
     title: "GG Web Dev",
     htmlAttrs: {
       lang: 'fr'
@@ -33,16 +35,15 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'GG web dev est une auto entreprise de création et de développement de site web, appartenant à Mr GIRARDEAU ghislain' }
+      { hid: 'description', 
+        name: 'description', 
+        content: 'GG web dev est une auto entreprise de création et de développement de site web, appartenant à Mr GIRARDEAU ghislain' 
+      }
     ],
     link: [
       { rel: 'icon', type: 'image/PNG', href: '/favicon.PNG' },
-/*       {
-        rel: 'canonical',
-        href: 'https://ghislain-girardeau-portfolio.netlify.app/#/'
-      } */
     ]
-  },
+  }, */
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
@@ -68,10 +69,13 @@ export default {
   ],
   
   i18n: {
+    seo: false,
     locales: [
       { code: 'en', iso: 'en-US', file: 'en.js' },
       { code: 'fr', iso: 'fr-FR', file: 'fr.js' },
-  ],
+    ],
+    /* baseUrl: 'https://ghislain-girardeau-portfolio.netlify.app/',*/
+    baseUrl: 'http://localhost:3000',
     defaultLocale: 'fr',
     vueI18n: i18n
   },
