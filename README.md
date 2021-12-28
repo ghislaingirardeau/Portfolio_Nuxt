@@ -6,7 +6,9 @@ pour deploy sur netlify :
     met a jour le dossier dist => commit => puis push master
     update auto sur netlify
 
-pour deploy sur heroku
+pour deploy sur heroku :
+    Penser a ne pas mettre de "server" dans nuxt config
+    push on master
 
 ## Build Setup
 

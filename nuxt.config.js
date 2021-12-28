@@ -11,9 +11,9 @@ export default {
   },
 
   // Target: https://go.nuxtjs.dev/config-target 
-  target: 'server',
+  target: 'static',
 
-  generate: {
+  /* generate: {
     routes: [
       '/projet/1',
       '/projet/2',
@@ -23,7 +23,7 @@ export default {
       '/projet/6',
       '/projet/7',
     ]
-  },
+  }, */
 
   // Global page headers: https://go.nuxtjs.dev/config-head
  
@@ -74,7 +74,7 @@ export default {
       { code: 'en', iso: 'en-US', file: 'en.js' },
       { code: 'fr', iso: 'fr-FR', file: 'fr.js' },
     ],
-    baseUrl: 'https://ghislain-girardeau-portfolio.netlify.app',
+    /* baseUrl: 'https://ghislain-girardeau-portfolio.netlify.app', */
     defaultLocale: 'fr',
     vueI18n: i18n
   },
@@ -82,13 +82,9 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   },
-  server: {
-    port: 3000, // par défaut : 3000
-  },
   loadingIndicator: {
     name: 'circle',
     color: 'white',
     background: 'linear-gradient(to top left, rgb(37, 35, 35), 85%, rgb(231, 230, 230)) no-repeat'
   },
-
 }
