@@ -1,14 +1,11 @@
 # portofolio
 dans nuxt.config :
     desactiver base: './' pour lancer npm run dev
+    
 pour deploy sur netlify :
-    puis npm run generate
+    npm run generate
     met a jour le dossier dist => commit => puis push master
     update auto sur netlify
-
-pour deploy sur heroku :
-    Penser a ne pas mettre de "server" dans nuxt config
-    push on master
 
 ## Build Setup
 

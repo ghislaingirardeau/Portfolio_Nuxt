@@ -13,7 +13,7 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target 
   target: 'static',
 
-  /* generate: {
+  generate: { // pour un crawling plus aisé des bots
     routes: [
       '/projet/1',
       '/projet/2',
@@ -23,10 +23,10 @@ export default {
       '/projet/6',
       '/projet/7',
     ]
-  }, */
+  },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
- 
+ // head envoyé comme fonction dans le layout
   /* head: {
     title: "GG Web Dev",
     htmlAttrs: {
@@ -74,7 +74,7 @@ export default {
       { code: 'en', iso: 'en-US', file: 'en.js' },
       { code: 'fr', iso: 'fr-FR', file: 'fr.js' },
     ],
-    baseUrl: 'https://portfolio-ggwebdev.herokuapp.com',
+    baseUrl: 'https://ghislain-girardeau-portfolio.netlify.app',
     defaultLocale: 'fr',
     vueI18n: i18n
   },
