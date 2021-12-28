@@ -11,7 +11,7 @@ export default {
   head () {
     const i18nHead = this.$nuxtI18nHead({ addSeoAttributes: true })
     return {
-      title: "GG Web Dev",
+      title: "GG Web Développeur Portfolio",
       htmlAttrs: {
         ...i18nHead.htmlAttrs
       },
