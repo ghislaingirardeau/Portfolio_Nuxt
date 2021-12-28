@@ -13,10 +13,10 @@ export default{
             p3: "Développeur web",
         },
         offer: {
-            hService: "Mes services",
-            textService: "Envie de vous lancez dans un projet digital web... <br>Mais vous ne savez pas, par oú commencer ?<br>Retrouver le détail de l'accompagnement je peux vous proposer ! ",
-            hWork: "Mes projets",
-            textWork: "Vous êtes déja initié au technologie du web... <br>Et vous souhaitez en savoir plus sur mes compétences et mes réalisations ?<br>Découvrez les technologies que je maitrise et les projets sur lesquels j'ai travaillé !"
+            hService: "Mes services pour un projet digital",
+            textService: "Envie de vous lancez dans un projet digital... <br>Mais vous ne savez pas, par oú commencer ?<br>Retrouver le détail de l'accompagnement je peux vous proposer ! ",
+            hWork: "Me connaitre via mes réalisations",
+            textWork: "Vous êtes déja initié au technologie et au langage de programmation... <br>Et vous souhaitez en savoir plus sur mes compétences et mes réalisations ?<br>Découvrez les technologies que je maitrise et les projets sur lesquels j'ai travaillé !"
         }
     },
     footer: {
@@ -136,7 +136,7 @@ export default{
         },
     ],
     projectsPage: {
-        title: "Découvrez la liste de mes projets",
+        title: "Découvrez toutes mes réalisations",
         description: "Cliquer sur un projet pour en savoir plus: technologies utilisées, objectifs attendus..."
     },
     projectsIdPage: {

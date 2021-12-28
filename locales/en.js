@@ -13,9 +13,9 @@ export default{
             p3: "Web Developer",
         },
         offer: {
-            hService: "My services",
+            hService: "How can I help you ?",
             textService: "You have a web project or a business to digitalize... <br> but you don't know where and how to start... ?<br> Find here, what kind of solution and assistance I can bring to you ! ",
-            hWork: "My works",
+            hWork: "Knowing me through my works",
             textWork: "You are probably familiar with the web technology... <br> And if you want to know what I can offer <br> Look at my projects and see which tools I work with !"
         }
     },

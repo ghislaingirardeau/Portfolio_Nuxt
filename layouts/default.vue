@@ -21,7 +21,7 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: 'GG web dev est une auto entreprise de création et de développement de site web, appartenant à Mr GIRARDEAU ghislain'
+          content: "GG web dev, auto entreprise de création de site internet, développement d'application et de solutions digitales. Je suis Ghislain freelance, indépendant et je vous propose mes services de développeur HTML, CSS, javascript, vue js, nuxt, sass, node js, mysql. "
         },
         ...i18nHead.meta
       ],
