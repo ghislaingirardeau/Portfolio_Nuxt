@@ -27,7 +27,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
  
-  /* head: {
+  head: {
     title: "GG Web Dev",
     htmlAttrs: {
       lang: 'fr'
@@ -43,7 +43,7 @@ export default {
     link: [
       { rel: 'icon', type: 'image/PNG', href: '/favicon.PNG' },
     ]
-  }, */
+  },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
@@ -74,8 +74,7 @@ export default {
       { code: 'en', iso: 'en-US', file: 'en.js' },
       { code: 'fr', iso: 'fr-FR', file: 'fr.js' },
     ],
-    /* baseUrl: 'https://ghislain-girardeau-portfolio.netlify.app/',*/
-    baseUrl: 'http://localhost:3000',
+    baseUrl: 'https://ghislain-girardeau-portfolio.netlify.app',
     defaultLocale: 'fr',
     vueI18n: i18n
   },
