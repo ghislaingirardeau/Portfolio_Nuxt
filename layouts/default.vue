@@ -8,7 +8,7 @@
 
 <script>
 export default {
-  /* head () {
+  head () {
     const i18nHead = this.$nuxtI18nHead({ addSeoAttributes: true })
     return {
       title: "GG Web Dev",
@@ -28,7 +28,7 @@ export default {
         ...i18nHead.link
      ]
     }
-  } */
+  }
 }
 </script>
 

@@ -27,7 +27,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
  
-  head: {
+  /* head: {
     title: "GG Web Dev",
     htmlAttrs: {
       lang: 'fr'
@@ -43,7 +43,7 @@ export default {
     link: [
       { rel: 'icon', type: 'image/PNG', href: '/favicon.PNG' },
     ]
-  },
+  }, */
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
