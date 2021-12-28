@@ -3,7 +3,7 @@ import i18n from './config/i18n'
 
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
-  ssr: false,
+  ssr: true,
 /* test sans sinon passer en ./ pour le deploy static */
   router: { 
     /* base: './',  */
