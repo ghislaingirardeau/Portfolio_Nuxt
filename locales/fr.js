@@ -57,7 +57,7 @@ export default{
         },
         stepTwo: {
             h3: "Etapes 2",
-            description: "<ul> <li>Etude individualisée de votre projet</li> <li>Evaluation des possibilités, recommendations et solutions adaptées</li><li> Proposition de devis, délai et cahier des charges reprenant le résultat convenu</li><li>Réponse à vos interrogations et questionnements</li> </ul>"
+            description: "<ul> <li>Etude individualisée de votre projet</li> <li>Evaluation des possibilités, recommandations et solutions adaptées</li><li> Proposition de devis, délai et cahier des charges reprenant le résultat convenu</li><li>Réponse à vos interrogations et questionnements</li> </ul>"
         },
         stepThree: {
             h3: "Etapes 3",
