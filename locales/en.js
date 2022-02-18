@@ -66,8 +66,18 @@ export default{
     },
     projects: [
         {
+            id: '8',
+            date: 'january 2022',
+            name: "App Cartography",
+            summary: "Mobile free Mapping App",
+            description: "Build a mapping tool for a sociologist researcher. Watch my position and save it, track me, fullscreen option, custom markers, save and export Excel data.",
+            tech: "Nuxt, vuetify, leaflet, import et export from/to Excel file, netlify",
+            imageURL: ["mapping1.PNG", "mapping2.PNG", "mapping3.PNG", "mapping4.PNG"],
+            link: 'https://map-tool-village.netlify.app/'
+        },
+        {
             id: '7',
-            date: 'aout 2021',
+            date: 'august 2021',
             name: "BeToFeel",
             summary: "Build a Full-Stack website : sharing and visualizing dynamic emotions",
             description: "SVG image dynamic, motion and personalized front render based on user data, Including a SQL database and an authentification user control. Offer the possibility to share your personal image to other users, Full stack deployement api server on Heroku / app on Netlify",
@@ -77,7 +87,7 @@ export default{
         },
         {
             id: '6',
-            date: 'mai 2021',
+            date: 'may 2021',
             name: "Groupomania",
             summary: "Build a Full-Stack Solution",
             description: "Analyze a client’s needs to define the scope and features of a new application. With the help of a front-end framework, build a full-stack solution, including a SQL database.",
@@ -86,7 +96,7 @@ export default{
         },
         {
             id: '4',
-            date: 'avril 2021',
+            date: 'april 2021',
             name: "Orinoco",
             summary: "Build an eCommerce Website",
             description: "Use the JavaScript programming language to interact with users and external services. Apply a test-driven approach to web development.",
@@ -95,7 +105,7 @@ export default{
         },
         {
             id: '1',
-            date: 'dec 2020',
+            date: 'december 2020',
             name: "Reservia",
             summary: "Turn Mock-ups into a Web Page",
             description: "Get started with HTML & CSS by implementing a travel booking platform's website from scratch.",
@@ -105,7 +115,7 @@ export default{
         },
         {
             id: '2',
-            date: 'janv 2021',
+            date: 'january 2021',
             name: "Ohmyfood",
             summary: "Integrate a mobile website with animations in CSS",
             description: "Implement the mobile version of this foodtech website with CSS animations.",
@@ -116,7 +126,7 @@ export default{
         },
         {
             id: '3',
-            date: 'fev 2021',
+            date: 'february 2021',
             name: "La chouette agence",
             summary: "Optimize an existing Website",
             description: "Research and implement current best practices and standards in web development, including SEO, size and speed, and accessibility.",
@@ -126,7 +136,7 @@ export default{
         },
         {
             id: '5',
-            date: 'mars 2021',
+            date: 'march 2021',
             name: "So Peckoko",
             summary: "Build a Secure API for a review app",
             description: "Hot Takes is a new app for customer reviews of specialty hot sauces. Use Node.js, Express, and MongoDB to build its NoSQL database. Secure customer data by applying the OWASP web security standards.",

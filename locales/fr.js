@@ -67,6 +67,16 @@ export default{
     },
     projects: [
         {
+            id: '8',
+            date: 'janvier 2022',
+            name: "Cartographie App",
+            summary: "Création d'une application de mapping pour mobile",
+            description: "Développement d'un outil d'aide à la cartographie pour une chercheuse en sociologie. Enregistrer une position, suivre ma position, créer des marqueurs customisables, enregistrer et exporter les datas.",
+            tech: "Nuxt, vuetify, leaflet, import GeoJson et export depuis fichier excel, netlify",
+            imageURL: ["mapping1.PNG", "mapping2.PNG", "mapping3.PNG", "mapping4.PNG", "mapping5.PNG"],
+            link: 'https://map-tool-village.netlify.app/'
+        },
+        {
             id: '7',
             date: 'aout 2021',
             name: "BeToFeel",
@@ -96,7 +106,7 @@ export default{
         },
         {
             id: '1',
-            date: 'dec 2020',
+            date: 'décembre 2020',
             name: "Reservia",
             summary: "Intégration d'une maquette en site web",
             description: "Implémenter une interface responsive, Utiliser un système de gestion de versions pour le suivi du projet",
@@ -106,7 +116,7 @@ export default{
         },
         {
             id: '2',
-            date: 'janv 2021',
+            date: 'janvier 2021',
             name: "Ohmyfood",
             summary: "Mise en œuvre une structure de navigation web",
             description: "Mettre en œuvre des effets CSS graphiques avancés en assurant une cohérence graphique. Mise en place d'animation Keyframes et transitions pour rendre enrichir l'expérience utilisateur",
@@ -117,7 +127,7 @@ export default{
         },
         {
             id: '3',
-            date: 'fev 2021',
+            date: 'février 2021',
             name: "La chouette agence",
             summary: "Utiliser les techniques d'amélioration et de référencement d'un site web",
             description: "Sur la base d'un site web existant, améliorer son référencement par un retravail des mots clés, rendre le site responsive et assurer son accessibilité. Optimiser son référencement, sa taille et son temps de chargement",

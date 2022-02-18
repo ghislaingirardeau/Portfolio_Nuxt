@@ -27,12 +27,7 @@
     border-radius: 5px 5px;
     cursor: pointer;
     background-color: transparent;
-    transform: scale(1);
-    transition: all ease 300ms;
-    &:hover{
-        color: $color-primary;
-        transform: scale(1.08);
-    }
+    @include anim-btn($color-btn);
 
     & > a{
         color: white;
