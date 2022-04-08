@@ -71,9 +71,9 @@ export default{
             date: 'janvier 2022',
             name: "Cartographie App",
             summary: "Création d'une application de mapping pour mobile",
-            description: "Développement d'un outil d'aide à la cartographie pour une chercheuse en sociologie. Enregistrer une position, suivre ma position, créer des marqueurs customisables, enregistrer et exporter les datas.",
-            tech: "Nuxt, vuetify, leaflet, import GeoJson et export depuis fichier excel, netlify",
-            imageURL: ["mapping1.PNG", "mapping2.PNG", "mapping3.PNG", "mapping4.PNG", "mapping5.PNG"],
+            description: "Développement d'un outil d'aide à la cartographie pour une chercheuse en sociologie. Enregistrer une position, suivre ma position, créer des marqueurs personnalisable, enregistrer et exporter les données.",
+            tech: "Nuxt, vuetify, leaflet, indexedDB, import GeoJson et export depuis fichier excel, netlify",
+            imageURL: ["map1.PNG", "map2.PNG", "map3.PNG", "map4.PNG", "map5.PNG", "map6.PNG"],
             link: 'https://map-tool-village.netlify.app/'
         },
         {

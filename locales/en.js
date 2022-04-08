@@ -70,9 +70,9 @@ export default{
             date: 'january 2022',
             name: "App Cartography",
             summary: "Mobile free Mapping App",
-            description: "Build a mapping tool for a sociologist researcher. Watch my position and save it, track me, fullscreen option, custom markers, save and export Excel data.",
-            tech: "Nuxt, vuetify, leaflet, import et export from/to Excel file, netlify",
-            imageURL: ["mapping1.PNG", "mapping2.PNG", "mapping3.PNG", "mapping4.PNG"],
+            description: "Build a mapping tool for a sociologist researcher. Watch my position and save it, track me, add or draw a location. Custom markers, edit datas, save and export Excel data.",
+            tech: "Nuxt, vuetify, leaflet, indexedDB, import et export from/to Excel file, netlify",
+            imageURL: ["map1.PNG", "map2.PNG", "map3.PNG", "map4.PNG", "map5.PNG", "map6.PNG"],
             link: 'https://map-tool-village.netlify.app/'
         },
         {
