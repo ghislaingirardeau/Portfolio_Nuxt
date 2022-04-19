@@ -13,7 +13,7 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target 
   target: 'static',
 
-  generate: { // pour un crawling plus aisé des bots
+  /* generate: { 
     routes: [
       '/projet/1',
       '/projet/2',
@@ -23,7 +23,7 @@ export default {
       '/projet/6',
       '/projet/7',
     ]
-  },
+  }, */
 
   // Global page headers: https://go.nuxtjs.dev/config-head
  // head envoyé comme fonction dans le layout
