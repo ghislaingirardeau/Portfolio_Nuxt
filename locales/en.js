@@ -120,7 +120,7 @@ export default{
             summary: "Integrate a mobile website with animations in CSS",
             description: "Implement the mobile version of this foodtech website with CSS animations.",
             tech: "HTML, CSS, SASS, GitHub, BEM methods for a clear code",
-            imageURL: ["ohmyfood.PNG", "ohmyfood_menu.PNG", "ohmyfood_menu1.PNG"],
+            imageURL: ["ohmyfood.PNG", "ohmyfood_menu1.PNG"],
             loader: 'true',
             link: 'https://ghislaingirardeau.github.io/GirardeauGhislain_3_13012021/index.html'
         },
