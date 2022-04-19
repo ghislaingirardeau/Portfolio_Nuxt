@@ -19,9 +19,9 @@
       
       <div class="block__moi">
         <h1>
-          <span class="block__moi--animation1">{{$t('index.me.p1')}}</span> <br>
-          <span class="block__moi--animation2">{{$t('index.me.p2')}}</span><br>
-          <span class="block__moi--animation3">{{$t('index.me.p3')}}</span>
+          <span class="block__moi--animation1" :title-value1="$t('index.me.p1')"></span> <br>
+          <span class="block__moi--animation2" :title-value2="$t('index.me.p2')"></span><br>
+          <span class="block__moi--animation3" :title-value3="$t('index.me.p3')"></span>
         </h1>
       </div>
      

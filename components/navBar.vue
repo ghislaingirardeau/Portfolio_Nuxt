@@ -39,7 +39,7 @@ export default {
     data() {
         return{
             componentKey: 0, /* pour faire un re-render du cube avec :key */
-            animCube: 'spin 7s 1.7s linear', /* anime par default au load */
+            animCube: 'spin 7s .3s linear', /* anime par default au load */
             lang: "en"
         }
     },
