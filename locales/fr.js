@@ -111,7 +111,7 @@ export default{
             summary: "Intégration d'une maquette en site web",
             description: "Implémenter une interface responsive, Utiliser un système de gestion de versions pour le suivi du projet",
             tech: "HTML, CSS, GitHub",
-            imageURL: ["reservia.png"],
+            imageURL: ["reservia.PNG"],
             link: 'https://ghislaingirardeau.github.io/GhislainGirardeau_2_23122020/'
         },
         {
