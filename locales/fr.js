@@ -93,7 +93,7 @@ export default{
             summary: "Création d'un réseau social interne à une entreprise",
             description: "Personnaliser le contenu envoyé à un client web, Gérer un stockage de données à l'aide de SQL, Implémenter un stockage de données sécurisé en utilisant SQL, Authentifier un utilisateur et maintenir sa session, Définir des rôles et des privilèges suivant l'utilisateur",
             tech: "Mysql, Node js, Express, bcrypt, multer, bootstrap, Vue js, GitHub",
-            imageURL: ["groupomania_log.png", "groupomania_signup.png", "groupomania_home.png", "groupomania_delete.png", "groupomania_forum.png", "groupomania_update.png", "groupomania_empty.png"],
+            imageURL: ["groupomania_log.PNG", "groupomania_signup.PNG", "groupomania_home.PNG", "groupomania_delete.PNG", "groupomania_forum.PNG", "groupomania_update.PNG", "groupomania_empty.PNG"],
         },
         {
             id: '4',
@@ -121,7 +121,7 @@ export default{
             summary: "Mise en œuvre une structure de navigation web",
             description: "Mettre en œuvre des effets CSS graphiques avancés en assurant une cohérence graphique. Mise en place d'animation Keyframes et transitions pour rendre enrichir l'expérience utilisateur",
             tech: "HTML, CSS, SASS, GitHub, méthode BEM pour un code clair",
-            imageURL: ["ohmyfood.png", "ohmyfood_menu.png", "ohmyfood_menu1.png"],
+            imageURL: ["ohmyfood.PNG", "ohmyfood_menu.PNG", "ohmyfood_menu1.PNG"],
             loader: 'true',
             link: 'https://ghislaingirardeau.github.io/GirardeauGhislain_3_13012021/index.html'
         },
@@ -132,7 +132,7 @@ export default{
             summary: "Utiliser les techniques d'amélioration et de référencement d'un site web",
             description: "Sur la base d'un site web existant, améliorer son référencement par un retravail des mots clés, rendre le site responsive et assurer son accessibilité. Optimiser son référencement, sa taille et son temps de chargement",
             tech: "Aria, SEO, google analytics, google search console, wave evaluation, headingMap  GitHub",
-            imageURL: ["chouette_agence_loading.png", "chouette_agence_titre.png", "chouette_agence_responsive.png"],
+            imageURL: ["chouette_agence_loading.PNG", "chouette_agence_titre.PNG", "chouette_agence_responsive.PNG"],
             link: 'https://ghislaingirardeau.github.io/GirardeauGhislain_4_02022021/index.html'
         },
         {

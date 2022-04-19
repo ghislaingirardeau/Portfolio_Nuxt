@@ -92,7 +92,7 @@ export default{
             summary: "Build a Full-Stack Solution",
             description: "Analyze a client’s needs to define the scope and features of a new application. With the help of a front-end framework, build a full-stack solution, including a SQL database.",
             tech: "Mysql, Node js, Express, bcrypt, multer, bootstrap, Vue js, GitHub",
-            imageURL: ["groupomania_log.png", "groupomania_signup.png", "groupomania_home.png", "groupomania_delete.png", "groupomania_forum.png", "groupomania_update.png", "groupomania_empty.png"]
+            imageURL: ["groupomania_log.PNG", "groupomania_signup.PNG", "groupomania_home.PNG", "groupomania_delete.PNG", "groupomania_forum.PNG", "groupomania_update.PNG", "groupomania_empty.PNG"]
         },
         {
             id: '4',
@@ -110,7 +110,7 @@ export default{
             summary: "Turn Mock-ups into a Web Page",
             description: "Get started with HTML & CSS by implementing a travel booking platform's website from scratch.",
             tech: "HTML, CSS, GitHub",
-            imageURL: ["reservia.png"],
+            imageURL: ["reservia.PNG"],
             link: 'https://ghislaingirardeau.github.io/GhislainGirardeau_2_23122020/'
         },
         {
@@ -120,7 +120,7 @@ export default{
             summary: "Integrate a mobile website with animations in CSS",
             description: "Implement the mobile version of this foodtech website with CSS animations.",
             tech: "HTML, CSS, SASS, GitHub, BEM methods for a clear code",
-            imageURL: ["ohmyfood.png", "ohmyfood_menu.png", "ohmyfood_menu1.png"],
+            imageURL: ["ohmyfood.PNG", "ohmyfood_menu.PNG", "ohmyfood_menu1.PNG"],
             loader: 'true',
             link: 'https://ghislaingirardeau.github.io/GirardeauGhislain_3_13012021/index.html'
         },
@@ -131,7 +131,7 @@ export default{
             summary: "Optimize an existing Website",
             description: "Research and implement current best practices and standards in web development, including SEO, size and speed, and accessibility.",
             tech: "Aria, SEO, google analytics, google search console, wave evaluation, headingMap  GitHub",
-            imageURL: ["chouette_agence_loading.png", "chouette_agence_titre.png", "chouette_agence_responsive.png"],
+            imageURL: ["chouette_agence_loading.PNG", "chouette_agence_titre.PNG", "chouette_agence_responsive.PNG"],
             link: 'https://ghislaingirardeau.github.io/GirardeauGhislain_4_02022021/index.html'
         },
         {
