@@ -1,5 +1,6 @@
 <template>
-  <div> <!-- Mettre les composants en format camel !!!! -->
+  <div>
+    <!-- Mettre les composants en format camel !!!! -->
     <navBar />
     <Nuxt />
     <footerBar />
@@ -8,32 +9,31 @@
 
 <script>
 export default {
-  head () {
-    const i18nHead = this.$nuxtI18nHead({ addSeoAttributes: true })
+  head() {
+    const i18nHead = this.$nuxtI18nHead({ addSeoAttributes: true });
     return {
       title: "GG Web Développeur Portfolio",
       htmlAttrs: {
-        ...i18nHead.htmlAttrs
+        ...i18nHead.htmlAttrs,
       },
       meta: [
-        { charset: 'utf-8' },
-        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { charset: "utf-8" },
+        { name: "viewport", content: "width=device-width, initial-scale=1" },
         {
-          hid: 'description',
-          name: 'description',
-          content: "GG web dev, auto entreprise de création de site internet, développement d'application et de solutions digitales. Je suis Ghislain freelance, indépendant et je vous propose mes services de développeur HTML, CSS, javascript, vue js, nuxt, sass, node js, mysql. "
+          hid: "description",
+          name: "description",
+          content:
+            "GG web dev, auto entreprise de création de site internet, développement d'application et de solutions digitales. Je suis Ghislain freelance, indépendant et je vous propose mes services de développeur HTML, CSS, javascript, vue js, nuxt, sass, node js, mysql. ",
         },
-        ...i18nHead.meta
+        ...i18nHead.meta,
       ],
       link: [
-        { rel: 'icon', type: 'image/PNG', href: '/favicon.PNG' },
-        ...i18nHead.link
-     ]
-    }
-  }
-}
+        { rel: "icon", type: "image/PNG", href: "/favicon.PNG" },
+        ...i18nHead.link,
+      ],
+    };
+  },
+};
 </script>
 
-<style>
-
-</style>
+<style></style>

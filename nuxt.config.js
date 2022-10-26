@@ -47,13 +47,10 @@ export default {
     ]
   }, */
 
-  // Global CSS: https://go.nuxtjs.dev/config-css
   css: ["@/assets/css/main.css", "@/assets/css/main.scss"],
 
-  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
 
-  // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
@@ -66,8 +63,6 @@ export default {
       id: process.env.ANALYTICS_ID,
     },
   },
-
-  // Modules: https://go.nuxtjs.dev/config-modules
 
   modules: ["nuxt-i18n"],
 
@@ -82,7 +77,6 @@ export default {
     vueI18n: i18n,
   },
 
-  // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     hmtl: {
       minify: {
