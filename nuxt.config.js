@@ -64,7 +64,11 @@ export default {
     },
   },
 
-  modules: ["nuxt-i18n"],
+  modules: ["nuxt-i18n", "@nuxtjs/robots", "@nuxtjs/sitemap"],
+
+  sitemap: {
+    hostname: "https://ghislain-girardeau-portfolio.netlify.app/",
+  },
 
   i18n: {
     seo: false,
