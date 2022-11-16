@@ -70,13 +70,29 @@ export default {
   },
   projects: [
     {
+      id: "9",
+      date: "juillet 2022",
+      name: "Appli Collecte de données",
+      summary:
+        "Création d'une application de collecte et de traitement de données",
+      description:
+        "Mise en place d'un simulateur de financements avec son plan d'amortissement, élaboration du questionnaire pour la collecte de donnée avec authentification, une page administrateur pour le suivi et la synthèse des données",
+      tech: "Nuxt, vuetify, firebase auth & store, moment JS, chart JS, notification par messagerie, export vers fichier excel, netlify, GitHub",
+      imageURL: [
+        "community_tool1.png",
+        "community_tool2.png",
+        "community_tool3.png",
+        "community_tool4.png",
+      ],
+    },
+    {
       id: "8",
       date: "janvier 2022",
       name: "Cartographie App",
       summary: "Création d'une application de mapping pour mobile",
       description:
         "Développement d'un outil d'aide à la cartographie pour une chercheuse en sociologie. Enregistrer une position, suivre ma position, créer des marqueurs personnalisable, enregistrer et exporter les données.",
-      tech: "Nuxt, vuetify, leaflet, indexedDB, import GeoJson et export depuis fichier excel, netlify",
+      tech: "Nuxt, vuetify, leaflet, Firebase, import GeoJson et export depuis fichier excel, netlify, GitHub",
       imageURL: [
         "map1.PNG",
         "map2.PNG",
