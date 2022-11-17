@@ -70,7 +70,7 @@ export default {
   },
   projects: [
     {
-      id: "9",
+      id: "10",
       date: "juillet 2022",
       name: "Appli Collecte de données",
       summary:
@@ -84,6 +84,16 @@ export default {
         "community_tool3.png",
         "community_tool4.png",
       ],
+    },
+    {
+      id: "9",
+      date: "mai 2022",
+      name: "Site E-commerce multi langues",
+      summary: "Modèle d'un site e-commerce multi langues",
+      description:
+        "Comprendre comment intégré une base de données dynamique en fonction de la langue, création d'une page panier avec simulation de paiement via l'API Stripe, gérer la convertion de devise",
+      tech: "Node js, Express, Axios, Vue js, Nuxt js, i18n, Vuetify, Stripe, GitHub, Mysql workbench, railway",
+      imageURL: ["e-commerce1.png", "e-commerce2.png"],
     },
     {
       id: "8",

@@ -69,7 +69,7 @@ export default {
   },
   projects: [
     {
-      id: "9",
+      id: "10",
       date: "july 2022",
       name: "Data collection app",
       summary: "Web app to collect and process datas",
@@ -82,6 +82,16 @@ export default {
         "community_tool3.png",
         "community_tool4.png",
       ],
+    },
+    {
+      id: "9",
+      date: "mai 2022",
+      name: "Multi languages e-commerce website",
+      summary: "E-commerce website template",
+      description:
+        "Understand how to integrate a dynamic database related to the user language, create a dynamic cart table summary and add an API Stripe payment simulation, currency conversion feature",
+      tech: "Node js, Express, Axios, Vue js, Nuxt js, i18n, Vuetify, Stripe, GitHub, Mysql workbench, railway",
+      imageURL: ["e-commerce1.png", "e-commerce2.png"],
     },
     {
       id: "8",
