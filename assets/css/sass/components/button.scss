@@ -15,7 +15,7 @@
   font-weight: bold;
   padding: 10px;
   border-radius: 5px 5px;
-  @include anim-btn($color-btn);
+  @include anim-btn($color-btn, $color-secondary);
 }
 
 .btn__link {

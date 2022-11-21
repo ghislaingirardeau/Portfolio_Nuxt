@@ -3,7 +3,7 @@ $color-secondary: #f4f72d;
 $color-third: #f78228;
 $color-dark: #16261c;
 $color-blue-mid: #517c77;
-$color-bright:white;
+$color-bright: white;
 $color-lien: white;
 $color-btn: white;
 $color-logo: rgb(201, 194, 194);
@@ -16,35 +16,34 @@ $h2size: 1.6rem;
 $h1sizeresponsive: 1.4rem;
 $h2sizeresponsive: 1.2rem;
 
-@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kalam&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
 
+$font_paragraphe: "Kalam", cursive;
+$font_logo: "Kaushan Script", cursive;
 
-$font_paragraphe: 'Kalam', cursive;
-$font_logo: 'Kaushan Script', cursive;
-
-@mixin anim-btn ($color) {
-    cursor: pointer;
-    background-color: transparent;
-    box-shadow: 3px 3px 5px $color-primary, -3px -3px 5px $color-blue-mid;
-    border: 3px solid $color-blue-mid;    
-    color: $color;
-    transform: scale(1);
-    transition: all ease 300ms;
-    &:hover{
-        color: $color-primary;
-        box-shadow: none;
-        transform: scale(1.08);
-    }
+@mixin anim-btn($color, $col2: $color-primary) {
+  cursor: pointer;
+  background-color: transparent;
+  box-shadow: 3px 3px 5px $col2, -3px -3px 5px $color-blue-mid;
+  border: 3px solid $color-blue-mid;
+  color: $color;
+  transform: scale(1);
+  transition: all ease 300ms;
+  &:hover {
+    color: $col2;
+    box-shadow: none;
+    transform: scale(1.08);
+  }
 }
 
-@mixin layout_page () {
-    color: $color-bright;
-    & > h1{
-        text-shadow: 2px 2px black;
-    }
-    & h2{
-        color: $color-primary;
-        text-decoration: underline;
-    }
+@mixin layout_page() {
+  color: $color-bright;
+  & > h1 {
+    text-shadow: 2px 2px black;
+  }
+  & h2 {
+    color: $color-primary;
+    text-decoration: underline;
+  }
 }

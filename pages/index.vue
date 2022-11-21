@@ -1,6 +1,6 @@
 <template>
   <main class="container">
-    <article class="block__presentation" :key="render">
+    <article class="block__presentation">
       <div class="block__cible">
         <article class="block__cible__service">
           <h2>{{ $t("index.offer.hService") }}</h2>
@@ -16,7 +16,7 @@
         </article>
       </div>
 
-      <div class="block__moi">
+      <div class="block__moi" :key="reloadMe">
         <h1>
           <span style="display: none"> titre </span>
           <span
@@ -32,6 +32,7 @@
           <span
             class="block__moi--animation3"
             :title-value3="$t('index.me.p3')"
+            @mouseleave="doThis"
           ></span>
         </h1>
       </div>
@@ -44,12 +45,18 @@ export default {
   data() {
     return {
       render: 0,
+      reloadMe: 0,
     };
   },
   mounted() {
-    setInterval(() => {
+    /* setInterval(() => {
       this.render++;
-    }, 35000);
+    }, 35000); */
+  },
+  methods: {
+    doThis() {
+      this.reloadMe++;
+    },
   },
 };
 </script>

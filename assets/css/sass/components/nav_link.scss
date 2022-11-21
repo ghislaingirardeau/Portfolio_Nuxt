@@ -1,95 +1,92 @@
 .header {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    border-bottom: 3px solid $color-third;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border-bottom: 3px solid $color-third;
 
-    &__navBar {
-        width: 65%;
-        padding: 55px 0px 0px 0px;
+  &__navBar {
+    width: 65%;
+    padding: 55px 0px 0px 0px;
 
-        &--font {
-            display: inline-block;
-            font-size: $linksize;
-            font-weight: bold;
-            text-decoration: none;
-            text-shadow: 1px 1px black;
-            padding: 5px 45px 25px 45px;
-            transition: all 0.3s ease;
-            color: $color-primary;
-            &:hover {
-                text-shadow: 27px 30px black;
-            }
-        }
+    &--font {
+      display: inline-block;
+      font-size: $linksize;
+      font-weight: bold;
+      text-decoration: none;
+      text-shadow: 1px 1px black;
+      padding: 5px 45px 25px 45px;
+      transition: all 0.3s ease;
+      color: $color-primary;
+      &:hover {
+        text-shadow: 27px 30px black;
+      }
     }
+  }
 
-    &__lang{
-        width: 60px;
-        height: 30px;
-        margin-top: 55px;
-    }
+  &__lang {
+    width: 60px;
+    height: 30px;
+    margin-top: 55px;
+  }
 
-    &__logo {
-        width: 10%;
-        height: 100px;
-        padding: 20px 0px 30px 12%;
-    }
+  &__logo {
+    width: 10%;
+    height: 100px;
+    padding: 20px 0px 30px 12%;
+  }
 }
 .toogleLang {
-    text-decoration: none;
-    font-size: 1rem;
-    font-family: $font_logo;
-    padding: 5px;
-    border-radius: 5px 5px;
-    @include anim-btn($color-btn);
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: $font_logo;
+  padding: 5px;
+  border-radius: 5px 5px;
+  @include anim-btn($color-btn, $color-secondary);
 }
 
 @media screen and (max-width: 1200px) {
+  .header {
+    &__navBar {
+      width: 75%;
 
-    .header {
-        &__navBar {
-            width: 75%;
-            
-            &--font {
-                padding: 5px 35px 15px 35px;
-                &:hover {
-                    text-shadow: 17px 20px black;
-                }
-            }
+      &--font {
+        padding: 5px 35px 15px 35px;
+        &:hover {
+          text-shadow: 17px 20px black;
         }
-    
-        &__logo {
-            width: 100%;
-            padding: 40px 0px 30px 40%;
-        }
+      }
     }
+
+    &__logo {
+      width: 100%;
+      padding: 40px 0px 30px 40%;
+    }
+  }
 }
 
 @media screen and (max-width: 700px) {
+  .header {
+    &__navBar {
+      width: 100%;
+      order: 2;
+      padding: 25px 0px 0px 0px;
+      &--font {
+        font-size: 1.2rem;
+        padding: 5px 5px 25px 5px;
+      }
+    }
+    &__lang {
+      margin-top: 20px;
+      order: 1;
+    }
 
-    .header {
-        &__navBar {
-            width: 100%;
-            order: 2;
-            padding: 25px 0px 0px 0px;
-            &--font {
-                font-size: 1.2rem;
-                padding: 5px 5px 25px 5px;
-            }
-        }
-        &__lang{
-            margin-top: 20px;
-            order: 1;
-        }
-    
-        &__logo {
-            width: 100%;
-            order: 0;
-            padding: 40px 0px 30px 40%;
-        }
+    &__logo {
+      width: 100%;
+      order: 0;
+      padding: 40px 0px 30px 40%;
     }
-    .toogleLang {
-        font-size: 1rem;
-    }
+  }
+  .toogleLang {
+    font-size: 1rem;
+  }
 }
-
