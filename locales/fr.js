@@ -226,6 +226,7 @@ export default {
     title: "Découvrez toutes mes réalisations",
     description:
       "Cliquer sur un projet pour en savoir plus: technologies utilisées, objectifs attendus...",
+    dateCreation: "Date de réalisation"
   },
   projectsIdPage: {
     description: "Description du projet et objectifs :",

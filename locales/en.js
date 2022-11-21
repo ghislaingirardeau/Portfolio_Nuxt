@@ -222,6 +222,7 @@ export default {
     title: "Find all project's descriptions",
     description:
       "Click on a projects to get more details: web development tools, features scoped expected...",
+    dateCreation: "Made in"
   },
   projectsIdPage: {
     description: "Details and objectives :",

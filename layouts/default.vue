@@ -29,6 +29,10 @@ export default {
       ],
       link: [
         { rel: "icon", type: "image/PNG", href: "/favicon.PNG" },
+        {
+          rel: "stylesheet",
+          href: "https://fonts.googleapis.com/icon?family=Material+Icons",
+        },
         ...i18nHead.link,
       ],
     };

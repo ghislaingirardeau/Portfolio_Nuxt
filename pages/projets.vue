@@ -31,7 +31,7 @@
 import { uppercase, reveal } from "@/store/function.js";
 
 export default {
-  head() {
+  /* head() {
     return {
       title: `Gg Web Dev - ${
         this.$i18n.locale === "fr" ? "Mes projets" : "My works"
@@ -43,7 +43,7 @@ export default {
       en: "/works",
       fr: "/projets",
     },
-  },
+  }, */
   data() {
     return {};
   },

@@ -20,7 +20,7 @@
       <NuxtLink :to="localePath('index')" class="header__navBar--font">{{
         $t("navBar.index")
       }}</NuxtLink>
-      <NuxtLink :to="localePath('projets')" class="header__navBar--font">{{
+      <NuxtLink :to="localePath('proNew')" class="header__navBar--font">{{
         $t("navBar.projects")
       }}</NuxtLink>
       <NuxtLink :to="localePath('service')" class="header__navBar--font">{{

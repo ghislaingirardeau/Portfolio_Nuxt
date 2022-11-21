@@ -1,41 +1,40 @@
-.page__projet{
-    & > h1{
-        text-shadow: 2px 2px black;
-    }
-    & > p{
-        color: $color-bright;
-    }
-    &--layout{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    & .date--text{
-        text-decoration: underline;
-    }
+.page__projet {
+  & > h1 {
+    text-shadow: 2px 2px black;
+  }
+  & > p {
+    color: $color-bright;
+  }
+  &--layout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  & .date--text {
+    text-decoration: underline;
+  }
 }
 
 .page__projet--link {
-    border-radius: 5px 5px;
-    width: 35%;
-    margin: 30px;
-    text-decoration: none;
-    @include anim-btn($color-lien);
+  border-radius: 5px 5px;
+  width: 35%;
+  margin: 30px;
+  text-decoration: none;
+  @include anim-btn($color-lien);
 }
 
-.slide-fade-enter-active{
-    transition: opacity .5s ease, transform .5s ease;
-    transition-delay: var(--i);
+.slide-fade-enter-active {
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  transition-delay: var(--i);
 }
-.slide-fade-enter{
-    opacity: 0;
-    transform: translateY(60px);
+.slide-fade-enter {
+  opacity: 0;
+  transform: translateY(60px);
 }
 
 @media screen and (max-width: 700px) {
-
-    .page__projet--link {
-        width: 100%;
-        margin: 30px;
-    }
+  .page__projet--link {
+    width: 90%;
+    margin: 30px;
+  }
 }

@@ -5,33 +5,38 @@ body {
   width: 95%;
   text-align: center;
   position: relative;
-  background: linear-gradient(to top left, rgb(37, 35, 35), 85%, rgb(231, 230, 230)) no-repeat;
+  background: linear-gradient(
+      to top left,
+      rgb(37, 35, 35),
+      85%,
+      rgb(231, 230, 230)
+    )
+    no-repeat;
 }
 
 a.nuxt-link-exact-active {
   color: #f78228;
 }
 
-h1{
-  color:$color-primary;
+h1 {
+  color: $color-primary;
   font-size: $h1size;
 }
 
-h2{
+h2 {
   font-size: $h2size;
 }
 
-@media screen and (max-width: 600px) {
-
-  body{
+@media screen and (max-width: 700px) {
+  body {
     font-size: 1rem;
   }
 
-  h1{
+  h1 {
     font-size: $h1sizeresponsive;
   }
-  
-  h2{
+
+  h2 {
     font-size: $h2sizeresponsive;
   }
 }

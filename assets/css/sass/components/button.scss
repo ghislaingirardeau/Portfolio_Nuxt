@@ -1,95 +1,95 @@
-.btn--download{
-    margin-bottom: 30px;
-    font-size: 1.6rem;
-    font-family: $font_logo;
-    font-weight: bold;
-    padding: 10px;
-    border-radius: 5px 5px;
-    @include anim-btn($color-btn);
+.btn--download {
+  margin-bottom: 30px;
+  font-size: 1.6rem;
+  font-family: $font_logo;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px 5px;
+  @include anim-btn($color-btn);
 }
 
 .btn__goback {
-    margin: 30px 0px 30px;
-    font-size: 1rem;
-    font-family: $font_logo;
-    font-weight: bold;
-    padding: 10px;
-    border-radius: 5px 5px;
-    @include anim-btn($color-btn);
+  margin: 30px 0px 30px;
+  font-size: 1rem;
+  font-family: $font_logo;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px 5px;
+  @include anim-btn($color-btn);
 }
 
 .btn__link {
-    margin: 30px 0px 30px;
-    font-size: 1.2rem;
-    font-family: $font_logo;
-    font-weight: bold;
-    padding: 14px;
-    border-radius: 5px 5px;
-    cursor: pointer;
-    background-color: transparent;
-    @include anim-btn($color-btn);
+  margin: 30px 0px 30px;
+  font-size: 1.2rem;
+  font-family: $font_logo;
+  font-weight: bold;
+  padding: 14px;
+  border-radius: 5px 5px;
+  cursor: pointer;
+  background-color: transparent;
+  @include anim-btn($color-btn);
 
-    & > a{
-        color: white;
-        text-decoration: none;
-    }
+  & > a {
+    color: white;
+    text-decoration: none;
+  }
 }
 
 .btn__slide {
-    font-size: 1.4rem;
-    font-weight: bold;
-    padding: 5px;
-    border-radius: 5px 5px;
-    @include anim-btn($color-btn);
-    position: absolute;
-    top: 45%;
-    background-color: $color-blue-mid;
-    opacity: .8;
-    &--next{
-        right: 20px;
-    }
-    &--prev{
-        left: 20px;
-    }
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 5px 5px;
+  @include anim-btn($color-btn);
+  position: absolute;
+  top: 45%;
+  background-color: $color-blue-mid;
+  opacity: 0.8;
+  &--next {
+    right: 20px;
+  }
+  &--prev {
+    left: 20px;
+  }
 }
 
 .btn__index {
-    margin-top: -50px;
+  margin-top: -50px;
 
-    & button{
+  & button {
     width: 20px;
     height: 20px;
     border: 2px solid $color-dark;
     border-radius: 10px;
     margin: 0px 5px 0px 5px;
     background-color: $color-blue-mid;
-    opacity: .8;
+    opacity: 0.8;
     cursor: pointer;
-    }
+  }
 }
-.btn__index button.active{
-    background: $color-primary;
+.btn__index button.active {
+  background: $color-primary;
 }
 
 @media screen and (max-width: 600px) {
-    .btn__index {
-        & button{
-        width: 15px;
-        height: 15px;
-        border-radius: 10px;
-        }
+  .btn__index {
+    & button {
+      width: 15px;
+      height: 15px;
+      border-radius: 10px;
     }
-    .btn__slide {
-        padding: 3px;
- 
-        &--next{
-            right: 0px;
-        }
-        &--prev{
-            left: 0px;
-        }
+  }
+  .btn__slide {
+    padding: 3px;
+
+    &--next {
+      right: 0px;
     }
-    .btn__goback {
-        font-size: 0.8rem;
+    &--prev {
+      left: 0px;
     }
+  }
+  .btn__goback {
+    font-size: 0.8rem;
+  }
 }

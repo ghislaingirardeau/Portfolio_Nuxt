@@ -29,9 +29,6 @@
           {{ $t("footer.contact") }}
           <a href="mailto:g.girardeaupro@sfr.fr">g.girardeaupro@sfr.fr</a>
         </li>
-        <li class="date">
-          {{ $t("date.day") }} {{ date }}{{ $t("date.time") }}{{ interval }}
-        </li>
       </ul>
     </div>
   </footer>
@@ -40,29 +37,8 @@
 <script>
 export default {
   data() {
-    return {
-      time: new Date(),
-      interval: "",
-      date: "",
-    };
+    return {};
   },
-  mounted() {
-    this.date =
-      this.time.getDate() +
-      "/" +
-      (this.time.getMonth() + 1) +
-      "/" +
-      this.time.getFullYear();
-    this.test = setInterval(() => {
-      /* this.test refére a window.test qui est une variable temporaire */
-      let timeDate = new Date();
-      this.interval =
-        timeDate.getHours() +
-        "h" +
-        timeDate.getMinutes() +
-        "m" +
-        timeDate.getSeconds();
-    }, 1000);
-  },
+  mounted() {},
 };
 </script>
