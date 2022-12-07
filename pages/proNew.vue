@@ -6,8 +6,8 @@
     @touchstart="startDrag($event)"
     @touchend="endDrag($event)"
   >
-    <h1>{{ $t("projectsPage.title") }}</h1>
-    <p class="text_clickOn">{{ $t("projectsPage.description") }}</p>
+    <h1 class="reveal-0">{{ $t("projectsPage.title") }}</h1>
+    <p class="text_clickOn reveal-0">{{ $t("projectsPage.description") }}</p>
     <span :key="reload" class="element_fixed"></span>
     <span :key="reload + 1" class="element_fixed2"></span>
     <div :key="swipeReload" class="swipe_element"></div>
@@ -34,6 +34,7 @@
 
 <script>
 import projetSlide from "~/components/projet/projetSlide.vue";
+import { reveal } from "@/store/function";
 export default {
   head() {
     return {
@@ -61,6 +62,7 @@ export default {
     };
   },
   mounted() {
+    reveal();
     this.projectsList(0, 4);
     window.addEventListener("resize", (event) => {
       this.windowSize = window.innerWidth;
