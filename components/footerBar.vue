@@ -29,6 +29,15 @@
           {{ $t("footer.contact") }}
           <a href="mailto:g.girardeaupro@sfr.fr">g.girardeaupro@sfr.fr</a>
         </li>
+        <li class="disable_stars">
+          <label for="scales">Disable Stars Animation</label>
+          <input
+            type="checkbox"
+            id="scales"
+            name="scales"
+            @change="animStarState"
+          />
+        </li>
       </ul>
     </div>
   </footer>
@@ -37,8 +46,22 @@
 <script>
 export default {
   data() {
-    return {};
+    return {
+      animStar: true,
+    };
+  },
+  methods: {
+    animStarState() {
+      this.animStar = !this.animStar;
+      this.$emit("hideStar", { toDO: this.animStar });
+    },
   },
   mounted() {},
 };
 </script>
+
+<style lang="scss" scoped>
+.disable_stars {
+  font-size: 16px;
+}
+</style>

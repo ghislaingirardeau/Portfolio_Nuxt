@@ -1,46 +1,48 @@
 <template>
   <div>
     <!-- Mettre les composants en format camel !!!! -->
-    <span class="light_flash"></span>
-    <span class="light_flash"></span>
-    <span class="light_flash"></span>
-    <span class="light_flash"></span>
-    <span class="light_flash"></span>
-    <span class="light_flash"></span>
-    <span class="light_flash"></span>
-    <span class="light_flash"></span>
-    <span class="light_flash"></span>
-    <span class="light_flash"></span>
-    <span class="light_flash"></span>
-    <span class="light_flash"></span>
-    <span class="light_flash"></span>
-    <span class="light_flash"></span>
-    <span class="light_flash"></span>
-    <span class="light_flash"></span>
-    <span class="light_flash"></span>
-    <span class="light_flash"></span>
-    <span class="light_flash"></span>
-    <span class="light_flash"></span>
-    <span class="light_flash"></span>
-    <span class="light_flash"></span>
-    <span class="light_flash"></span>
-    <span class="light_flash"></span>
-    <span class="light_flash"></span>
-    <span class="light_flash"></span>
-    <span class="light_flash"></span>
-    <span class="light_flash"></span>
-    <span class="light_flash"></span>
-    <span class="light_flash"></span>
-    <span class="light_flash"></span>
-    <span class="light_flash"></span>
-    <span class="light_flash"></span>
-    <span class="light_flash"></span>
-    <span class="light_flash"></span>
-    <span class="light_flash"></span>
+    <div v-show="showAnimStar">
+      <span class="light_flash"></span>
+      <span class="light_flash"></span>
+      <span class="light_flash"></span>
+      <span class="light_flash"></span>
+      <span class="light_flash"></span>
+      <span class="light_flash"></span>
+      <span class="light_flash"></span>
+      <span class="light_flash"></span>
+      <span class="light_flash"></span>
+      <span class="light_flash"></span>
+      <span class="light_flash"></span>
+      <span class="light_flash"></span>
+      <span class="light_flash"></span>
+      <span class="light_flash"></span>
+      <span class="light_flash"></span>
+      <span class="light_flash"></span>
+      <span class="light_flash"></span>
+      <span class="light_flash"></span>
+      <span class="light_flash"></span>
+      <span class="light_flash"></span>
+      <span class="light_flash"></span>
+      <span class="light_flash"></span>
+      <span class="light_flash"></span>
+      <span class="light_flash"></span>
+      <span class="light_flash"></span>
+      <span class="light_flash"></span>
+      <span class="light_flash"></span>
+      <span class="light_flash"></span>
+      <span class="light_flash"></span>
+      <span class="light_flash"></span>
+      <span class="light_flash"></span>
+      <span class="light_flash"></span>
+      <span class="light_flash"></span>
+      <span class="light_flash"></span>
+      <span class="light_flash"></span>
+      <span class="light_flash"></span>
+    </div>
     <navBar />
 
     <Nuxt />
-    <footerBar />
+    <footerBar @hideStar="starAnimState" />
   </div>
 </template>
 
@@ -74,12 +76,27 @@ export default {
       ],
     };
   },
+  data() {
+    return {
+      showAnimStar: true,
+    };
+  },
   mounted() {
     setTimeout(() => {
       this.animStar();
     }, 2200);
   },
   methods: {
+    starAnimState(payload) {
+      this.showAnimStar = payload.toDO;
+      console.log(payload.toDO);
+      if (payload.toDO) {
+        console.log(payload.toDO);
+        setTimeout(() => {
+          this.animStar();
+        }, 500);
+      }
+    },
     animStar() {
       const markers = document.getElementsByClassName("light_flash");
       const layoutHeight = parseInt(
@@ -130,7 +147,7 @@ export default {
             pseudoElement: "::before",
             delay: Math.random() * 6000,
             iterations: Infinity,
-            easing: "ease-in",
+            easing: "linear",
           }
         );
       }
