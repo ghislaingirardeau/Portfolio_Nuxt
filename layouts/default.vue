@@ -1,7 +1,44 @@
 <template>
   <div>
     <!-- Mettre les composants en format camel !!!! -->
+    <span class="light_flash"></span>
+    <span class="light_flash"></span>
+    <span class="light_flash"></span>
+    <span class="light_flash"></span>
+    <span class="light_flash"></span>
+    <span class="light_flash"></span>
+    <span class="light_flash"></span>
+    <span class="light_flash"></span>
+    <span class="light_flash"></span>
+    <span class="light_flash"></span>
+    <span class="light_flash"></span>
+    <span class="light_flash"></span>
+    <span class="light_flash"></span>
+    <span class="light_flash"></span>
+    <span class="light_flash"></span>
+    <span class="light_flash"></span>
+    <span class="light_flash"></span>
+    <span class="light_flash"></span>
+    <span class="light_flash"></span>
+    <span class="light_flash"></span>
+    <span class="light_flash"></span>
+    <span class="light_flash"></span>
+    <span class="light_flash"></span>
+    <span class="light_flash"></span>
+    <span class="light_flash"></span>
+    <span class="light_flash"></span>
+    <span class="light_flash"></span>
+    <span class="light_flash"></span>
+    <span class="light_flash"></span>
+    <span class="light_flash"></span>
+    <span class="light_flash"></span>
+    <span class="light_flash"></span>
+    <span class="light_flash"></span>
+    <span class="light_flash"></span>
+    <span class="light_flash"></span>
+    <span class="light_flash"></span>
     <navBar />
+
     <Nuxt />
     <footerBar />
   </div>
@@ -37,7 +74,100 @@ export default {
       ],
     };
   },
+  mounted() {
+    setTimeout(() => {
+      this.animStar();
+    }, 2200);
+  },
+  methods: {
+    animStar() {
+      const markers = document.getElementsByClassName("light_flash");
+      const layoutHeight = parseInt(
+        window.getComputedStyle(document.getElementById("__layout")).height
+      );
+
+      for (let index = 0; index < markers.length; index++) {
+        let integrer = Number.isInteger(index / 2);
+        let positionX = Math.random() * (window.innerWidth - 100);
+        let positionY = Math.random() * layoutHeight;
+        let randomX = Math.random() * 350; // max translate de 500
+        let randomY = Math.random() * 350; // max translate de 500
+        let getRandomX = () => {
+          if (positionX / window.innerWidth > 0.7) {
+            return `-${randomX}px`;
+          }
+          if (positionX / window.innerWidth < 0.3) {
+            return `${randomX}px`;
+          }
+          return `${integrer ? "-" : ""}${randomX}px`;
+        };
+        let getRandomY = () => {
+          if (positionY / layoutHeight > 0.7) {
+            return `-${randomY}px`;
+          }
+          if (positionY / layoutHeight < 0.3) {
+            return `${randomY}px`;
+          }
+          return `${integrer ? "-" : ""}${randomY}px`;
+        };
+        markers[index].style.setProperty(
+          "--light-width",
+          `${Math.random() * 6 + 1}px`
+        );
+        markers[index].style.setProperty("--light-positionX", `${positionX}px`);
+        markers[index].style.setProperty("--light-positionY", `${positionY}px`);
+        markers[index].animate(
+          [
+            { transform: `translate3d(0px, 0px, 0px)`, opacity: 0 },
+            { opacity: 0.8, offset: 0.9 },
+            {
+              transform: `translate3d(${getRandomX()}, ${getRandomY()}, 0px)`,
+              opacity: 0,
+            },
+          ],
+          {
+            duration: 10000,
+            pseudoElement: "::before",
+            delay: Math.random() * 6000,
+            iterations: Infinity,
+            easing: "ease-in",
+          }
+        );
+      }
+    },
+  },
 };
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+:root {
+  --light-width: 10px;
+  --light-positionX: 100px;
+  --light-positionY: 100px;
+}
+.light_flash {
+  z-index: 100;
+  position: absolute;
+  left: var(--light-positionX);
+  top: var(--light-positionY);
+  &::before {
+    position: absolute;
+    content: "";
+    opacity: 0;
+    width: var(--light-width);
+    height: var(--light-width);
+    border: 2px solid white;
+    border-radius: 15px;
+    background: white;
+    filter: blur(2px);
+  }
+}
+@keyframes opacity-change {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+</style>
