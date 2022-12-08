@@ -7,16 +7,25 @@
     <div class="container__etape">
       <article class="container__etape__block reveal-1">
         <h3>{{ $t("services.stepOne.h3") }}</h3>
-        <p v-html="$t('services.stepOne.description')"></p>
+        <div
+          v-html="$t('services.stepOne.description')"
+          class="container__etape--content"
+        ></div>
       </article>
       <article class="container__etape__block reveal-2">
         <h3>{{ $t("services.stepTwo.h3") }}</h3>
-        <p v-html="$t('services.stepTwo.description')"></p>
+        <div
+          v-html="$t('services.stepTwo.description')"
+          class="container__etape--content"
+        ></div>
       </article>
 
       <article class="container__etape__block reveal-3">
         <h3>{{ $t("services.stepThree.h3") }}</h3>
-        <p v-html="$t('services.stepThree.description')"></p>
+        <div
+          v-html="$t('services.stepThree.description')"
+          class="container__etape--content"
+        ></div>
       </article>
     </div>
 

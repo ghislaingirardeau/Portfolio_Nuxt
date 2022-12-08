@@ -1,41 +1,42 @@
 .page__service {
-    @include layout_page;
+  @include layout_page;
 
-    &--link {
-        color: $color-third;
-        text-decoration: none;
-        transition: all 0.3s ease;
-        font-size: 1.8rem;
-        &:hover {
-            text-shadow: 7px 20px black;
-        }
+  &--link {
+    color: $color-third;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 1.8rem;
+    &:hover {
+      text-shadow: 7px 20px black;
     }
+  }
 }
 
-.container__etape{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    
+.container__etape {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 
-    &__block{
-        width: 30%;
-        box-shadow: 5px 5px 5px $color-blue-mid;
-        margin-bottom: 30px;
-        padding-left: 5px;
+  &__block {
+    width: 30%;
+    box-shadow: 5px 5px 5px $color-blue-mid;
+    margin-bottom: 30px;
+    padding-left: 5px;
 
-        & > p {
-            text-align: left;
-        }
+    & > p {
+      text-align: left;
     }
+  }
+  &--content {
+    text-align: left;
+    padding-right: 3px;
+  }
 }
 
 @media screen and (max-width: 900px) {
-    .container__etape{
-        &__block{
-            width: 100%;
-            
-        }
+  .container__etape {
+    &__block {
+      width: 100%;
     }
-    
   }
+}
