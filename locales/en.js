@@ -23,6 +23,7 @@ export default {
   footer: {
     title: "Follow me on :",
     contact: "My email :",
+    animation: "Disable Stars Animation",
   },
   about: {
     h1: "More about me",
@@ -222,7 +223,7 @@ export default {
     title: "Find all project's descriptions",
     description:
       "Click on a projects to get more details: web development tools, features scoped expected...",
-    dateCreation: "Made in"
+    dateCreation: "Made in",
   },
   projectsIdPage: {
     description: "Details and objectives :",

@@ -16,7 +16,11 @@
         <div class="right">web</div>
       </div>
     </div>
-    <nav class="header__navBar" @click="spinLogo" :key="componentKey">
+    <nav
+      class="header__navBar switchLang__anim--opacity"
+      @click="spinLogo"
+      :key="componentKey"
+    >
       <NuxtLink :to="localePath('index')" class="header__navBar--font">{{
         $t("navBar.index")
       }}</NuxtLink>
@@ -31,7 +35,7 @@
       }}</NuxtLink>
     </nav>
 
-    <div class="header__lang" @click="toogleShow" :key="lang">
+    <div class="header__lang switchLang__anim--opacity" @click="toogleShow">
       <nuxt-link
         class="toogleLang"
         :to="switchLocalePath(lang)"
@@ -69,9 +73,20 @@ export default {
       this.lang = this.$i18n.localeCodes.find(
         (element) => element != this.$i18n.locale
       );
+      const navElt = document.getElementsByClassName(
+        "switchLang__anim--opacity"
+      );
+
+      for (const element of navElt) {
+        console.log(element);
+        element.animate([{ opacity: 0 }, { opacity: 1 }], {
+          duration: 500,
+          easing: "ease-in-out",
+        });
+      }
     },
   },
-  created() {
+  mounted() {
     this.toogleShow();
   },
 };

@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <div class="footer__layout">
+    <div class="footer__layout switchLang__anim--opacity">
       <ul>
         <li>
           {{ $t("footer.title") }}
@@ -30,11 +30,11 @@
           <a href="mailto:g.girardeaupro@sfr.fr">g.girardeaupro@sfr.fr</a>
         </li>
         <li class="disable_stars">
-          <label for="scales">Disable Stars Animation</label>
+          <label for="starsAnim">{{ $t("footer.animation") }}</label>
           <input
             type="checkbox"
-            id="scales"
-            name="scales"
+            id="starsAnim"
+            name="starsAnim"
             @change="animStarState"
           />
         </li>
@@ -60,8 +60,4 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-.disable_stars {
-  font-size: 16px;
-}
-</style>
+<style lang="scss" scoped></style>
