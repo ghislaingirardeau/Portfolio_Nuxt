@@ -10,7 +10,10 @@
     <p class="text_clickOn reveal-0">{{ $t("projectsPage.description") }}</p>
     <span :key="reload" class="element_fixed"></span>
     <span :key="reload + 1" class="element_fixed2"></span>
-    <div :key="swipeReload" class="swipe_element"></div>
+    <div class="swipe--text">
+      <span> &lt;--- swipe ---&gt;</span>
+    </div>
+    <!-- <div :key="swipeReload" class="swipe_element"></div> -->
 
     <button @click="goRight" class="btn__goback carrousel-ctrl-right">
       &gt;

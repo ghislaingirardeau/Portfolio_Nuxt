@@ -25,6 +25,10 @@
   height: 10px;
   background-color: red;
 }
+.swipe--text {
+  color: $color-secondary;
+  display: none;
+}
 .swipe_element {
   display: none;
   margin-top: 15px;
@@ -224,7 +228,10 @@
     transform: translateX(0px);
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1024px) {
+  .swipe--text {
+    display: inherit;
+  }
   .carrousel-ctrl-right {
     right: 0px;
     display: none;

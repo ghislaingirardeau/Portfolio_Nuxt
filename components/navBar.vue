@@ -78,7 +78,6 @@ export default {
       );
 
       for (const element of navElt) {
-        console.log(element);
         element.animate([{ opacity: 0 }, { opacity: 1 }], {
           duration: 500,
           easing: "ease-in-out",

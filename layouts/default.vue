@@ -81,39 +81,62 @@ export default {
       showAnimStar: true,
     };
   },
+  watch: {
+    $route(to, from) {
+      const disable = () => {
+        return new Promise((resolve, reject) => {
+          this.showAnimStar = false;
+          resolve(true);
+        });
+      };
+
+      if (from.fullPath === "/Apropos" || from.fullPath === "/en/about") {
+        disable().then(() => {
+          this.starAnimState({ toDO: true }, 200);
+        });
+      }
+      if (to.fullPath === "/Apropos" || to.fullPath === "/en/about") {
+        disable().then(() => {
+          this.starAnimState({ toDO: true }, 200);
+        });
+      }
+    },
+  },
   mounted() {
     setTimeout(() => {
       this.animStar();
     }, 2200);
   },
   methods: {
-    starAnimState(payload) {
+    starAnimState(payload, time = 500) {
+
       this.showAnimStar = payload.toDO;
-      console.log(payload.toDO);
       if (payload.toDO) {
-        console.log(payload.toDO);
         setTimeout(() => {
           this.animStar();
-        }, 500);
+        }, time);
       }
     },
     animStar() {
-      const markers = document.getElementsByClassName("light_flash");
+      const starsLight = document.getElementsByClassName("light_flash");
       const layoutHeight = parseInt(
         window.getComputedStyle(document.getElementById("__layout")).height
       );
+      const layoutWidth = parseInt(
+        window.getComputedStyle(document.getElementById("__layout")).width
+      );
 
-      for (let index = 0; index < markers.length; index++) {
+      for (let index = 0; index < starsLight.length; index++) {
         let integrer = Number.isInteger(index / 2);
-        let positionX = Math.random() * (window.innerWidth - 100);
-        let positionY = Math.random() * layoutHeight;
-        let randomX = Math.random() * 350; // max translate de 500
-        let randomY = Math.random() * 350; // max translate de 500
+        let positionX = Math.random() * layoutWidth; // position absolute of star
+        let positionY = Math.random() * layoutHeight; // position absolute of star
+        let randomX = Math.random() * layoutWidth * 0.3; // max translate de 200 mobile
+        let randomY = Math.random() * layoutHeight * 0.3; // max translate de 200 mobile
         let getRandomX = () => {
-          if (positionX / window.innerWidth > 0.7) {
+          if (positionX / layoutWidth > 0.7) {
             return `-${randomX}px`;
           }
-          if (positionX / window.innerWidth < 0.3) {
+          if (positionX / layoutWidth < 0.3) {
             return `${randomX}px`;
           }
           return `${integrer ? "-" : ""}${randomX}px`;
@@ -127,13 +150,19 @@ export default {
           }
           return `${integrer ? "-" : ""}${randomY}px`;
         };
-        markers[index].style.setProperty(
+        starsLight[index].style.setProperty(
           "--light-width",
           `${Math.random() * 6 + 1}px`
         );
-        markers[index].style.setProperty("--light-positionX", `${positionX}px`);
-        markers[index].style.setProperty("--light-positionY", `${positionY}px`);
-        markers[index].animate(
+        starsLight[index].style.setProperty(
+          "--light-positionX",
+          `${positionX}px`
+        );
+        starsLight[index].style.setProperty(
+          "--light-positionY",
+          `${positionY}px`
+        );
+        starsLight[index].animate(
           [
             { transform: `translate3d(0px, 0px, 0px)`, opacity: 0 },
             { opacity: 0.8, offset: 0.9 },
