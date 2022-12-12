@@ -67,7 +67,7 @@ export default {
         ...i18nHead.meta,
       ],
       link: [
-        { rel: "icon", type: "image/PNG", href: "/favicon.PNG" },
+        { rel: "icon", type: "image/PNG", href: "/favicon.png" },
         {
           rel: "stylesheet",
           href: "https://fonts.googleapis.com/icon?family=Material+Icons",
@@ -109,7 +109,6 @@ export default {
   },
   methods: {
     starAnimState(payload, time = 500) {
-
       this.showAnimStar = payload.toDO;
       if (payload.toDO) {
         setTimeout(() => {

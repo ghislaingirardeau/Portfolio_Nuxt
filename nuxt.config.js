@@ -55,13 +55,11 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: ["@nuxtjs/google-analytics"],
-  googleAnalytics: {
-    id: process.env.ANALYTICS_ID, // Use as fallback if no runtime config is provided
-  },
-  publicRuntimeConfig: {
-    googleAnalytics: {
-      id: process.env.ANALYTICS_ID,
-    },
+  /* googleAnalytics: {
+    id: process.env.ANALYTICS_ID,
+  }, */
+  env: {
+    googleAnalyticsId: process.env.ANALYTICS_ID,
   },
 
   modules: ["nuxt-i18n", "@nuxtjs/robots", "@nuxtjs/sitemap"],
