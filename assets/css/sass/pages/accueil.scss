@@ -1,163 +1,172 @@
-.block__presentation{
-	display: flex;
-	flex-wrap: nowrap;
-	perspective: 400px;
-	perspective-origin: 50% 50px;
+.block__presentation {
+  display: flex;
+  flex-wrap: nowrap;
+  perspective: 400px;
+  perspective-origin: 50% 50px;
 }
-.block__moi{
-	width: 50%;
-    text-align: left;
-    padding-top: 9%;
-	position: relative;
-	& > h1 {
-		font-size: 3rem;
-		transform: rotateZ(47deg);
-		padding: 10px 0px 10px 20%;
-		height: 180px;
-		&:after{
-			position: absolute;
-			content: '';
-			top: 0px;
-			width: 85px;
-			height: 5px;
-			border: 2px solid white;
-			border-radius: 15px;
-			background: white;
-			filter: blur(2px);
-			opacity: 0;
-			animation: loadBorderBlockMoi .6s .1s ease forwards;
-			animation-iteration-count: 3;
-		}
+.block__moi {
+  width: 50%;
+  text-align: left;
+  padding-top: 9%;
+  position: relative;
+  & > h1 {
+    font-size: 3rem;
+    transform: rotateZ(47deg);
+    padding: 10px 0px 10px 20%;
+    height: 180px;
+    &:after {
+      position: absolute;
+      content: "";
+      top: 0px;
+      width: 85px;
+      height: 5px;
+      border: 2px solid white;
+      border-radius: 15px;
+      background: white;
+      filter: blur(2px);
+      opacity: 0;
+      animation: loadBorderBlockMoi 0.6s 0.1s ease forwards;
+      animation-iteration-count: 3;
+    }
+  }
+  &--animation1 {
+    &:after {
+      opacity: 0;
+      position: absolute;
+      content: attr(title-value1);
+      top: 0px;
+      animation: loadingMoi 0.5s 0.1s ease-out forwards;
+    }
+    &:before {
+      opacity: 0;
+      position: absolute;
+      content: attr(title-value1);
+      top: 0px;
+      color: black;
+      animation: loadingMoiShadow 0.3s 0.2s ease-out forwards;
+    }
+  }
+  &--animation2 {
+    &:after {
+      opacity: 0;
+      position: absolute;
+      content: attr(title-value2);
+      top: 70px;
+      animation: loadingMoi 0.5s 0.7s ease-out forwards;
+    }
 
-	}
-	&--animation1{
-		
-		&:after {
-			opacity: 0;
-			position: absolute;
-			content: attr(title-value1);
-			top: 0px;
-			animation: loadingMoi 0.5s .1s ease-out forwards;
-		}
-		&:before {
-			opacity: 0;
-			position: absolute;
-			content: attr(title-value1);
-			top: 0px;
-			color: black;
-			animation: loadingMoiShadow 0.3s 0.2s ease-out forwards;
-		}
-	}
-	&--animation2{		
-		&:after {
-			opacity: 0;
-			position: absolute;
-			content: attr(title-value2);
-			top: 70px;
-			animation: loadingMoi 0.5s .7s ease-out forwards;
-		}
-		
-		&:before {
-			opacity: 0;
-			position: absolute;
-			content: attr(title-value2);
-			top: 70px;
-			color: black;
-			animation: loadingMoiShadow 0.3s .8s ease-out forwards;
-		}	}
-	&--animation3{		
-		&:after {
-			opacity: 0;
-			position: absolute;
-			content: attr(title-value3);
-			top: 140px;
-			animation: loadingMoi 0.5s 1.3s ease-out forwards;
-		}
-		
-		&:before {
-			opacity: 0;
-			position: absolute;
-			content: attr(title-value3);
-			top: 140px;
-			color: black;
-			animation: loadingMoiShadow 0.3s 1.4s ease-out forwards;
-		}	}
+    &:before {
+      opacity: 0;
+      position: absolute;
+      content: attr(title-value2);
+      top: 70px;
+      color: black;
+      animation: loadingMoiShadow 0.3s 0.8s ease-out forwards;
+    }
+  }
+  &--animation3 {
+    &:after {
+      opacity: 0;
+      position: absolute;
+      content: attr(title-value3);
+      top: 140px;
+      animation: loadingMoi 0.5s 1.3s ease-out forwards;
+    }
+
+    &:before {
+      opacity: 0;
+      position: absolute;
+      content: attr(title-value3);
+      top: 140px;
+      color: black;
+      animation: loadingMoiShadow 0.3s 1.4s ease-out forwards;
+    }
+  }
 }
 
-.block__cible{
-    text-align: left;
-	width: 50%;
-    font-size: $accueil;
-	padding-left: 10%;
-	
-	&__service {
-		position: relative;
-		animation: animBorder 1s 2.1s ease both;
-		box-shadow: 5px 5px 5px $color-blue-mid;
-		text-shadow: -2px 2px black;		
-		padding: 5px;
-		margin: 20px 0 20px 0;
-		&:before{
-			position: absolute;
-			content: '';
-			width: 155px;
-			height: 5px;
-			border: 2px solid white;
-			border-radius: 15px;
-			background: white;
-			filter: blur(2px);
-			opacity: 0;
-			animation: loadBorderBottom 1s 2.1s cubic-bezier(.56,.12,.04,1);
-		}
-	}
-	&__projet {
-		position: relative;
-		box-shadow: 5px 5px 5px $color-blue-mid;
-		animation: animBorder 1s 3.2s ease both;
-		text-shadow: -2px 2px black;		
-		padding: 5px;
-		margin: 40px 0 20px 0;
-		&:before{
-			position: absolute;
-			content: '';
-			width: 155px;
-			height: 5px;
-			border: 2px solid white;
-			border-radius: 15px;
-			background: white;
-			filter: blur(2px);
-			opacity: 0;
-			animation: loadBorderBottom 1s 3.2s cubic-bezier(.56,.12,.04,1);
-		}
+.block__cible {
+  text-align: left;
+  width: 50%;
+  font-size: $accueil;
+  padding-left: 10%;
 
-	}
+  &__service {
+    position: relative;
+    animation: animBorder 1s 2.1s ease both;
+    box-shadow: 5px 5px 5px $color-blue-mid;
+    text-shadow: -2px 2px black;
+    padding: 5px;
+    margin: 20px 0 20px 0;
+    transition: box-shadow 0.2s linear;
+    &:before {
+      position: absolute;
+      content: "";
+      width: 155px;
+      height: 5px;
+      border: 2px solid white;
+      border-radius: 15px;
+      background: white;
+      filter: blur(2px);
+      opacity: 0;
+      animation: loadBorderBottom 1s 2.1s cubic-bezier(0.56, 0.12, 0.04, 1);
+    }
+    &:hover {
+      cursor: pointer;
+      box-shadow: 5px 5px 5px $color-blue-mid, -5px -5px 5px $color-blue-mid;
+    }
+  }
+  &__projet {
+    position: relative;
+    box-shadow: 5px 5px 5px $color-blue-mid;
+    animation: animBorder 1s 3.2s ease both;
+    text-shadow: -2px 2px black;
+    padding: 5px;
+    margin: 40px 0 20px 0;
+    transition: box-shadow 0.2s linear;
+    &:before {
+      position: absolute;
+      content: "";
+      width: 155px;
+      height: 5px;
+      border: 2px solid white;
+      border-radius: 15px;
+      background: white;
+      filter: blur(2px);
+      opacity: 0;
+      animation: loadBorderBottom 1s 3.2s cubic-bezier(0.56, 0.12, 0.04, 1);
+    }
+    &:hover {
+      cursor: pointer;
+      box-shadow: 5px 5px 5px $color-blue-mid, -5px -5px 5px $color-blue-mid;
+    }
+  }
 }
 
 @media screen and (max-width: 1080px) {
-	.block__presentation{
-		flex-wrap: wrap-reverse;
-	}
-	.block__moi{
-		width: 80%;
-		margin: auto;
-	}
-	.block__cible{
-		width: 95%;
-		padding-left: 0%;
-		text-align: center;
-	}
+  .block__presentation {
+    flex-wrap: wrap-reverse;
+  }
+  .block__moi {
+    width: 80%;
+    margin: auto;
+  }
+  .block__cible {
+    width: 95%;
+    padding-left: 0%;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 500px) {
-	.block__moi{
-		padding-bottom: 10%;
-		& > h1 {
-			font-size: 1.8rem;
-		}
-	}
-	.block__cible{
-		margin-top: -30px;
-		/* &__service {
+  .block__moi {
+    padding-bottom: 10%;
+    & > h1 {
+      font-size: 1.8rem;
+    }
+  }
+  .block__cible {
+    margin-top: -30px;
+    /* &__service {
 			&:before{
 				animation: none;
 			}
@@ -167,50 +176,50 @@
 				animation: none;
 			}
 		} */
-	}
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
-	.block__moi{
-		& > h1 {
-			&:after{
-				animation: none;
-			}
-		}
-		&--animation1{
-			opacity: 1;
-			animation: none;
-		}
-		&--animation2{
-			opacity: 1;
-			animation: none;
-		}
-		&--animation3{
-			opacity: 1;
-			animation: none;
-		}
-	}
-	
-	.block__cible{
-		& > h1 {
-			&:after{
-				animation: none;
-			}
-			&:before{
-				animation: none;
-			}
-		}
-		&--animation1{
-			opacity: 1;
-			animation: none;
-		}
-		&--animation2{
-			opacity: 1;
-			animation: none;
-		}
-		&--animation3{
-			opacity: 1;
-			animation: none;
-		}
-	}
+  .block__moi {
+    & > h1 {
+      &:after {
+        animation: none;
+      }
+    }
+    &--animation1 {
+      opacity: 1;
+      animation: none;
+    }
+    &--animation2 {
+      opacity: 1;
+      animation: none;
+    }
+    &--animation3 {
+      opacity: 1;
+      animation: none;
+    }
+  }
+
+  .block__cible {
+    & > h1 {
+      &:after {
+        animation: none;
+      }
+      &:before {
+        animation: none;
+      }
+    }
+    &--animation1 {
+      opacity: 1;
+      animation: none;
+    }
+    &--animation2 {
+      opacity: 1;
+      animation: none;
+    }
+    &--animation3 {
+      opacity: 1;
+      animation: none;
+    }
+  }
 }

@@ -2,7 +2,7 @@
   <main class="container">
     <article class="block__presentation">
       <div class="block__cible">
-        <article class="block__cible__service">
+        <article class="block__cible__service" @click="goToRoute('service')">
           <h2>{{ $t("index.offer.hService") }}</h2>
           <p
             class="block__cible--font"
@@ -10,7 +10,7 @@
           ></p>
         </article>
 
-        <article class="block__cible__projet">
+        <article class="block__cible__projet" @click="goToRoute('proNew')">
           <h2>{{ $t("index.offer.hWork") }}</h2>
           <p class="block__cible--font" v-html="$t('index.offer.textWork')"></p>
         </article>
@@ -56,6 +56,9 @@ export default {
   methods: {
     doThis() {
       this.reloadMe++;
+    },
+    goToRoute(uri) {
+      this.$router.push(this.localePath({ name: uri }));
     },
   },
 };
