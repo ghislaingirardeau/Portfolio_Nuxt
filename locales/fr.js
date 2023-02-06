@@ -71,9 +71,19 @@ export default {
   },
   projects: [
     {
+      id: "11",
+      date: "janvier 2023",
+      name: "Mobile App météo",
+      summary: "Découverte de React Native, via une App Météo",
+      description:
+        "Découverte et intégration de composants React Native & Expo, mise en place d'une navigation, récupération de données API. Exploration d'autres composants: camera, store files, pickers, env, touche event, animation...",
+      tech: "React native, Expo Go, Ionicons, AsyncStorage, GitHub",
+      video: "reactNative.mp4",
+    },
+    {
       id: "10",
       date: "juillet 2022",
-      name: "Appli Collecte de données",
+      name: "Web App - Collecte de données",
       summary:
         "Création d'une application de collecte et de traitement de données",
       description:
@@ -89,7 +99,7 @@ export default {
     {
       id: "9",
       date: "mai 2022",
-      name: "Site E-commerce multi langues",
+      name: "E-commerce multi langues",
       summary: "Modèle d'un site e-commerce multi langues",
       description:
         "Comprendre comment intégré une base de données dynamique en fonction de la langue, création d'une page panier avec simulation de paiement via l'API Stripe, gérer la convertion de devise",
@@ -99,7 +109,7 @@ export default {
     {
       id: "8",
       date: "janvier 2022",
-      name: "Cartographie App",
+      name: "PWA - Cartographie",
       summary: "Création d'une application de mapping pour mobile",
       description:
         "Développement d'un outil d'aide à la cartographie pour une chercheuse en sociologie. Enregistrer une position, suivre ma position, créer des marqueurs personnalisable, enregistrer et exporter les données.",

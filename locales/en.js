@@ -70,9 +70,19 @@ export default {
   },
   projects: [
     {
+      id: "11",
+      date: "january 2023",
+      name: "Weather Mobile App",
+      summary: "Dicsover & Explore React Native",
+      description:
+        "React Native & Expo components exploring, set up a React navigation, fetch API data. Play with extra components: camera, store files, pickers, env, touche event, animation...",
+      tech: "React native, Expo Go, Ionicons, AsyncStorage, GitHub",
+      video: "reactNative.mp4",
+    },
+    {
       id: "10",
       date: "july 2022",
-      name: "Data collection app",
+      name: "Web App - Data collection app",
       summary: "Web app to collect and process datas",
       description:
         "Loan simulator and payment table, datas forms template to collect the datas, the admin page to visualize the collections and view the datas tables",
@@ -97,7 +107,7 @@ export default {
     {
       id: "8",
       date: "january 2022",
-      name: "App Cartography",
+      name: "PWA - Cartographie",
       summary: "Mobile free Mapping App",
       description:
         "Build a mapping tool for a sociologist researcher. Watch my position and save it, track me, add or draw a location. Custom markers, edit datas, save and export Excel data.",

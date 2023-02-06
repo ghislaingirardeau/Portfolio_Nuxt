@@ -15,12 +15,29 @@
         <p>{{ detailProject.tech }}</p>
 
         <h2>{{ $t("projectsIdPage.gallery") }}</h2>
+
         <div v-if="detailProject.loader" class="block_projet--loader">
           <p>{{ $t("projectsIdPage.loader") }}</p>
           <loaderOhmyfood />
         </div>
 
-        <carousel :ImageCount="slides.length" :ImageArray="slides">
+        <video
+          v-if="detailProject.video"
+          controls
+          controlsList="nofullscreen nodownload noremoteplayback noplaybackrate"
+          width="300"
+        >
+          <source
+            :src="require(`~/assets/images/${detailProject.video}`)"
+            type="video/mp4"
+          />
+        </video>
+
+        <carousel
+          v-if="detailProject.imageURL"
+          :ImageCount="slides.length"
+          :ImageArray="slides"
+        >
           <!-- envoie le nombre d'image en props -->
           <carousel-slide
             v-for="(item, i) in slides"

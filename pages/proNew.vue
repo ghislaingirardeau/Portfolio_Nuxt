@@ -136,7 +136,7 @@ export default {
         return (this.list = this.$t("projects").slice(4, 8));
       }
       if (this.slide === 2) {
-        return (this.list = this.$t("projects").slice(8, 10));
+        return (this.list = this.$t("projects").slice(8, 12));
       }
     },
     goRight() {
