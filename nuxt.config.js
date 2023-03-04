@@ -5,27 +5,9 @@ export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: true,
   /* test sans sinon passer en ./ pour le deploy static */
-  router: {
-    /* base: './',  */
-    /* mode: 'hash' */
-  },
 
   // Target: https://go.nuxtjs.dev/config-target
   target: "static",
-
-  generate: {
-    // pour un crawling plus aisé des bots
-    routes: [
-      "/projet/1",
-      "/projet/2",
-      "/projet/3",
-      "/projet/4",
-      "/projet/5",
-      "/projet/6",
-      "/projet/7",
-      "/projet/8",
-    ],
-  },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   // head envoyé comme fonction dans le layout
