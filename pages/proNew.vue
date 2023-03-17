@@ -110,13 +110,13 @@ export default {
       const touchLength = $event.changedTouches[0].clientX - this.touchBeg;
       if (
         $event.changedTouches[0].clientX > this.touchBeg &&
-        touchLength > 20
+        touchLength > 50
       ) {
         return this.goRight();
       }
       if (
         $event.changedTouches[0].clientX < this.touchBeg &&
-        touchLength < -20
+        touchLength < -50
       ) {
         return this.goLeft();
       }
