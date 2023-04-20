@@ -17,25 +17,20 @@
       </div>
 
       <div class="block__moi" :key="reloadMe">
-        <h1>
-          <span style="display: none"> titre </span>
-          <span
-            class="block__moi--animation1"
-            :title-value1="$t('index.me.p1')"
-          ></span>
+        <h1 v-if="$i18n.locale === 'en'">
+          <span class="block__moi--animation-en1"></span>
           <br />
-          <span
-            class="block__moi--animation2"
-            :title-value2="$t('index.me.p2')"
-          ></span
-          ><br />
-          <span
-            class="block__moi--animation3"
-            :title-value3="$t('index.me.p3')"
-            @mouseleave="doThis"
-          ></span>
+          <span class="block__moi--animation-en2"></span><br />
+          <span class="block__moi--animation-en3"></span>
+        </h1>
+        <h1 v-else>
+          <span class="block__moi--animation-fr1"></span>
+          <br />
+          <span class="block__moi--animation-fr2"></span><br />
+          <span class="block__moi--animation-fr3"></span>
         </h1>
       </div>
+        
     </article>
   </main>
 </template>
@@ -49,14 +44,11 @@ export default {
     };
   },
   mounted() {
-    /* setInterval(() => {
-      this.render++;
-    }, 35000); */
+    setInterval(() => {
+      this.reloadMe++;
+    }, 15000);
   },
   methods: {
-    doThis() {
-      this.reloadMe++;
-    },
     goToRoute(uri) {
       this.$router.push(this.localePath({ name: uri }));
     },

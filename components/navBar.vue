@@ -5,7 +5,7 @@
       <div
         class="cube"
         @click="spinLogo"
-        :key="componentKey"
+        :key="cubeRender"
         :style="{ animation: animCube }"
       >
         <div class="front">g</div>
@@ -16,11 +16,7 @@
         <div class="right">web</div>
       </div>
     </div>
-    <nav
-      class="header__navBar switchLang__anim--opacity"
-      @click="spinLogo"
-      :key="componentKey"
-    >
+    <nav class="header__navBar switchLang__anim--opacity" @click="spinLogo">
       <NuxtLink :to="localePath('index')" class="header__navBar--font">{{
         $t("navBar.index")
       }}</NuxtLink>
@@ -58,7 +54,7 @@
 export default {
   data() {
     return {
-      componentKey: 0 /* pour faire un re-render du cube avec :key */,
+      cubeRender: 0 /* pour faire un re-render du cube avec :key */,
       animCube: "spin 7s .3s linear" /* anime par default au load */,
       lang: "en",
     };
@@ -67,7 +63,7 @@ export default {
     spinLogo() {
       let time = 2 + Math.floor(Math.random() * 10) + "s";
       this.animCube = "spin " + time + " linear ";
-      this.componentKey += 1; /* pour faire un re-render du cube */
+      this.cubeRender++; /* pour faire un re-render du cube */
     },
     toogleShow() {
       this.lang = this.$i18n.localeCodes.find(
@@ -87,6 +83,9 @@ export default {
   },
   mounted() {
     this.toogleShow();
+    setInterval(() => {
+      this.cubeRender++;
+    }, 15000);
   },
 };
 </script>

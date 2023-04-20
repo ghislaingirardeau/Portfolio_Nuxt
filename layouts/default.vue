@@ -151,7 +151,7 @@ export default {
         };
         starsLight[index].style.setProperty(
           "--light-width",
-          `${Math.random() * 6 + 1}px`
+          `${Math.random() + 1}px`
         );
         starsLight[index].style.setProperty(
           "--light-positionX",
