@@ -71,6 +71,24 @@ export default {
   },
   projects: [
     {
+      id: "12",
+      date: "juin 2023",
+      name: "Mon Vocabulaire en carte",
+      summary: "Créer une application web avec PWA, Typescript & Nuxt 3",
+      description:
+        "App permettant de traduire des mots ou expressions mais aussi de les organiser et archiver sous forme de carte. L'application permet de réécouter 'mon vocabulaire' dans la langue choisie à différentes vitesses et offre une aide à la prononciation pour certaine langue comme le Khmer.",
+      tech: "Typescript, Nuxt 3, PWA, i18n, Firebase GitHub",
+      imageURL: [
+        "carte_sample.png",
+        "carte_account.png",
+        "carte_options.png",
+        "carte_tuto1.png",
+        "carte_tuto2.png",
+        "carte_tuto3.png",
+      ],
+      link: "https://my-flashcard-lang.netlify.app",
+    },
+    {
       id: "11",
       date: "janvier 2023",
       name: "Mobile App météo",
@@ -201,7 +219,7 @@ export default {
       loader: "true",
       link: "https://ghislaingirardeau.github.io/GirardeauGhislain_3_13012021/index.html",
     },
-    {
+    /* {
       id: "3",
       date: "février 2021",
       name: "La chouette agence",
@@ -216,8 +234,8 @@ export default {
         "chouette_agence_responsive.PNG",
       ],
       link: "https://ghislaingirardeau.github.io/GirardeauGhislain_4_02022021/index.html",
-    },
-    {
+    }, */
+    /* {
       id: "5",
       date: "mars 2021",
       name: "So Peckoko",
@@ -231,7 +249,7 @@ export default {
         "so_peckoko_create.PNG",
         "so_peckoko_CRUD.PNG",
       ],
-    },
+    }, */
   ],
   projectsPage: {
     title: "Découvrez toutes mes réalisations",

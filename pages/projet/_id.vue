@@ -45,11 +45,14 @@
             :numImg="i"
           >
             <!-- envoie index de l'image a afficher en props -->
-            <img
-              :src="require(`~/assets/images/${item}`)"
-              :alt="detailProject.name"
-              class="carousel--img"
-            />
+            <div class="carousel_slide">
+              <img
+                :src="require(`~/assets/images/${item}`)"
+                :alt="detailProject.name"
+                class="carousel--img"
+              />
+            </div>
+
             <!-- passe la src en dynamique avec item defined -->
           </carousel-slide>
         </carousel>
