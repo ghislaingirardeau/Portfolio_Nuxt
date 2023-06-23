@@ -60,20 +60,22 @@
     font-size: 35px;
     color: white;
     padding: 3px;
-    animation: logoSettings 1s 0.3s linear 1;
+    opacity: 0;
+    animation: settingIconAnimation 1s 0.3s linear 1;
   }
   &::before {
     position: absolute;
     top: 14px;
     left: 25px;
     font-family: "Material Icons";
-    transform: rotateZ(25deg);
     content: "settings";
     --color: #55f2a6;
     font-size: 35px;
     color: white;
     padding: 3px;
-    animation: logoSettings 1s 0.3s linear 1 reverse;
+    transform: rotateZ(25deg);
+    opacity: 0;
+    animation: settingIconAnimationB 1s 0.3s linear 1 reverse;
   }
 }
 .element_fixed2 {
@@ -91,7 +93,8 @@
     font-size: 35px;
     color: white;
     padding: 3px;
-    animation: logoSettings 1s 0.3s linear 1;
+    opacity: 0;
+    animation: settingIconAnimation 1s 0.3s linear 1;
   }
   &::before {
     position: absolute;
@@ -149,10 +152,26 @@
   transform: rotateY(-45deg) translate3d(150px, 0, 30px);
 }
 
-@keyframes logoSettings {
+@keyframes settingIconAnimation {
   0% {
     transform: rotateZ(0deg);
     filter: drop-shadow(0 0 2px var(--color));
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotateZ(var(--direction));
+    filter: drop-shadow(0 0 2px var(--color));
+  }
+}
+
+@keyframes settingIconAnimationB {
+  0% {
+    filter: drop-shadow(0 0 2px var(--color));
+  }
+  50% {
+    opacity: 1;
   }
   100% {
     transform: rotateZ(var(--direction));
