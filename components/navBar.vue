@@ -55,14 +55,14 @@ export default {
   data() {
     return {
       cubeRender: 0 /* pour faire un re-render du cube avec :key */,
-      animCube: "spin 7s .3s linear" /* anime par default au load */,
+      animCube: "spin 4s linear" /* anime par default au load */,
       lang: "en",
     };
   },
   methods: {
     spinLogo() {
-      let time = 2 + Math.floor(Math.random() * 10) + "s";
-      this.animCube = "spin " + time + " linear ";
+      /* let time = 2 + Math.floor(Math.random() * 10) + "s";
+      this.animCube = "spin " + time + " linear "; */
       this.cubeRender++; /* pour faire un re-render du cube */
     },
     toogleShow() {
@@ -83,9 +83,9 @@ export default {
   },
   mounted() {
     this.toogleShow();
-    setInterval(() => {
+    /* setInterval(() => {
       this.cubeRender++;
-    }, 15000);
+    }, 15000); */
   },
 };
 </script>
