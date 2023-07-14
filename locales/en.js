@@ -23,7 +23,7 @@ export default {
   footer: {
     title: "Follow me on :",
     contact: "My email :",
-    animation: "Disable Stars Animation",
+    animation: "Disable Animation",
   },
   about: {
     h1: "More about me",
@@ -31,25 +31,25 @@ export default {
     h2commit: "My work commitment...",
     personal: {
       h3: "...Personally",
-      text: "After more than 10 years working as a manager of international sport brand (Intersport), I decided to realize my childhood dream to explore the world. The two years of this exciting and rich adventure have allowed me to strengthen certain things that I value most those are: being independent, open-minded, curious, and respect. Yearning to continue exploring the World, I decided to attend six months of training to be a web developer. As a sports practitioner and a web developer, I'm eager to work on any interesting projects that I can bring about this intersection of my skills and knowledge (sport and web development).",
+      text: "After more than 10 years working as a manager for an international sports brand (Intersport), I decided to fulfil my childhood dream of discovering the world. The two years of this exciting and rich adventure have allowed me to strengthen certain things that I value most: being independent, open-minded, curious and respectful. Longing to continue exploring the world, I decided to take part in a six-month training course to become a web developer. As an athlete and a web developer, I'm eager to work on any interesting projects that I can bring to this intersection of my skills and knowledge (sports and web development).",
     },
     professionaly: {
       h3: "...Professionally",
-      id1: "Freelancer, I'm self-employed since june 2021 as a web developer : I realized this e-portfolio via Vue et Nuxt Js, 2 js framework that I particularly like to work with !",
-      id2: "OPEN CLASSROOM : attended intensive six months training as a Web developer. AGILE methods practitioner, all my training come from real-work projects. These projects were approved and assessed by a tutor, a professor and a jury committee composed by professional web developers. I am used to organize my work autonomously regarding to the project's deadline, which is defined by customers.",
+      id1: "Freelancer, I'm self-employed since June 2021 as a web developer : I realised this e-portfolio using Vue and Nuxt Js, 2 js frameworks that I particularly like to work with !",
+      id2: "OPEN CLASSROOM: attended six months intensive training as a web developer. As a practitioner of the AGILE method, all my training came from real work projects. These projects were approved and evaluated by a tutor, a professor and a jury of professional web developers. I am used to organising my work autonomously in relation to the project deadline set by the client.",
     },
     willingness: {
-      id1: "Because digitalisation can has an impact on the environment... I would like to work on projects, which share my vision of being ecological.",
-      id2: "Because in a fast and dematerialized world, where the personal data are being exposed, the data protection is at stake... Be trustful and respectful are the main values for a confident relationship in order to warranty customer data security.",
-      id3: "Because technology also ease our daily life through none physcial connection... I like to keep in mind, there's always human behind. Made clear, fair, constructive trade are the core values of my work. ",
-      id4: "Because being a freelancer means to be autonomous, responsible, and organized... Plan my work, have clear schedules, put deadlines report and present regularly the forward of the project are my work's commitment.",
+      id1: "Because digitalisation can have an impact on the environment... I would like to work on projects, that share my vision of being ecological.",
+      id2: "Because in a fast and dematerialised world, where the personal data are being exposed, the data protection is at stake... Trust and respect are the main values for a fair relationship to guarantee the security of the customer's data.",
+      id3: "Because technology also makes our daily lives easier, without any physical connection... I like to remember that there's always a human being behind it. Clear, fair and constructive dealings are the core values of my work.",
+      id4: "Because being a freelancer means being autonomous, responsible and organised... Planning my work, having clear schedules, setting deadlines, reporting and regularly presenting the progress of the project are the commitments of my work.",
     },
   },
   services: {
     header: {
       h1: "Be at your side for your web projects",
-      h2: "Free advise until the project contracts are signed...",
-      p: "Each steps are made through a web meeting (30 to 60 min) to discuss about your project",
+      h2: "Free advice until the project contracts are signed...",
+      p: "Each steps is made through a web meeting (30 to 60 min) to discuss about your project",
     },
     stepOne: {
       h3: "Step 1",
@@ -73,9 +73,9 @@ export default {
       id: "12",
       date: "juin 2023",
       name: "Mon Vocabulaire en carte",
-      summary: "Create a web application with PWA, Typescript & Nuxt 3",
+      summary: "Building a web application with PWA, Typescript & Nuxt 3",
       description:
-        "App allowing to translate words or expressions but also to organize and archive them in the form of a card. The application allows you to listen to 'my vocabulary' in the chosen language at different speeds and offers pronunciation assistance for certain languages such as Khmer.",
+        "An application that allows you to translate words or phrases, but also to organise and archive them in the form of a card. The application allows you to listen to 'my vocabulary' in the chosen language at different speeds and offers pronunciation help for certain languages such as Khmer.",
       tech: "Typescript, Nuxt 3, PWA, i18n, Firebase GitHub",
       imageURL: [
         "carte_sample.png",
@@ -93,7 +93,7 @@ export default {
       name: "Weather Mobile App",
       summary: "Dicsover & Explore React Native",
       description:
-        "React Native & Expo components exploring, set up a React navigation, fetch API data. Play with extra components: camera, store files, pickers, env, touche event, animation...",
+        "Explore React Native & Expo components, set up a React navigation, get API data. Play with additional components: camera, save files, picker, env, touch event, animation...",
       tech: "React native, Expo Go, Ionicons, AsyncStorage, GitHub",
       video: "reactNative.mp4",
     },
@@ -101,9 +101,9 @@ export default {
       id: "10",
       date: "july 2022",
       name: "Web App - Data collection app",
-      summary: "Web app to collect and process datas",
+      summary: "Web application for data collection and processing",
       description:
-        "Loan simulator and payment table, datas forms template to collect the datas, the admin page to visualize the collections and view the datas tables",
+        "Loan simulator and payment table, data forms template to collect the data, the admin page to visualise the collections and view the data tables.",
       tech: "Nuxt, vuetify, firebase auth & store, moment JS, chart JS, notification, export to excel, netlify, GitHub",
       imageURL: [
         "community_tool1.png",
@@ -118,7 +118,7 @@ export default {
       name: "Multi languages e-commerce website",
       summary: "E-commerce website template",
       description:
-        "Understand how to integrate a dynamic database related to the user language, create a dynamic cart table summary and add an API Stripe payment simulation, currency conversion feature",
+        "Understand how to integrate a dynamic database related to the user language, create a dynamic shopping table summary and add an API Stripe payment simulation, currency conversion feature",
       tech: "Node js, Express, Axios, Vue js, Nuxt js, i18n, Vuetify, Stripe, GitHub, Mysql workbench, railway",
       imageURL: ["e-commerce1.png", "e-commerce2.png"],
     },
@@ -128,7 +128,7 @@ export default {
       name: "PWA - Cartographie",
       summary: "Mobile free Mapping App",
       description:
-        "Build a mapping tool for a sociologist researcher. Watch my position and save it, track me, add or draw a location. Custom markers, edit datas, save and export Excel data.",
+        "Build a mapping tool for a sociologist researcher. Track and save my position, follow me, add or draw a location. Create custom markers, edit data, save and export data to Excel.",
       tech: "Nuxt, vuetify, leaflet, Firebase, import et export from/to Excel file, netlify, GitHub",
       imageURL: [
         "map1.PNG",
@@ -145,9 +145,9 @@ export default {
       date: "august 2021",
       name: "BeToFeel",
       summary:
-        "Build a Full-Stack website : sharing and visualizing dynamic emotions",
+        "Building a full-stack website: sharing and visualising dynamic emotions",
       description:
-        "SVG image dynamic, motion and personalized front render based on user data, Including a SQL database and an authentification user control. Offer the possibility to share your personal image to other users, Full stack deployement api server on Heroku / app on Netlify",
+        "SVG image dynamic, motion and personalised front rendering based on user data, including SQL database and authentication user control. Offer the ability to share your personal image with other users, Full stack deployment API server on Heroku / app on Netlify",
       tech: "Node js, Express, Axios, bcrypt, Figma, bootstrap vue, Nuxt js, GitHub, Mysql workbench",
       imageURL: [
         "beToFeelsign.PNG",
@@ -166,7 +166,7 @@ export default {
       name: "Groupomania",
       summary: "Build a Full-Stack Solution",
       description:
-        "Analyze a client’s needs to define the scope and features of a new application. With the help of a front-end framework, build a full-stack solution, including a SQL database.",
+        "Analyse a client's requirements to define the scope and features of a new application. Build a full-stack solution using a front-end framework, including a SQL database.",
       tech: "Mysql, Node js, Express, bcrypt, multer, bootstrap, Vue js, GitHub",
       imageURL: [
         "groupomania_log.PNG",
@@ -248,9 +248,9 @@ export default {
     }, */
   ],
   projectsPage: {
-    title: "Find all project's descriptions",
+    title: "Find all project descriptions",
     description:
-      "Click on a projects to get more details: web development tools, features scoped expected...",
+      "Click on a project to get more details: web development tools, features scoped expected...",
     dateCreation: "Made in",
   },
   projectsIdPage: {
