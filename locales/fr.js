@@ -32,7 +32,7 @@ export default {
     h2commit: "Mes souhaits d'engagements...",
     personal: {
       h3: "...Personnellement",
-      text: "Après 10 d'expériences dans la distribution d'articles de sport, j'ai décidé de réaliser un vieux rêve et de partir faire un tour du monde pendant plus de 2 ans. Une aventure riche personnellement qui m'a ouvert de nouvelles valeurs : autonomie, ouverture d'esprit, aventurier, curieux, respect. Passionée de sports, investi dans le développement web, j'ai aujourd'hui le souhait de mettre à disposition mes compétences dans des projets enrichissant tant humainement que professionnellement.",
+      text: "Après 10 d'expériences dans la distribution d'articles de sport, j'ai décidé de réaliser un vieux rêve et de me tourner vers une autre passion qu'est le langage informatique. Passionée de sports, investi dans le développement web, j'ai aujourd'hui le souhait de mettre à disposition mes compétences dans des projets enrichissant tant humainement que professionnellement.",
     },
     professionaly: {
       h3: "...Professionnellement",

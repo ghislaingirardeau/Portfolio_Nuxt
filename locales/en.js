@@ -31,7 +31,7 @@ export default {
     h2commit: "My work commitment...",
     personal: {
       h3: "...Personally",
-      text: "After more than 10 years working as a manager for an international sports brand (Intersport), I decided to fulfil my childhood dream of discovering the world. The two years of this exciting and rich adventure have allowed me to strengthen certain things that I value most: being independent, open-minded, curious and respectful. Longing to continue exploring the world, I decided to take part in a six-month training course to become a web developer. As an athlete and a web developer, I'm eager to work on any interesting projects that I can bring to this intersection of my skills and knowledge (sports and web development).",
+      text: "After more than 10 years working as a manager for an international sports brand (Intersport), I decided to explore one of my other hobbie which is IT. I took part in a six-month training course to become a web developer. As an athlete and a web developer, I'm eager to work on any interesting projects that I can bring to this intersection of my skills and knowledge (sports and web development).",
     },
     professionaly: {
       h3: "...Professionally",
