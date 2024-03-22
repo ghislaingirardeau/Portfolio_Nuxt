@@ -62,7 +62,7 @@
   &--animation-fr2 {
     &:after {
       @include titleAnimation(
-        "I'm Ghislain,,",
+        "I'm Ghislain,",
         70px,
         loadingMoi 0.5s 0.7s ease-out forwards
       );
