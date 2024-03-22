@@ -114,7 +114,7 @@ export default {
         "community_tool4.png",
       ],
     },
-    {
+    /* {
       id: "9",
       date: "mai 2022",
       name: "E-commerce multi langues",
@@ -123,7 +123,7 @@ export default {
         "Comprendre comment intégré une base de données dynamique en fonction de la langue, création d'une page panier avec simulation de paiement via l'API Stripe, gérer la convertion de devise",
       tech: "Node js, Express, Axios, Vue js, Nuxt js, i18n, Vuetify, Stripe, GitHub, Mysql workbench, railway",
       imageURL: ["e-commerce1.png", "e-commerce2.png"],
-    },
+    }, */
     {
       id: "8",
       date: "janvier 2022",
