@@ -71,12 +71,36 @@ export default {
   },
   projects: [
     {
+      id: "13",
+      date: "mars 2024 - Aujourd'hui",
+      name: `Wordle Game`,
+      summary: "Créer un mini jeu (wordle) en Test-Driven-Development",
+      description:`
+      Création du jeu en donnant la priorité au Test first grâce à 3 étapes. 
+      <ul>
+        <li>Feux Rouge: Écrire le test du résultat attendu </li>
+        <li>Feux Vert: Écrire le code pour que le test passe</li>
+        <li>Refactoriser le code et le test.</li>
+      </ul>`,
+      tech: "Typescript, VueJs 3, Vitest, JsDom, Tailwinds",
+      imageURL: [
+        "wordle1.png",
+        "wordle2.png",
+      ],
+      link: "https://my-flashcard-lang.netlify.app",
+    },
+    {
       id: "12",
       date: "juin 2023",
       name: "Mon Vocabulaire en carte",
       summary: "Créer une application web avec PWA, Typescript & Nuxt 3",
-      description:
-        "App permettant de traduire des mots ou expressions mais aussi de les organiser et archiver sous forme de carte. L'application permet de réécouter 'mon vocabulaire' dans la langue choisie à différentes vitesses et offre une aide à la prononciation pour certaine langue comme le Khmer.",
+      description:`
+      App permettant de traduire des mots ou expressions mais aussi de les organiser et archiver sous forme de carte. L'application permet de:
+      <ul>
+        <li>Réécouter 'mon vocabulaire' dans la langue choisie à différentes vitesses</li>
+        <li>offre une aide à la prononciation pour certaine langue comme le Khmer.</li>
+        <li>Enregistrer le mot avec la voix ou le clavier</li>
+      </ul>`,
       tech: "Typescript, Nuxt 3, PWA, i18n, Firebase GitHub",
       imageURL: [
         "carte_sample.png",

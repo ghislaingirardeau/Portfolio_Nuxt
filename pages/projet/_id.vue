@@ -3,8 +3,8 @@
     <transition name="opacity" appear>
       <div class="block_projet">
         <h1>{{ detailProject.name }}</h1>
-        <h2>{{ $t("projectsIdPage.description") }}</h2>
-        <p>{{ detailProject.description }}</p>
+        <h2>{{ detailProject.summary }}</h2>
+        <p v-html="detailProject.description"></p>
         <button v-if="detailProject.link" class="btn__link">
           <a :href="detailProject.link" target="_blank"
             >Lien vers {{ detailProject.name }}</a
