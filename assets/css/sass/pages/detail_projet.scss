@@ -20,6 +20,10 @@
   }
   & > p {
     color: $color-bright;
+    & > ul {
+      list-style: none;
+
+    }
   }
   &:before {
     content: "";
