@@ -70,7 +70,4 @@ export default {
 };
 </script>
 
-exemple de montage de carousel au chargement mounted () { this.slides =
-this.$children /* Etape 1: pour connaitre le nombre d'enfants (soit le nombre de
-slides totales) au montage*/ this.slides.forEach((slide, i) => { /* pour chaque
-slide, on vient leur donnée un index */ slide.index = i }) },
+
