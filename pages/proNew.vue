@@ -49,7 +49,7 @@ export default {
   nuxtI18n: {
     paths: {
       en: "/works",
-      fr: "/projetsNew",
+      fr: "/projets",
     },
   },
   components: { projetSlide },
