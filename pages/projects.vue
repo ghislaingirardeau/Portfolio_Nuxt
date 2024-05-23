@@ -79,7 +79,7 @@ export default {
     return {
       slide: 1,
       listsOfProject: [],
-      slideDirection: "slide-rotate-right",
+      slideDirection: "slide-translate-right",
       reload: 10,
       touchBeg: 0,
       windowSize: 0,
@@ -164,7 +164,7 @@ export default {
       this.slide >= this.pageNumber() - 1 ? (this.slide = 0) : this.slide++;
       index ? (this.slide = index) : "";
       this.projectsList();
-      this.slideDirection = "slide-rotate-right";
+      this.slideDirection = "slide-translate-right";
       this.reload++;
     },
     goLeft(e, index = null) {
@@ -174,7 +174,7 @@ export default {
       this.slide <= 0 ? (this.slide = 2) : this.slide--;
       index || index === 0 ? (this.slide = index) : "";
       this.projectsList();
-      this.slideDirection = "slide-rotate-left";
+      this.slideDirection = "slide-translate-left";
       this.reload++;
     },
     goToProjects(index) {
