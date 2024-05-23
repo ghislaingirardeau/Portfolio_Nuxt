@@ -71,6 +71,12 @@
   background: $color-secondary;
 }
 
+@media screen and (min-width: 1024px) {
+  .btn__index--media {
+    visibility: hidden;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .btn__index {
     & button {

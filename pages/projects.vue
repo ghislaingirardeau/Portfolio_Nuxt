@@ -46,7 +46,7 @@
         <projet-slide :listsOfProject="listsOfProject" />
       </projet-carrousel>
     </transition-group>
-    <div class="btn__index">
+    <div class="btn__index btn__index--media">
       <button
         v-for="i in pageNumber()"
         :key="i"
@@ -157,28 +157,28 @@ export default {
         return (this.listsOfProject = this.$t("projects").slice(8, 12));
       }
     },
-    goRight(index) {
+    goRight(e, index = null) {
       const r = document.querySelector(":root");
       r.style.setProperty("--direction", "180deg");
       r.style.setProperty("--launcherStart", "launchLogoRight");
       this.slide >= this.pageNumber() - 1 ? (this.slide = 0) : this.slide++;
-      index ? (this.slide = index) : null;
+      index ? (this.slide = index) : "";
       this.projectsList();
       this.slideDirection = "slide-rotate-right";
       this.reload++;
     },
-    goLeft(index) {
+    goLeft(e, index = null) {
       const r = document.querySelector(":root");
       r.style.setProperty("--direction", "-180deg");
       r.style.setProperty("--launcherStart", "launchLogoLeft");
       this.slide <= 0 ? (this.slide = 2) : this.slide--;
-      index || index === 0 ? (this.slide = index) : null;
+      index || index === 0 ? (this.slide = index) : "";
       this.projectsList();
       this.slideDirection = "slide-rotate-left";
       this.reload++;
     },
     goToProjects(index) {
-      index > this.slide ? this.goRight(index) : this.goLeft(index);
+      index > this.slide ? this.goRight("_", index) : this.goLeft("_", index);
     },
   },
 };
