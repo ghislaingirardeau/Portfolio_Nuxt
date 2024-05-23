@@ -14,13 +14,26 @@
       <span> &lt;--- swipe ---&gt;</span>
     </div>
     <!-- <div :key="swipeReload" class="swipe_element"></div> -->
+    <transition name="fade-button-slide">
+      <button
+        @click="goRight"
+        v-if="slide != 2"
+        class="btn__goback carrousel-ctrl-right"
+      >
+        &gt;
+      </button>
+    </transition>
 
-    <button @click="goRight" class="btn__goback carrousel-ctrl-right">
-      &gt;
-    </button>
-    <button @click="goLeft" class="btn__goback carrousel-ctrl-left">
-      &lt;
-    </button>
+    <transition name="fade-button-slide">
+      <button
+        @click="goLeft"
+        v-if="slide != 0"
+        class="btn__goback carrousel-ctrl-left"
+      >
+        &lt;
+      </button>
+    </transition>
+
     <transition-group :name="slideDirection" tag="article">
       <projet-carrousel key="0" v-if="slide === 0">
         <projet-slide :list="list" />
@@ -161,4 +174,4 @@ export default {
 };
 </script>
 
-<style lang="scss"></style>
+<style lang="css"></style>

@@ -10,7 +10,7 @@
           ></p>
         </article>
 
-        <article class="block__cible__projet" @click="goToRoute('proNew')">
+        <article class="block__cible__projet" @click="goToRoute('projects')">
           <h2>{{ $t("index.offer.hWork") }}</h2>
           <p class="block__cible--font" v-html="$t('index.offer.textWork')"></p>
         </article>
@@ -30,7 +30,6 @@
           <span class="block__moi--animation-fr3"></span>
         </h1>
       </div>
-        
     </article>
   </main>
 </template>
