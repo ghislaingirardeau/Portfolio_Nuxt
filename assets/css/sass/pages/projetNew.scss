@@ -117,15 +117,13 @@
 }
 
 .slide-rotate-left-enter {
-  transform-origin: center center 150px;
   opacity: 0;
-  transform: rotateY(45deg) translate3d(150px, 0, 30px);
+  transform: translateX(30px);
 }
 
 .slide-rotate-left-leave-to {
-  transform-origin: center center 150px;
   opacity: 0;
-  transform: rotateY(45deg) translate3d(-150px, 0, -30px);
+  transform: translateX(-30px);
 }
 .slide-rotate-right-leave-active {
   transition: all 0.7s 0.25s ease-out;
@@ -136,15 +134,23 @@
 }
 
 .slide-rotate-right-enter {
-  transform-origin: center center 150px;
   opacity: 0;
-  transform: rotateY(-45deg) translate3d(-150px, 0, -30px);
+  transform: translateX(-30px);
 }
 
 .slide-rotate-right-leave-to {
-  transform-origin: center center 150px;
   opacity: 0;
-  transform: rotateY(-45deg) translate3d(150px, 0, 30px);
+  transform: translateX(30px);
+}
+
+.fade-button-slide-enter-active,
+.fade-button-slide-leave-active {
+  transition: all 0.3s ease-out;
+}
+
+.fade-button-slide-enter,
+.fade-button-slide-leave-to {
+  opacity: 0;
 }
 
 @keyframes settingIconAnimation {
