@@ -54,7 +54,7 @@
 }
 
 .btn__index {
-  margin-top: -50px;
+  margin-top: 0px;
 
   & button {
     width: 20px;
@@ -68,7 +68,7 @@
   }
 }
 .btn__index button.active {
-  background: $color-primary;
+  background: $color-secondary;
 }
 
 @media screen and (max-width: 600px) {

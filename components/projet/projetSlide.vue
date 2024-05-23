@@ -1,7 +1,7 @@
 <template>
   <div class="page__projet--layout">
     <NuxtLink
-      v-for="item in list"
+      v-for="item in listsOfProject"
       :key="item.id"
       class="page__projet--link btn--projets"
       :to="localePath({ name: 'projet-id', params: { id: item.id } })"
@@ -20,7 +20,7 @@
 <script>
 export default {
   props: {
-    list: {
+    listsOfProject: {
       type: Array,
       default: () => [],
     },

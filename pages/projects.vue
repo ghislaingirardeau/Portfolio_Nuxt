@@ -13,6 +13,7 @@
     <div class="swipe--text">
       <span> &lt;--- swipe ---&gt;</span>
     </div>
+
     <!-- <div :key="swipeReload" class="swipe_element"></div> -->
     <transition name="fade-button-slide">
       <button
@@ -36,15 +37,23 @@
 
     <transition-group :name="slideDirection" tag="article">
       <projet-carrousel key="0" v-if="slide === 0">
-        <projet-slide :list="list" />
+        <projet-slide :listsOfProject="listsOfProject" />
       </projet-carrousel>
       <projet-carrousel key="1" v-if="slide === 1">
-        <projet-slide :list="list" />
+        <projet-slide :listsOfProject="listsOfProject" />
       </projet-carrousel>
       <projet-carrousel key="2" v-if="slide === 2">
-        <projet-slide :list="list" />
+        <projet-slide :listsOfProject="listsOfProject" />
       </projet-carrousel>
     </transition-group>
+    <div class="btn__index">
+      <button
+        v-for="i in pageNumber()"
+        :key="i"
+        @click.prevent="goToProjects(i - 1)"
+        :class="{ active: i - 1 === slide }"
+      ></button>
+    </div>
   </main>
 </template>
 
@@ -69,7 +78,7 @@ export default {
   data() {
     return {
       slide: 1,
-      list: [],
+      listsOfProject: [],
       slideDirection: "slide-rotate-right",
       reload: 10,
       touchBeg: 0,
@@ -105,7 +114,7 @@ export default {
       }
       if (process.browser && window.innerWidth < 700) {
         return "1100";
-        /* switch (this.list.length) {
+        /* switch (this.listsOfProject.length) {
           case 4:
             return "950";
             break;
@@ -135,40 +144,41 @@ export default {
       }
     },
     pageNumber() {
-      let page;
-      Number.isInteger(this.$t("projects").length / 4)
-        ? (page = this.$t("projects").length / 4)
-        : (page = Number.parseInt(this.$t("projects").length / 4) + 1);
-      return page;
+      return Math.ceil(this.$t("projects").length / 4);
     },
     projectsList() {
       if (this.slide === 0) {
-        return (this.list = this.$t("projects").slice(0, 4));
+        return (this.listsOfProject = this.$t("projects").slice(0, 4));
       }
       if (this.slide === 1) {
-        return (this.list = this.$t("projects").slice(4, 8));
+        return (this.listsOfProject = this.$t("projects").slice(4, 8));
       }
       if (this.slide === 2) {
-        return (this.list = this.$t("projects").slice(8, 12));
+        return (this.listsOfProject = this.$t("projects").slice(8, 12));
       }
     },
-    goRight() {
+    goRight(index) {
       const r = document.querySelector(":root");
       r.style.setProperty("--direction", "180deg");
       r.style.setProperty("--launcherStart", "launchLogoRight");
       this.slide >= this.pageNumber() - 1 ? (this.slide = 0) : this.slide++;
+      index ? (this.slide = index) : null;
       this.projectsList();
       this.slideDirection = "slide-rotate-right";
       this.reload++;
     },
-    goLeft() {
+    goLeft(index) {
       const r = document.querySelector(":root");
       r.style.setProperty("--direction", "-180deg");
       r.style.setProperty("--launcherStart", "launchLogoLeft");
       this.slide <= 0 ? (this.slide = 2) : this.slide--;
+      index || index === 0 ? (this.slide = index) : null;
       this.projectsList();
       this.slideDirection = "slide-rotate-left";
       this.reload++;
+    },
+    goToProjects(index) {
+      index > this.slide ? this.goRight(index) : this.goLeft(index);
     },
   },
 };
