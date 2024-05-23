@@ -48,8 +48,8 @@ export default {
   },
   nuxtI18n: {
     paths: {
-      en: "/works",
-      fr: "/projets",
+      en: "/myWorks",
+      fr: "/MesApps",
     },
   },
   components: { projetSlide },
