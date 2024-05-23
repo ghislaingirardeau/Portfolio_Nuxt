@@ -2,7 +2,9 @@ body {
   margin: auto;
   font-size: 1.2rem;
   font-family: $font_paragraphe;
-  width: 95%;
+  min-width: 95vw;
+  min-height: 100vh;
+  padding-inline: 2.5vw;
   text-align: center;
   position: relative;
   background: linear-gradient(

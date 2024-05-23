@@ -8,8 +8,8 @@
   >
     <h1>{{ $t("projectsPage.title") }}</h1>
     <p class="text_clickOn">{{ $t("projectsPage.description") }}</p>
-    <span :key="reload" class="element_fixed"></span>
-    <span :key="reload + 1" class="element_fixed2"></span>
+    <!-- <span :key="reload" class="element_fixed"></span>
+    <span :key="reload + 1" class="element_fixed2"></span> -->
     <div class="swipe--text">
       <span> &lt;--- swipe ---&gt;</span>
     </div>
