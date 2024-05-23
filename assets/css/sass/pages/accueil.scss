@@ -40,8 +40,60 @@
       animation-iteration-count: 3;
     }
   }
-  &--animation-en1,
   &--animation-fr1 {
+    &:after {
+      @include titleAnimation(
+        "Bonjour,",
+        0px,
+        loadingMoi 0.5s 0.1s ease-out forwards
+      );
+    }
+    &:before {
+      @include titleAnimation(
+        "Bonjour,",
+        0px,
+        loadingMoiShadow 0.3s 0.2s ease-out forwards,
+        true
+      );
+    }
+  }
+  &--animation-fr2 {
+    &:after {
+      @include titleAnimation(
+        "Je suis Ghislain,",
+        70px,
+        loadingMoi 0.5s 0.7s ease-out forwards
+      );
+    }
+
+    &:before {
+      @include titleAnimation(
+        "Je suis Ghislain,",
+        70px,
+        loadingMoiShadow 0.3s 0.8s ease-out forwards,
+        true
+      );
+    }
+  }
+  &--animation-fr3 {
+    &:after {
+      @include titleAnimation(
+        "Développeur Web",
+        140px,
+        loadingMoi 0.5s 1.3s ease-out forwards
+      );
+    }
+
+    &:before {
+      @include titleAnimation(
+        "Développeur Web",
+        140px,
+        loadingMoiShadow 0.3s 1.4s ease-out forwards,
+        true
+      );
+    }
+  }
+  &--animation-en1 {
     &:after {
       @include titleAnimation(
         "Hello,",
@@ -58,8 +110,7 @@
       );
     }
   }
-  &--animation-en2,
-  &--animation-fr2 {
+  &--animation-en2 {
     &:after {
       @include titleAnimation(
         "I'm Ghislain,",
@@ -77,11 +128,10 @@
       );
     }
   }
-  &--animation-en3,
-  &--animation-fr3 {
+  &--animation-en3 {
     &:after {
       @include titleAnimation(
-        "Web Developer,",
+        "Web Developer",
         140px,
         loadingMoi 0.5s 1.3s ease-out forwards
       );

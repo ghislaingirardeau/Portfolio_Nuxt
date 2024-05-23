@@ -75,7 +75,7 @@ export default {
       date: "mars 2024 - Aujourd'hui",
       name: `Wordle Game`,
       summary: "Créer un mini jeu (wordle) en Test-Driven-Development",
-      description:`
+      description: `
       Création du jeu en donnant la priorité au Test first grâce à 3 étapes. 
       <ul>
         <li>Feux Rouge: Écrire le test du résultat attendu </li>
@@ -83,18 +83,15 @@ export default {
         <li>Refactoriser le code et le test.</li>
       </ul>`,
       tech: "Typescript, VueJs 3, Vitest, JsDom, Tailwinds",
-      imageURL: [
-        "wordle1.png",
-        "wordle2.png",
-      ],
-      link: "https://my-flashcard-lang.netlify.app",
+      imageURL: ["wordle1.png", "wordle2.png"],
+      link: "https://wordle-game-gg-wev-dev.netlify.app/",
     },
     {
       id: "12",
       date: "juin 2023",
       name: "Mon Vocabulaire en carte",
       summary: "Créer une application web avec PWA, Typescript & Nuxt 3",
-      description:`
+      description: `
       App permettant de traduire des mots ou expressions mais aussi de les organiser et archiver sous forme de carte. L'application permet de:
       <ul>
         <li>Réécouter 'mon vocabulaire' dans la langue choisie à différentes vitesses</li>

@@ -74,7 +74,7 @@ export default {
       date: "march 2024 - Today",
       name: `Wordle Game`,
       summary: "Create a mini game (wordle) in Test-Driven-Development",
-      description:`
+      description: `
       Creation of the game giving priority to Test first using 3 steps.
       <ul>
       <li>Red Lights: Write the test for the expected result </li>
@@ -82,11 +82,8 @@ export default {
       <li>Refactor code and test.</li>
       </ul>`,
       tech: "Typescript, VueJs 3, Vitest, JsDom, Tailwinds",
-      imageURL: [
-        "wordle1.png",
-        "wordle2.png",
-      ],
-      link: "https://my-flashcard-lang.netlify.app",
+      imageURL: ["wordle1.png", "wordle2.png"],
+      link: "https://wordle-game-gg-wev-dev.netlify.app/",
     },
     {
       id: "12",
