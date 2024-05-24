@@ -1,19 +1,17 @@
-@import 'sass/variable/variable.scss';
-@import 'sass/variable/keyframes.scss';
-@import 'sass/variable/transition.scss';
-@import 'sass/body.scss';
-@import 'sass/pages/accueil.scss';
-@import 'sass/components/logo.scss';
-@import 'sass/components/button.scss';
-@import 'sass/components/nav_link.scss';
-@import 'sass/components/footer.scss';
-@import 'sass/pages/projet.scss';
-@import 'sass/pages/projetNew.scss';
-@import 'sass/components/carousel.scss';
-@import 'sass/pages/detail_projet.scss';
-@import 'sass/pages/about.scss';
-@import 'sass/pages/cv.scss';
-@import 'sass/pages/service.scss';
+@import "sass/variable/variable.scss";
+@import "sass/variable/keyframes.scss";
+@import "sass/variable/transition.scss";
+@import "sass/body.scss";
+@import "sass/pages/accueil.scss";
+@import "sass/components/logo.scss";
+@import "sass/components/button.scss";
+@import "sass/components/nav_link.scss";
+@import "sass/components/footer.scss";
+@import "sass/pages/project.scss";
+@import "sass/pages/projectAnimation.scss";
+@import "sass/components/carousel.scss";
+@import "sass/pages/detail_projet.scss";
+@import "sass/pages/about.scss";
+@import "sass/pages/service.scss";
 
-@import 'sass/components/loaderOhmyfood.scss';
-
+@import "sass/components/loaderOhmyfood.scss";

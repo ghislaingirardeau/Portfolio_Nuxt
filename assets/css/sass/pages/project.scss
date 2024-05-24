@@ -1,0 +1,117 @@
+.page__projet {
+  & > h1 {
+    text-shadow: 2px 2px black;
+  }
+  & > p {
+    color: $color-bright;
+  }
+  &--layout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  & .date--text {
+    text-decoration: underline;
+  }
+}
+
+.page__projet--link {
+  border-radius: 5px 5px;
+  width: 35%;
+  margin: 30px;
+  text-decoration: none;
+  opacity: 0;
+  @include anim-btn($color-lien);
+}
+
+.slide-fade-enter-active {
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  transition-delay: var(--i);
+}
+.slide-fade-enter {
+  opacity: 0;
+  transform: translateY(60px);
+}
+
+.carroussel_block {
+  position: relative;
+  z-index: 0;
+}
+.carrousel-ctrl-right {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  position: absolute;
+  right: 20px;
+  top: 40%;
+  z-index: 1;
+}
+.carrousel-ctrl-left {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  position: absolute;
+  left: 20px;
+  top: 40%;
+  z-index: 1;
+}
+.text_clickOn {
+  color: white;
+  padding-inline: 10%;
+}
+.swipe_fixed {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+}
+.swipe--text {
+  color: $color-secondary;
+  display: none;
+}
+.swipe_element {
+  display: none;
+  margin-top: 15px;
+  &::before {
+    position: absolute;
+    content: "";
+    opacity: 0;
+    width: 5px;
+    height: 5px;
+    border: 2px solid white;
+    border-radius: 15px;
+    background: white;
+    filter: blur(2px);
+    animation: swipeMobile 1.5s 0.5s linear 1 forwards;
+  }
+}
+.projet_carrousel_block {
+  position: absolute;
+  width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .swipe--text {
+    display: inherit;
+  }
+  .carrousel-ctrl-right {
+    right: 0px;
+    display: none;
+  }
+  .carrousel-ctrl-left {
+    left: 0px;
+    display: none;
+  }
+  .element_fixed {
+    display: none;
+  }
+  .element_fixed2 {
+    display: none;
+  }
+  .swipe_element {
+    display: inherit;
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  .page__projet--link {
+    width: 90%;
+    margin: 30px;
+  }
+}
