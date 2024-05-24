@@ -1,35 +1,22 @@
 // Animation carrousel groupe
+.slide-translate-right-leave-active,
 .slide-translate-left-leave-active {
-  transition: all 0.7s ease-out;
+  transition: all 0.5s ease-out;
 }
 
+.slide-translate-right-enter-active,
 .slide-translate-left-enter-active {
-  transition: all 0.7s 0.5s ease-out;
+  transition: all 0.5s 0.5s ease-out;
 }
 
-.slide-translate-left-enter {
-  opacity: 0;
-  transform: translateX(20px);
-}
-
+.slide-translate-right-enter,
 .slide-translate-left-leave-to {
   opacity: 0;
   transform: translateX(-20px);
 }
-.slide-translate-right-leave-active {
-  transition: all 0.7s ease-out;
-}
 
-.slide-translate-right-enter-active {
-  transition: all 0.7s 0.5s ease-out;
-}
-
-.slide-translate-right-enter {
-  opacity: 0;
-  transform: translateX(-20px);
-}
-
-.slide-translate-right-leave-to {
+.slide-translate-right-leave-to,
+.slide-translate-left-enter {
   opacity: 0;
   transform: translateX(20px);
 }
@@ -47,28 +34,23 @@
   }
 }
 
-@keyframes fadeProjectLeft {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0px);
-  }
-}
-@keyframes fadeProjectRight {
-  from {
-    opacity: 0;
-    transform: translateX(-50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0px);
+@mixin keyframeFadeProject($direction, $value) {
+  @keyframes fadeProject#{$direction} {
+    from {
+      opacity: 0;
+      transform: translateX($value);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
   }
 }
-//--------------------------------
 
+@include keyframeFadeProject("Left", 50px);
+@include keyframeFadeProject("Right", -50px);
+
+//--------------------------------
 // Les boutons du slide des projets
 .fade-button-slide-enter-active,
 .fade-button-slide-leave-active {
@@ -81,33 +63,6 @@
 }
 
 //----------------------------------
-
-@keyframes settingIconAnimation {
-  0% {
-    transform: rotateZ(0deg);
-    filter: drop-shadow(0 0 2px var(--color));
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    transform: rotateZ(var(--direction));
-    filter: drop-shadow(0 0 2px var(--color));
-  }
-}
-
-@keyframes settingIconAnimationB {
-  0% {
-    filter: drop-shadow(0 0 2px var(--color));
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    transform: rotateZ(var(--direction));
-    filter: drop-shadow(0 0 2px var(--color));
-  }
-}
 
 @keyframes launchLogoLeft {
   0% {

@@ -7,14 +7,16 @@
   &__navBar {
     width: 65%;
     padding: 55px 0px 0px 0px;
+    display: flex;
+    justify-content: space-around;
 
     &--font {
-      display: inline-block;
+      // display: inline-block;
       font-size: $linksize;
       font-weight: bold;
       text-decoration: none;
       text-shadow: 1px 1px black;
-      padding: 5px 45px 25px 45px;
+      // padding: 5px 45px 25px 45px;
       transition: all 0.3s ease;
       color: $color-primary;
       &:hover {
@@ -44,7 +46,7 @@
   @include anim-btn($color-btn, $color-secondary);
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 992px) {
   .header {
     &__navBar {
       width: 75%;
@@ -64,15 +66,16 @@
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
   .header {
     &__navBar {
       width: 100%;
       order: 2;
       padding: 25px 0px 0px 0px;
+      flex-wrap: wrap;
       &--font {
         font-size: 1.2rem;
-        padding: 5px 5px 25px 5px;
+        padding: 5px 25px 25px 25px;
       }
     }
     &__lang {
