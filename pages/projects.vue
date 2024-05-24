@@ -30,6 +30,7 @@
         @click="goLeft"
         v-if="slide != 0"
         class="btn__goback carrousel-ctrl-left"
+        :style="{ visibility: buttonLeftIsVisible }"
       >
         &lt;
       </button>
@@ -84,6 +85,7 @@ export default {
       touchBeg: 0,
       windowSize: 0,
       swipeReload: 0,
+      buttonLeftIsVisible: "hidden",
     };
   },
   mounted() {
@@ -166,6 +168,7 @@ export default {
       this.projectsList();
       this.slideDirection = "slide-translate-right";
       this.reload++;
+      this.buttonLeftIsVisible = false;
     },
     goLeft(e, index = null) {
       const r = document.querySelector(":root");
