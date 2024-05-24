@@ -20,6 +20,7 @@
   width: 35%;
   margin: 30px;
   text-decoration: none;
+  opacity: 0;
   @include anim-btn($color-lien);
 }
 

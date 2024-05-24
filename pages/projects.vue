@@ -38,13 +38,22 @@
 
     <transition-group :name="slideDirection" tag="article">
       <projet-carrousel key="0" v-if="slide === 0">
-        <projet-slide :listsOfProject="listsOfProject" />
+        <projet-slide
+          :listsOfProject="listsOfProject"
+          :animDirection="slideDirection"
+        />
       </projet-carrousel>
       <projet-carrousel key="1" v-if="slide === 1">
-        <projet-slide :listsOfProject="listsOfProject" />
+        <projet-slide
+          :listsOfProject="listsOfProject"
+          :animDirection="slideDirection"
+        />
       </projet-carrousel>
       <projet-carrousel key="2" v-if="slide === 2">
-        <projet-slide :listsOfProject="listsOfProject" />
+        <projet-slide
+          :listsOfProject="listsOfProject"
+          :animDirection="slideDirection"
+        />
       </projet-carrousel>
     </transition-group>
     <div class="btn__index btn__index--media">
@@ -78,7 +87,7 @@ export default {
   components: { projetSlide },
   data() {
     return {
-      slide: 1,
+      slide: 0,
       listsOfProject: [],
       slideDirection: "slide-translate-right",
       reload: 10,
@@ -100,7 +109,6 @@ export default {
         this.swipeReload++;
       }, 5000);
     }
-    this.goLeft();
   },
   methods: {
     heightBlock() {
@@ -116,15 +124,6 @@ export default {
       }
       if (process.browser && window.innerWidth < 700) {
         return "1100";
-        /* switch (this.listsOfProject.length) {
-          case 4:
-            return "950";
-            break;
-
-          case 2:
-            return "475";
-            break;
-        } */
       }
     },
     startDrag($event) {

@@ -1,9 +1,10 @@
 <template>
   <div class="page__projet--layout">
     <NuxtLink
-      v-for="item in listsOfProject"
+      v-for="(item, index) in listsOfProject"
       :key="item.id"
       class="page__projet--link btn--projets"
+      :class="{ [`${animDirection}-${index}`]: true }"
       :to="localePath({ name: 'projet-id', params: { id: item.id } })"
     >
       <article>
@@ -24,8 +25,14 @@ export default {
       type: Array,
       default: () => [],
     },
+    animDirection: {
+      type: String,
+    },
+  },
+  mounted() {
+    console.log(this.animDirection);
   },
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="css" scoped></style>
