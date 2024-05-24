@@ -6,6 +6,9 @@
 }
 
 .block_projet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 65%;
   border: 2px solid $color-blue-mid;
   border-radius: 5px 5px;
@@ -22,7 +25,6 @@
     color: $color-bright;
     & > ul {
       list-style: none;
-
     }
   }
   &:before {
