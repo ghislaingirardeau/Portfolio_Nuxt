@@ -52,8 +52,7 @@ export default {
   },
   methods: {
     animStarState() {
-      this.animStar = !this.animStar;
-      this.$emit("hideStar", { toDO: this.animStar });
+      this.$emit("hideStar", (this.animStar = !this.animStar));
     },
   },
   mounted() {},
