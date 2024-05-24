@@ -35,12 +35,11 @@
 
         <carousel
           v-if="detailProject.imageURL"
-          :ImageCount="slides.length"
-          :ImageArray="slides"
+          :ImageArray="detailProject.imageURL"
         >
           <!-- envoie le nombre d'image en props -->
           <carousel-slide
-            v-for="(item, i) in slides"
+            v-for="(item, i) in detailProject.imageURL"
             :key="item.id"
             :numImg="i"
           >
@@ -98,7 +97,6 @@ export default {
       detailProject: {},
       relatedProject: [],
       imageUrl: "" /* si on passe directement url dans le mounted */,
-      slides: [],
       metaTitle: "Gg Web Dev - ",
     };
   },
@@ -120,10 +118,6 @@ export default {
     this.relatedProject = this.$t("projects").filter(
       (element) => element.id != this.id
     );
-    this.slides =
-      this.detailProject.imageURL; /* recupere aussi le tableau d'images */
-    /* const filename = this.detailProject.imageURL
-        this.imageUrl = require(`~/assets/images/${filename}`); */
   },
   components: {
     carousel,
