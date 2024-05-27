@@ -40,10 +40,9 @@
   font-weight: bold;
   padding: 5px;
   border-radius: 5px 5px;
-  @include anim-btn($color-btn);
+  @include anim-btn($color-btn, $color-secondary);
   position: absolute;
   top: 45%;
-  background-color: $color-blue-mid;
   opacity: 0.8;
   &--next {
     right: 20px;

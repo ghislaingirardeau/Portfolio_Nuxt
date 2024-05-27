@@ -1,5 +1,5 @@
 <template>
-  <div class="page__projet--layout">
+  <div class="projet_carrousel_slide">
     <NuxtLink
       v-for="(item, index) in listsOfProject"
       :key="item.id"

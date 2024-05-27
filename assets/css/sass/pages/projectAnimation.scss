@@ -1,36 +1,53 @@
 // Animation carrousel groupe
-.slide-translate-right-leave-active,
-.slide-translate-left-leave-active {
-  transition: all 0.5s ease-out;
-}
+// disable for now
+// .slide-translate-right-leave-active,
+// .slide-translate-left-leave-active {
+//   transition: all 0.5s ease-out;
+// }
 
-.slide-translate-right-enter-active,
-.slide-translate-left-enter-active {
-  transition: all 0.5s ease-out;
-}
+// .slide-translate-right-enter-active,
+// .slide-translate-left-enter-active {
+//   transition: all 0.5s ease-out;
+// }
 
-.slide-translate-right-enter,
-.slide-translate-left-leave-to {
-  opacity: 0;
-  transform: translateX(-10px);
-}
+// .slide-translate-right-enter,
+// .slide-translate-left-leave-to {
+//   opacity: 0;
+//   transform: translateX(-10px);
+// }
 
-.slide-translate-right-leave-to,
-.slide-translate-left-enter {
-  opacity: 0;
-  transform: translateX(10px);
-}
+// .slide-translate-right-leave-to,
+// .slide-translate-left-enter {
+//   opacity: 0;
+//   transform: translateX(10px);
+// }
+
+// .fade-projects-group {
+//   animation: fadeProjects 0.5s ease;
+// }
+
+// @keyframes fadeProjects {
+//   0% {
+//     opacity: 1;
+//   }
+//   50% {
+//     opacity: 0;
+//   }
+//   100% {
+//     opacity: 1;
+//   }
+// }
 //-----------------------------------
 
 // Animation de chaque projet
 @for $i from 0 through 3 {
   .slide-translate-right-#{$i} {
-    animation: fadeProjectRight 1s $i * 0.2s ease forwards;
+    animation: fadeProjectRight 1s $i * 0.2s ease both;
   }
 }
 @for $i from 0 through 3 {
   .slide-translate-left-#{$i} {
-    animation: fadeProjectLeft 1s $i * 0.2s ease forwards;
+    animation: fadeProjectLeft 1s $i * 0.2s ease both;
   }
 }
 

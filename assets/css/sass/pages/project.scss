@@ -5,11 +5,6 @@
   & > p {
     color: $color-bright;
   }
-  &--layout {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
   & .date--text {
     text-decoration: underline;
   }
@@ -37,19 +32,27 @@
   position: relative;
   z-index: 0;
 }
-.carrousel-ctrl-right {
+
+@mixin carrouselControl() {
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 5px 5px;
+  @include anim-btn($color-btn, $color-secondary);
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   position: absolute;
-  right: 20px;
-  top: 40%;
   z-index: 1;
 }
+
+.carrousel-ctrl-right {
+  @include carrouselControl();
+  right: 20px;
+  top: 50%;
+}
 .carrousel-ctrl-left {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  position: absolute;
+  @include carrouselControl();
   left: 20px;
-  top: 40%;
-  z-index: 1;
+  top: 50%;
 }
 .text_clickOn {
   color: white;
@@ -64,25 +67,15 @@
   color: $color-secondary;
   display: none;
 }
-/* .swipe_element {
-  display: none;
-  margin-top: 15px;
-  &::before {
-    position: absolute;
-    content: "";
-    opacity: 0;
-    width: 5px;
-    height: 5px;
-    border: 2px solid white;
-    border-radius: 15px;
-    background: white;
-    filter: blur(2px);
-    animation: swipeMobile 1.5s 0.5s linear 1 forwards;
-  }
-} */
-.projet_carrousel_block {
-  position: absolute;
+
+.projet_carrousel {
   width: 100%;
+  min-height: 560px;
+  &_slide {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 1024px) {
