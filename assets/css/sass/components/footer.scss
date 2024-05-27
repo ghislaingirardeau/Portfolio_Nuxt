@@ -14,11 +14,11 @@
       margin-left: 30px;
       margin-bottom: 5px;
       & > a {
-        color: $color-primary;
+        color: $color-secondary;
         transition: all 0.3s ease;
         text-decoration: underline;
         &:hover {
-          text-shadow: 7px 30px black;
+          text-shadow: 7px 15px $color-blue-mid;
           text-decoration: none;
         }
       }
@@ -81,6 +81,11 @@ input[type="checkbox" i]:checked::before {
       & > li {
         margin-left: 0px;
         display: block;
+        & > a {
+          &:hover {
+            text-shadow: none;
+          }
+        }
       }
     }
   }
