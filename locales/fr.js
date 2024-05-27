@@ -71,7 +71,7 @@ export default {
       description:
         "<ul> <li>Lancement et développement du projet</li> <li>Plannification des étapes pour le développement</li><li> Un rapport hebdomadaire sur l'avancement du projet</li><li>Un échange visio pour avoir les impressions du rendu</li> </ul>",
     },
-    footer: "Cliquer pour prendre un rendez-vous",
+    footer: "Prendre un rendez-vous en visio",
   },
   projects: [
     {

@@ -68,7 +68,7 @@ export default {
       description:
         "<ul> <li>After quote validation, project development start</li> <li>Steps planifications to see the project forwards </li><li> Weekly report </li><li>Exchange and feedback regularly to get the first impressions or made corrections</li> </ul>",
     },
-    footer: "Click to get a visio conference",
+    footer: "Schedule a visio conference",
   },
   projects: [
     {
