@@ -22,7 +22,7 @@
   position: relative;
   & > h1 {
     font-size: 3rem;
-    transform: rotateZ(47deg);
+    transform: rotateZ(35deg);
     padding: 10px 0px 10px 20%;
     height: 180px;
     &:after {
@@ -148,6 +148,19 @@
   }
 }
 
+@mixin ligthBlock($delay) {
+  position: absolute;
+  content: "";
+  width: 155px;
+  height: 5px;
+  border: 2px solid white;
+  border-radius: 15px;
+  background: white;
+  filter: blur(2px);
+  opacity: 0;
+  animation: lightBorderPresentation 1s $delay cubic-bezier(0.56, 0.12, 0.04, 1);
+}
+
 .block__cible {
   text-align: left;
   width: 50%;
@@ -156,23 +169,13 @@
 
   &__service {
     position: relative;
-    animation: animBorder 1s 2.1s ease both;
-    box-shadow: 5px 5px 5px $color-blue-mid;
+    animation: slidePresentation 1s 2.1s ease both;
     text-shadow: -2px 2px black;
     padding: 5px;
     margin: 20px 0 20px 0;
     transition: box-shadow 0.2s linear;
     &:before {
-      position: absolute;
-      content: "";
-      width: 155px;
-      height: 5px;
-      border: 2px solid white;
-      border-radius: 15px;
-      background: white;
-      filter: blur(2px);
-      opacity: 0;
-      animation: loadBorderBottom 1s 2.1s cubic-bezier(0.56, 0.12, 0.04, 1);
+      @include ligthBlock(2.1s);
     }
     &:hover {
       cursor: pointer;
@@ -181,23 +184,13 @@
   }
   &__projet {
     position: relative;
-    box-shadow: 5px 5px 5px $color-blue-mid;
-    animation: animBorder 1s 3.2s ease both;
+    animation: slidePresentation 1s 3.2s ease both;
     text-shadow: -2px 2px black;
     padding: 5px;
     margin: 40px 0 20px 0;
     transition: box-shadow 0.2s linear;
     &:before {
-      position: absolute;
-      content: "";
-      width: 155px;
-      height: 5px;
-      border: 2px solid white;
-      border-radius: 15px;
-      background: white;
-      filter: blur(2px);
-      opacity: 0;
-      animation: loadBorderBottom 1s 3.2s cubic-bezier(0.56, 0.12, 0.04, 1);
+      @include ligthBlock(3.2s);
     }
     &:hover {
       cursor: pointer;
