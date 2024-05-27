@@ -48,7 +48,6 @@ export default {
       }
       this.direction = "right";
       this.index++;
-      console.log(this.$route.params.id);
     },
     previousSlide() {
       if (this.index === 0) {

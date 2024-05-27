@@ -14,7 +14,6 @@
       <span> &lt;--- swipe ---&gt;</span>
     </div>
 
-    <!-- <div :key="swipeReload" class="swipe_element"></div> -->
     <transition name="fade-button-slide">
       <button
         @click="goRight"
@@ -93,7 +92,6 @@ export default {
       reload: 10,
       touchBeg: 0,
       windowSize: 0,
-      swipeReload: 0,
       buttonLeftIsVisible: "hidden",
     };
   },
@@ -101,14 +99,10 @@ export default {
     reveal();
     this.projectsList(0, 4);
     window.addEventListener("resize", (event) => {
+      console.log(window.innerWidth);
       this.windowSize = window.innerWidth;
       this.heightBlock();
     });
-    if (this.windowSize < 700) {
-      setInterval(() => {
-        this.swipeReload++;
-      }, 5000);
-    }
   },
   methods: {
     heightBlock() {
