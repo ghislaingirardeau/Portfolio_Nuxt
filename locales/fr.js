@@ -24,6 +24,10 @@ export default {
     title: "Retrouver mon profil sur :",
     contact: "Mon email :",
     animation: "Désactiver l'animation",
+    description: `Ce portofolio a été (et est toujours un peu) mon laboratoire de
+    test. Je n'ai utilisé volontairement aucune autre librairie à
+    l'exéption de Nuxt et Sass pour son développement (par choix
+    d'apprentissage lors de mes 1er mois en tant que développeur).`,
   },
 
   about: {

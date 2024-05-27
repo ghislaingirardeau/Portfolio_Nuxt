@@ -24,6 +24,8 @@ export default {
     title: "Follow me on :",
     contact: "My email :",
     animation: "Disable Animation",
+    description: `
+    This portofolio was (and still is to some extent) my test laboratory. I deliberately didn't use any other libraries except Nuxt and Sass for its development (because I chose to learn during my first months as a developer).`,
   },
   about: {
     h1: "More about me",

@@ -38,6 +38,11 @@
             @change="animStarState"
           />
         </li>
+        <li class="footer_comment">
+          <small>
+            {{ $t("footer.description") }}
+          </small>
+        </li>
       </ul>
     </div>
   </footer>
