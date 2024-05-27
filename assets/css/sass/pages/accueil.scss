@@ -161,6 +161,14 @@
   animation: lightBorderPresentation 1s $delay cubic-bezier(0.56, 0.12, 0.04, 1);
 }
 
+@mixin presentationDisplay($delay, $marginTop) {
+  position: relative;
+  animation: slidePresentation 1s $delay ease both;
+  text-shadow: -2px 2px black;
+  padding: 5px;
+  margin: $marginTop 0 20px 0;
+}
+
 .block__cible {
   text-align: left;
   width: 50%;
@@ -168,12 +176,12 @@
   padding-left: 10%;
 
   &__service {
-    position: relative;
-    animation: slidePresentation 1s 2.1s ease both;
-    text-shadow: -2px 2px black;
-    padding: 5px;
-    margin: 20px 0 20px 0;
-    transition: box-shadow 0.2s linear;
+    @include presentationDisplay(2.1s, 20px);
+    // position: relative;
+    // animation: slidePresentation 1s 2.1s ease both;
+    // text-shadow: -2px 2px black;
+    // padding: 5px;
+    // margin: 20px 0 20px 0;
     &:before {
       @include ligthBlock(2.1s);
     }
@@ -183,12 +191,13 @@
     }
   }
   &__projet {
-    position: relative;
-    animation: slidePresentation 1s 3.2s ease both;
-    text-shadow: -2px 2px black;
-    padding: 5px;
-    margin: 40px 0 20px 0;
-    transition: box-shadow 0.2s linear;
+    @include presentationDisplay(3.2s, 40px);
+
+    // position: relative;
+    // animation: slidePresentation 1s 3.2s ease both;
+    // text-shadow: -2px 2px black;
+    // padding: 5px;
+    // margin: 40px 0 20px 0;
     &:before {
       @include ligthBlock(3.2s);
     }
