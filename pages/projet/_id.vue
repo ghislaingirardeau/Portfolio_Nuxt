@@ -76,7 +76,7 @@
           >
             <NuxtLink
               :to="localePath({ name: 'projet-id', params: { id: item.id } })"
-              class="liste--orange"
+              class="autres_projets_lien"
               >{{ item.name }}
             </NuxtLink>
           </li>

@@ -62,13 +62,13 @@
   }
 }
 
-.liste--orange {
-  color: $color-third;
+.autres_projets_lien {
+  color: $color-secondary;
   text-decoration: none;
   font-size: $linksize;
   transition: all 0.3s ease;
   &:hover {
-    text-shadow: 7px 30px black;
+    text-shadow: 7px 30px $color-blue-mid;
   }
 }
 
@@ -98,11 +98,6 @@
       & > li {
         display: inline-block;
       }
-    }
-  }
-  .liste--orange {
-    &:hover {
-      text-shadow: 7px 30px white;
     }
   }
 }
