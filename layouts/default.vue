@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div :key="resetApp">
     <start-anim v-if="isStarEnable" :key="isStarEnable" />
     <TheHeader />
     <Nuxt />
@@ -42,12 +42,18 @@ export default {
   data() {
     return {
       isStarEnable: true,
+      resetApp: 0,
     };
   },
   methods: {
     disableAnimStar(payload) {
       this.isStarEnable = payload;
     },
+  },
+  mounted() {
+    window.addEventListener("resize", (event) => {
+      this.resetApp++;
+    });
   },
 };
 </script>
