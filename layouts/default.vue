@@ -50,11 +50,11 @@ export default {
       this.isStarEnable = payload;
     },
   },
-  mounted() {
+  /* mounted() {
     window.addEventListener("resize", (event) => {
       this.resetApp++;
     });
-  },
+  }, */
 };
 </script>
 
