@@ -64,7 +64,7 @@
   color: $color-secondary;
   display: none;
 }
-.swipe_element {
+/* .swipe_element {
   display: none;
   margin-top: 15px;
   &::before {
@@ -79,7 +79,7 @@
     filter: blur(2px);
     animation: swipeMobile 1.5s 0.5s linear 1 forwards;
   }
-}
+} */
 .projet_carrousel_block {
   position: absolute;
   width: 100%;
@@ -107,7 +107,6 @@
     display: inherit;
   }
 }
-
 
 @media screen and (max-width: 700px) {
   .page__projet--link {
