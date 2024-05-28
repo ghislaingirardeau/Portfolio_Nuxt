@@ -12,14 +12,18 @@
 
     <projet-carrousel>
       <transition name="fade-button-slide">
-        <button @click="goRight" v-if="slide != 2" class="carrousel-ctrl-right">
+        <button
+          @click="moveSlide($event, null, 'right')"
+          v-if="slide != 2"
+          class="carrousel-ctrl-right"
+        >
           &gt;
         </button>
       </transition>
 
       <transition name="fade-button-slide">
         <button
-          @click="goLeft"
+          @click="moveSlide($event, null, 'left')"
           v-if="slide != 0"
           class="carrousel-ctrl-left"
           :style="{ visibility: buttonLeftIsVisible }"
@@ -122,27 +126,41 @@ export default {
         return (this.listsOfProject = this.$t("projects").slice(8, 12));
       }
     },
-    goRight(e, index = null) {
-      const r = document.querySelector(":root");
-      r.style.setProperty("--direction", "180deg");
-      r.style.setProperty("--launcherStart", "launchLogoRight");
+    moveSlide($event, index = null, direction = null) {
+      // animation pour la sortie du slide
+      const projectsFade = [{ opacity: 1 }, { opacity: 0 }];
+
+      const projectsFadeTiming = {
+        duration: 200,
+        iterations: 1,
+      };
+      document
+        .querySelector(".projet_carrousel_slide")
+        .animate(projectsFade, projectsFadeTiming)
+        .addEventListener("finish", (event) => {
+          // quand animation de la sortie du slide est fini
+          // execute l'animation d'entrée du slide
+          direction === "right" ? this.goRight(index) : this.goLeft(index);
+          this.projectsList();
+        });
+    },
+    goRight(index = null) {
       this.slide >= this.pageNumber() - 1 ? (this.slide = 0) : this.slide++;
       index ? (this.slide = index) : "";
-      this.projectsList();
       this.slideDirection = "slide-translate-right";
       this.buttonLeftIsVisible = false;
     },
     goLeft(e, index = null) {
-      const r = document.querySelector(":root");
-      r.style.setProperty("--direction", "-180deg");
-      r.style.setProperty("--launcherStart", "launchLogoLeft");
       this.slide <= 0 ? (this.slide = 2) : this.slide--;
       index || index === 0 ? (this.slide = index) : "";
       this.projectsList();
       this.slideDirection = "slide-translate-left";
     },
     goToProjects(index) {
-      index > this.slide ? this.goRight("_", index) : this.goLeft("_", index);
+      // pour les boutons de navigation, va à la slide (index) correspondante
+      index > this.slide
+        ? this.moveSlide("_", index, "right")
+        : this.moveSlide("_", index, "left");
     },
   },
 };
