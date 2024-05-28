@@ -99,11 +99,23 @@
   .swipe_element {
     display: inherit;
   }
+  .projet_carrousel {
+    min-height: 632px;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .page__projet--link {
     width: 90%;
     margin: 30px;
+  }
+  .projet_carrousel {
+    min-height: 990px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .projet_carrousel {
+    min-height: 920px;
   }
 }
