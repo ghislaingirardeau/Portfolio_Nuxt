@@ -84,11 +84,18 @@ export default {
     },
     detectTouchEnd(event) {
       event.preventDefault();
-      if (this.touchBeginX < event.changedTouches[0].clientX) {
+      let gapTouchX = event.changedTouches[0].clientX - this.touchBeginX;
+      if (
+        this.touchBeginX < event.changedTouches[0].clientX &&
+        gapTouchX > 60
+      ) {
         console.log("swipe right");
         this.nextSlide();
       }
-      if (this.touchBeginX > event.changedTouches[0].clientX) {
+      if (
+        this.touchBeginX > event.changedTouches[0].clientX &&
+        gapTouchX < -60
+      ) {
         console.log("swipe left");
         this.previousSlide();
       }
