@@ -8,14 +8,14 @@
     <button
       @click.prevent="previousSlide"
       class="btn__slide btn__slide--prev"
-      v-show="ImageArray.length > 1 && !isMobile"
+      v-show="ImageArray.length > 1 && isMobile"
     >
       &lt;
     </button>
     <button
       @click.prevent="nextSlide"
       class="btn__slide btn__slide--next"
-      v-show="ImageArray.length > 1 && !isMobile"
+      v-show="ImageArray.length > 1 && isMobile"
     >
       &gt;
     </button>
@@ -50,10 +50,10 @@ export default {
       return navigator.userAgentData.mobile;
     },
     defineTouchStart() {
-      return this.isMobile ? "touchstart" : null;
+      return !this.isMobile ? "touchstart" : null;
     },
     defineTouchEnd() {
-      return this.isMobile ? "touchend" : null;
+      return !this.isMobile ? "touchend" : null;
     },
   },
   methods: {

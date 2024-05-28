@@ -99,9 +99,15 @@
   }
 }
 
+@media screen and (max-width: 900px) {
+  .carousel {
+    width: 90%;
+  }
+}
+
 @media screen and (max-width: 576px) {
   .carousel {
-    position: relative;
+    width: 90%;
   }
   .carousel_slide {
     height: 300px;
