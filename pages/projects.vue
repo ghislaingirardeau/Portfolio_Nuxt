@@ -103,13 +103,13 @@ export default {
         $event.changedTouches[0].clientX > this.touchBeg &&
         touchLength > 90
       ) {
-        return this.goRight();
+        return this.moveSlide("_", null, "right");
       }
       if (
         $event.changedTouches[0].clientX < this.touchBeg &&
         touchLength < -90
       ) {
-        return this.goLeft();
+        return this.moveSlide("_", null, "left");
       }
     },
     pageNumber() {
@@ -140,7 +140,12 @@ export default {
         .addEventListener("finish", (event) => {
           // quand animation de la sortie du slide est fini
           // execute l'animation d'entrée du slide
-          direction === "right" ? this.goRight(index) : this.goLeft(index);
+          if (direction === "right") {
+            this.goRight(index);
+          }
+          if (direction === "left") {
+            this.goLeft(index);
+          }
           this.projectsList();
         });
     },
