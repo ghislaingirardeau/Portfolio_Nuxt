@@ -1,11 +1,8 @@
 <template>
   <div
     class="carousel"
-    v-on="
-      isMobile
-        ? { touchstart: detectTouchStart, touchend: detectTouchEnd }
-        : null
-    "
+    @[defineTouchStart].passive="detectTouchStart"
+    @[defineTouchEnd].passive="detectTouchEnd"
   >
     <slot></slot>
     <button
@@ -41,6 +38,7 @@ export default {
       index: 0,
       direction: null,
       touchBeginX: 0,
+      eventName: "click",
     };
   },
   props: {
@@ -50,6 +48,12 @@ export default {
   computed: {
     isMobile() {
       return navigator.userAgentData.mobile;
+    },
+    defineTouchStart() {
+      return this.isMobile ? "touchstart" : null;
+    },
+    defineTouchEnd() {
+      return this.isMobile ? "touchend" : null;
     },
   },
   methods: {
@@ -78,27 +82,25 @@ export default {
       this.index = i;
     },
     detectTouchStart(event) {
-      event.preventDefault();
-      console.log("touch start");
       this.touchBeginX = event.changedTouches[0].clientX;
     },
     detectTouchEnd(event) {
-      event.preventDefault();
       let gapTouchX = event.changedTouches[0].clientX - this.touchBeginX;
       if (
         this.touchBeginX < event.changedTouches[0].clientX &&
         gapTouchX > 60
       ) {
-        console.log("swipe right");
         this.nextSlide();
       }
       if (
         this.touchBeginX > event.changedTouches[0].clientX &&
         gapTouchX < -60
       ) {
-        console.log("swipe left");
         this.previousSlide();
       }
+    },
+    toDoTest() {
+      console.log("hello");
     },
   },
 };
