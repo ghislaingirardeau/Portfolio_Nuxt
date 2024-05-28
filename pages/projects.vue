@@ -1,8 +1,8 @@
 <template>
   <main
     class="carroussel_block"
-    @touchstart="startDrag($event)"
-    @touchend="endDrag($event)"
+    @touchstart.passive="startDrag($event)"
+    @touchend.passive="endDrag($event)"
   >
     <h1>{{ $t("projectsPage.title") }}</h1>
     <p class="text_clickOn">{{ $t("projectsPage.description") }}</p>
