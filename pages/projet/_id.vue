@@ -48,7 +48,7 @@
               <img
                 :src="require(`~/assets/images/${item}`)"
                 :alt="detailProject.name"
-                class="carousel--img"
+                class="carousel_slide--img"
               />
             </div>
 
