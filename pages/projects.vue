@@ -128,8 +128,8 @@ export default {
     },
     moveSlide($event, index = null, direction = null) {
       // animation pour la sortie du slide
+      // une fois l'animation terminé, execute le goRight ou Left pour afficher la slide + animation à l'entrée
       const projectsFade = [{ opacity: 1 }, { opacity: 0 }];
-
       const projectsFadeTiming = {
         duration: 200,
         iterations: 1,
@@ -151,21 +151,32 @@ export default {
     },
     goRight(index = null) {
       this.slide >= this.pageNumber() - 1 ? (this.slide = 0) : this.slide++;
+      // si il y a un index, renvoit le slide correspondant
       index ? (this.slide = index) : "";
       this.slideDirection = "slide-translate-right";
       this.buttonLeftIsVisible = false;
     },
-    goLeft(e, index = null) {
+    goLeft(index = null) {
       this.slide <= 0 ? (this.slide = 2) : this.slide--;
+      // ajoute la condition === 0 sinon la condition index = 0 ne sera jamais vrai
       index || index === 0 ? (this.slide = index) : "";
       this.projectsList();
       this.slideDirection = "slide-translate-left";
     },
     goToProjects(index) {
-      // pour les boutons de navigation, va à la slide (index) correspondante
-      index > this.slide
-        ? this.moveSlide("_", index, "right")
-        : this.moveSlide("_", index, "left");
+      // Gère la navigation boutons des slides
+      // si je clique sur l'index du slide en cours, ne fait rien
+      if (index === this.slide) {
+        return;
+      }
+      if (index > this.slide) {
+        this.moveSlide("_", index, "right");
+        return;
+      }
+      if (index < this.slide) {
+        this.moveSlide("_", index, "left");
+        return;
+      }
     },
   },
 };
