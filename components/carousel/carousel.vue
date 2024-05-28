@@ -2,7 +2,7 @@
   <div
     class="carousel"
     v-on="
-      !isMobile
+      isMobile
         ? { touchstart: detectTouchStart, touchend: detectTouchEnd }
         : null
     "
@@ -11,14 +11,14 @@
     <button
       @click.prevent="previousSlide"
       class="btn__slide btn__slide--prev"
-      v-show="ImageArray.length > 1 && isMobile"
+      v-show="ImageArray.length > 1 && !isMobile"
     >
       &lt;
     </button>
     <button
       @click.prevent="nextSlide"
       class="btn__slide btn__slide--next"
-      v-show="ImageArray.length > 1 && isMobile"
+      v-show="ImageArray.length > 1 && !isMobile"
     >
       &gt;
     </button>
