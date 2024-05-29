@@ -1,7 +1,7 @@
 <template>
-  <main class="detail_project">
+  <main class="detail_project_page">
     <transition name="opacity" appear>
-      <div class="block_projet">
+      <div class="detail_project">
         <h1>{{ detailProject.name }}</h1>
         <h2>{{ detailProject.summary }}</h2>
         <p v-html="detailProject.description"></p>
@@ -16,7 +16,7 @@
 
         <h2>{{ $t("projectsIdPage.gallery") }}</h2>
 
-        <div v-if="detailProject.loader" class="block_projet--loader">
+        <div v-if="detailProject.loader" class="detail_project--loader">
           <p>{{ $t("projectsIdPage.loader") }}</p>
           <loaderOhmyfood />
         </div>
@@ -63,15 +63,10 @@
       </div>
     </transition>
 
-    <aside class="autres_projets">
+    <aside class="others_projects">
       <h2>{{ $t("projectsIdPage.other") }}</h2>
       <ul>
-        <transition-group
-          class="autres_projets--liste"
-          name="slide-fade"
-          tag="article"
-          appear
-        >
+        <transition-group name="slide-fade" tag="article" appear>
           <li
             v-for="(item, l) in relatedProject"
             :key="item.id"
@@ -79,7 +74,7 @@
           >
             <NuxtLink
               :to="localePath({ name: 'projet-id', params: { id: item.id } })"
-              class="autres_projets_lien"
+              class="others_projects_link"
               >{{ item.name }}
             </NuxtLink>
           </li>

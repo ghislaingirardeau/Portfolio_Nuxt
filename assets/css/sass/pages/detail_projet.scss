@@ -1,11 +1,11 @@
-.detail_project {
+.detail_project_page {
   position: relative;
   margin-top: 30px;
   display: flex;
   justify-content: space-between;
 }
 
-.block_projet {
+.detail_project {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,7 +46,7 @@
   }
 }
 
-.autres_projets {
+.others_projects {
   width: 30%;
   & > h2 {
     text-shadow: 2px 2px black;
@@ -62,7 +62,7 @@
   }
 }
 
-.autres_projets_lien {
+.others_projects_link {
   color: $color-secondary;
   text-decoration: none;
   font-size: $linksize;
@@ -80,10 +80,10 @@
 }
 
 @media screen and (max-width: 768px) {
-  .detail_project {
+  .detail_project_page {
     flex-wrap: wrap;
   }
-  .block_projet {
+  .detail_project {
     width: 100%;
     &:before {
       display: none;
@@ -92,7 +92,7 @@
       font-size: 1.2rem;
     }
   }
-  .autres_projets {
+  .others_projects {
     width: 100%;
     & > ul {
       & > li {

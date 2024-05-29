@@ -7,14 +7,14 @@
     <slot></slot>
     <button
       @click.prevent="previousSlide"
-      class="btn__slide btn__slide--prev"
+      class="carousel_btn__slide carousel_btn__slide--prev"
       v-show="ImageArray.length > 1 && !isMobile"
     >
       &lt;
     </button>
     <button
       @click.prevent="nextSlide"
-      class="btn__slide btn__slide--next"
+      class="carousel_btn__slide carousel_btn__slide--next"
       v-show="ImageArray.length > 1 && !isMobile"
     >
       &gt;
