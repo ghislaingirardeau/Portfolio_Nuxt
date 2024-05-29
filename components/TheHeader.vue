@@ -67,7 +67,7 @@ export default {
   data() {
     return {
       cubeRender: 0 /* pour faire un re-render du cube avec :key */,
-      animCube: "spin 3s linear" /* anime par default au load */,
+      animCube: "spin 2.4s 0.3s linear" /* anime par default au load */,
       lang: "en",
     };
   },
