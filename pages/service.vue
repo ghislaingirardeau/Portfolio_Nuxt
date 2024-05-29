@@ -4,27 +4,27 @@
     <p class="reveal-0">{{ $t("services.header.p") }}</p>
 
     <h2 class="reveal-0">{{ $t("services.header.h2") }}</h2>
-    <div class="container__etape">
-      <article class="container__etape__block reveal-1">
+    <div class="service_step">
+      <article class="service_step__block reveal-1">
         <h3>{{ $t("services.stepOne.h3") }}</h3>
         <div
           v-html="$t('services.stepOne.description')"
-          class="container__etape--content"
+          class="service_step--content"
         ></div>
       </article>
-      <article class="container__etape__block reveal-2">
+      <article class="service_step__block reveal-2">
         <h3>{{ $t("services.stepTwo.h3") }}</h3>
         <div
           v-html="$t('services.stepTwo.description')"
-          class="container__etape--content"
+          class="service_step--content"
         ></div>
       </article>
 
-      <article class="container__etape__block reveal-3">
+      <article class="service_step__block reveal-3">
         <h3>{{ $t("services.stepThree.h3") }}</h3>
         <div
           v-html="$t('services.stepThree.description')"
-          class="container__etape--content"
+          class="service_step--content"
         ></div>
       </article>
     </div>

@@ -12,7 +12,7 @@
   }
 }
 
-.container__etape {
+.service_step {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -34,7 +34,7 @@
 }
 
 @media screen and (max-width: 992px) {
-  .container__etape {
+  .service_step {
     &__block {
       width: 100%;
     }
