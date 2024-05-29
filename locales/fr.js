@@ -78,7 +78,7 @@ export default {
       id: "13",
       date: "mars 2024 - Aujourd'hui",
       name: `Wordle Game`,
-      summary: "Créer un mini jeu (wordle) en Test-Driven-Development",
+      summary: "Création d'un mini jeu (wordle) en Test-Driven-Development",
       description: `
       Création du jeu en donnant la priorité au Test first grâce à 3 étapes. 
       <ul>
@@ -94,7 +94,7 @@ export default {
       id: "12",
       date: "juin 2023",
       name: "Mon Vocabulaire en carte",
-      summary: "Créer une application web avec PWA, Typescript & Nuxt 3",
+      summary: "Création d'une application web avec PWA, Typescript & Nuxt 3",
       description: `
       App permettant de traduire des mots ou expressions mais aussi de les organiser et archiver sous forme de carte. L'application permet de:
       <ul>
