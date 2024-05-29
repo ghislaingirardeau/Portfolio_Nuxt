@@ -1,5 +1,5 @@
 <template>
-  <div class="projet_carrousel">
+  <div class="projects_carousel">
     <slot></slot>
   </div>
 </template>

@@ -1,22 +1,33 @@
-.page__projet {
+.projects_page {
+  position: relative;
+  z-index: 0;
   & > h1 {
     text-shadow: 2px 2px black;
   }
   & > p {
     color: $color-bright;
   }
-  & .date--text {
-    text-decoration: underline;
-  }
 }
-
-.page__projet--link {
+.projects_text-underline {
+  text-decoration: underline;
+}
+.projects_carousel_slide--link {
   border-radius: 5px 5px;
   width: 35%;
   margin: 30px;
   text-decoration: none;
   opacity: 0;
   @include anim-btn($color-lien);
+}
+
+.projects_carousel {
+  width: 100%;
+  min-height: 560px;
+  &_slide {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .slide-fade-enter-active {
@@ -26,11 +37,6 @@
 .slide-fade-enter {
   opacity: 0;
   transform: translateY(60px);
-}
-
-.carroussel_block {
-  position: relative;
-  z-index: 0;
 }
 
 @mixin carrouselControl() {
@@ -44,78 +50,63 @@
   z-index: 1;
 }
 
-.carrousel-ctrl-right {
+.projects_carousel_ctrl-right {
   @include carrouselControl();
   right: 20px;
   top: 50%;
 }
-.carrousel-ctrl-left {
+.projects_carousel_ctrl-left {
   @include carrouselControl();
   left: 20px;
   top: 50%;
 }
-.text_clickOn {
+.projects_description {
   color: white;
   padding-inline: 10%;
 }
-.swipe_fixed {
-  width: 10px;
-  height: 10px;
-  background-color: red;
-}
-.swipe--text {
+.projects_swipe {
   color: $color-secondary;
   display: none;
 }
 
-.projet_carrousel {
-  width: 100%;
-  min-height: 560px;
-  &_slide {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
-
 @media screen and (max-width: 1024px) {
-  .swipe--text {
+  .projects_swipe {
     display: inherit;
   }
-  .carrousel-ctrl-right {
+  .projects_carousel_ctrl-right {
     right: 0px;
     display: none;
   }
-  .carrousel-ctrl-left {
+  .projects_carousel_ctrl-left {
     left: 0px;
     display: none;
   }
-  .element_fixed {
-    display: none;
-  }
-  .element_fixed2 {
-    display: none;
-  }
-  .swipe_element {
-    display: inherit;
-  }
-  .projet_carrousel {
+  // .element_fixed {
+  //   display: none;
+  // }
+  // .element_fixed2 {
+  //   display: none;
+  // }
+  // .swipe_element {
+  //   display: inherit;
+  // }
+  .projects_carousel {
     min-height: 632px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .page__projet--link {
+  .projects_carousel_slide--link {
     width: 90%;
     margin: 30px;
   }
-  .projet_carrousel {
+  .projects_carousel {
     min-height: 990px;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .projet_carrousel {
+  .projects_carousel {
     min-height: 920px;
   }
 }

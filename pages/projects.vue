@@ -1,12 +1,12 @@
 <template>
   <main
-    class="carroussel_block"
+    class="projects_page"
     @touchstart.passive="startDrag($event)"
     @touchend.passive="endDrag($event)"
   >
     <h1>{{ $t("projectsPage.title") }}</h1>
-    <p class="text_clickOn">{{ $t("projectsPage.description") }}</p>
-    <div class="swipe--text">
+    <p class="projects_description">{{ $t("projectsPage.description") }}</p>
+    <div class="projects_swipe">
       <span> &lt;--- swipe ---&gt;</span>
     </div>
 
@@ -15,7 +15,7 @@
         <button
           @click="moveSlide($event, null, 'right')"
           v-if="slide != 2"
-          class="carrousel-ctrl-right"
+          class="projects_carousel_ctrl-right"
         >
           &gt;
         </button>
@@ -25,7 +25,7 @@
         <button
           @click="moveSlide($event, null, 'left')"
           v-if="slide != 0"
-          class="carrousel-ctrl-left"
+          class="projects_carousel_ctrl-left"
           :style="{ visibility: buttonLeftIsVisible }"
         >
           &lt;
@@ -135,7 +135,7 @@ export default {
         iterations: 1,
       };
       document
-        .querySelector(".projet_carrousel_slide")
+        .querySelector(".projects_carousel_slide")
         .animate(projectsFade, projectsFadeTiming)
         .addEventListener("finish", (event) => {
           // quand animation de la sortie du slide est fini
