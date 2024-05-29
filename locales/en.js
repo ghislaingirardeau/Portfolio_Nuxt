@@ -75,6 +75,7 @@ export default {
       id: "13",
       date: "march 2024 - Today",
       name: `Wordle Game`,
+      mobileFirst: true,
       summary: "Create a mini game (wordle) in Test-Driven-Development",
       description: `
       Creation of the game giving priority to Test first using 3 steps.
@@ -91,6 +92,7 @@ export default {
       id: "12",
       date: "juin 2023",
       name: "Mon Vocabulaire en carte",
+      mobileFirst: true,
       summary: "Building a web application with PWA, Typescript & Nuxt 3",
       description:
         "An application that allows you to translate words or phrases, but also to organise and archive them in the form of a card. The application allows you to listen to 'my vocabulary' in the chosen language at different speeds and offers pronunciation help for certain languages such as Khmer.",
@@ -110,6 +112,7 @@ export default {
       date: "january 2023",
       name: "Weather Mobile App",
       summary: "Dicsover & Explore React Native",
+      mobileFirst: true,
       description:
         "Explore React Native & Expo components, set up a React navigation, get API data. Play with additional components: camera, save files, picker, env, touch event, animation...",
       tech: "React native, Expo Go, Ionicons, AsyncStorage, GitHub",
@@ -120,6 +123,7 @@ export default {
       date: "july 2022",
       name: "Web App - Data collection app",
       summary: "Web application for data collection and processing",
+      mobileFirst: false,
       description:
         "Loan simulator and payment table, data forms template to collect the data, the admin page to visualise the collections and view the data tables.",
       tech: "Nuxt, vuetify, firebase auth & store, moment JS, chart JS, notification, export to excel, netlify, GitHub",
@@ -145,6 +149,7 @@ export default {
       date: "january 2022",
       name: "PWA - Cartographie",
       summary: "Mobile free Mapping App",
+      mobileFirst: true,
       description:
         "Build a mapping tool for a sociologist researcher. Track and save my position, follow me, add or draw a location. Create custom markers, edit data, save and export data to Excel.",
       tech: "Nuxt, vuetify, leaflet, Firebase, import et export from/to Excel file, netlify, GitHub",
@@ -162,6 +167,7 @@ export default {
       id: "7",
       date: "august 2021",
       name: "BeToFeel",
+      mobileFirst: false,
       summary:
         "Building a full-stack website: sharing and visualising dynamic emotions",
       description:
@@ -183,6 +189,7 @@ export default {
       date: "may 2021",
       name: "Groupomania",
       summary: "Build a Full-Stack Solution",
+      mobileFirst: false,
       description:
         "Analyse a client's requirements to define the scope and features of a new application. Build a full-stack solution using a front-end framework, including a SQL database.",
       tech: "Mysql, Node js, Express, bcrypt, multer, bootstrap, Vue js, GitHub",
@@ -201,6 +208,7 @@ export default {
       date: "april 2021",
       name: "Orinoco",
       summary: "Build an eCommerce Website",
+      mobileFirst: false,
       description:
         "Use the JavaScript programming language to interact with users and external services. Apply a test-driven approach to web development.",
       tech: "Javascript, bootstrap, Regex, GitHub",
@@ -217,6 +225,7 @@ export default {
       date: "december 2020",
       name: "Reservia",
       summary: "Turn Mock-ups into a Web Page",
+      mobileFirst: false,
       description:
         "Get started with HTML & CSS by implementing a travel booking platform's website from scratch.",
       tech: "HTML, CSS, GitHub",
@@ -228,6 +237,7 @@ export default {
       date: "january 2021",
       name: "Ohmyfood",
       summary: "Integrate a mobile website with animations in CSS",
+      mobileFirst: false,
       description:
         "Implement the mobile version of this foodtech website with CSS animations.",
       tech: "HTML, CSS, SASS, GitHub, BEM methods for a clear code",

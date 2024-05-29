@@ -79,6 +79,7 @@ export default {
       date: "mars 2024 - Aujourd'hui",
       name: `Wordle Game`,
       summary: "Création d'un mini jeu (wordle) en Test-Driven-Development",
+      mobileFirst: true,
       description: `
       Création du jeu en donnant la priorité au Test first grâce à 3 étapes. 
       <ul>
@@ -95,6 +96,7 @@ export default {
       date: "juin 2023",
       name: "Mon Vocabulaire en carte",
       summary: "Création d'une application web avec PWA, Typescript & Nuxt 3",
+      mobileFirst: true,
       description: `
       App permettant de traduire des mots ou expressions mais aussi de les organiser et archiver sous forme de carte. L'application permet de:
       <ul>
@@ -118,6 +120,7 @@ export default {
       date: "janvier 2023",
       name: "Mobile App météo",
       summary: "Découverte de React Native, via une App Météo",
+      mobileFirst: true,
       description:
         "Découverte et intégration de composants React Native & Expo, mise en place d'une navigation, récupération de données API. Exploration d'autres composants: camera, store files, pickers, env, touche event, animation...",
       tech: "React native, Expo Go, Ionicons, AsyncStorage, GitHub",
@@ -129,6 +132,7 @@ export default {
       name: "Web App - Collecte de données",
       summary:
         "Création d'une application de collecte et de traitement de données",
+        mobileFirst: false,
       description:
         "Mise en place d'un simulateur de financements avec son plan d'amortissement, élaboration du questionnaire pour la collecte de donnée avec authentification, une page administrateur pour le suivi et la synthèse des données",
       tech: "Nuxt, vuetify, firebase auth & store, moment JS, chart JS, notification par messagerie, export vers fichier excel, netlify, GitHub",
@@ -154,6 +158,7 @@ export default {
       date: "janvier 2022",
       name: "PWA - Cartographie",
       summary: "Création d'une application de mapping pour mobile",
+      mobileFirst: true,
       description:
         "Développement d'un outil d'aide à la cartographie pour une chercheuse en sociologie. Enregistrer une position, suivre ma position, créer des marqueurs personnalisable, enregistrer et exporter les données.",
       tech: "Nuxt, vuetify, leaflet, Firebase, import GeoJson et export depuis fichier excel, netlify, GitHub",
@@ -173,6 +178,8 @@ export default {
       name: "BeToFeel",
       summary:
         "Développement d'un siteweb fullstack de visualisation et de partage d'émotions",
+
+        mobileFirst: false,
       description:
         "Personnaliser et animer le rendu d'une image SVG, rendre dynamique une image en fonction de la base de donnée de l'utilisateur, Gérer et implémenter un stockage de données à l'aide de SQL, Déployer le site Netlify et le serveur Heroku",
       tech: "Node js, Express, Axios, bcrypt, Figma, bootstrap vue, Nuxt js, GitHub, Mysql workbench",
@@ -192,6 +199,7 @@ export default {
       date: "mai 2021",
       name: "Groupomania",
       summary: "Création d'un réseau social interne à une entreprise",
+      mobileFirst: false,
       description:
         "Personnaliser le contenu envoyé à un client web, Gérer un stockage de données à l'aide de SQL, Implémenter un stockage de données sécurisé en utilisant SQL, Authentifier un utilisateur et maintenir sa session, Définir des rôles et des privilèges suivant l'utilisateur",
       tech: "Mysql, Node js, Express, bcrypt, multer, bootstrap, Vue js, GitHub",
@@ -210,6 +218,7 @@ export default {
       date: "avril 2021",
       name: "Orinoco",
       summary: "Création d'un 1er projet pour un site e-commerce",
+      mobileFirst: false,
       description:
         "Interagir avec une API avec JavaScript. Valider des données issues de sources externes avant leur envoie vers API. Créer un plan de test pour une application et gérer des événements JavaScript",
       tech: "Javascript, bootstrap, Regex, GitHub",
@@ -226,6 +235,7 @@ export default {
       date: "décembre 2020",
       name: "Reservia",
       summary: "Intégration d'une maquette en site web",
+      mobileFirst: false,
       description:
         "Implémenter une interface responsive, Utiliser un système de gestion de versions pour le suivi du projet",
       tech: "HTML, CSS, GitHub",
@@ -236,6 +246,7 @@ export default {
       id: "2",
       date: "janvier 2021",
       name: "Ohmyfood",
+      mobileFirst: false,
       summary: "Mise en œuvre une structure de navigation web",
       description:
         "Mettre en œuvre des effets CSS graphiques avancés en assurant une cohérence graphique. Mise en place d'animation Keyframes et transitions pour rendre enrichir l'expérience utilisateur",

@@ -44,7 +44,10 @@
             :numImg="i"
           >
             <!-- envoie index de l'image a afficher en props -->
-            <div class="carousel_slide">
+            <div
+              class="carousel_slide"
+              :style="{ height: carouselSlideHeight }"
+            >
               <img
                 :src="require(`~/assets/images/${item}`)"
                 :alt="detailProject.name"
@@ -124,5 +127,20 @@ export default {
     carouselSlide,
   },
   methods: {},
+  computed: {
+    carouselSlideHeight() {
+      // Ajuste la hauteur du carousel suivant le type d'image, mobile ou non
+      // si image est en mode mobile
+      if (this.detailProject.mobileFirst) {
+        return "400px";
+      } else if (navigator.userAgentData.mobile) {
+        // si l'image est en mode desktop et que user est sur device mobile
+        return "250px";
+      } else {
+        // sinon renvoie une height de 400px
+        return "400px";
+      }
+    },
+  },
 };
 </script>
