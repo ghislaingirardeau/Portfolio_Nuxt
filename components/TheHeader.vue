@@ -8,12 +8,24 @@
         :key="cubeRender"
         :style="{ animation: animCube }"
       >
-        <div class="front">g</div>
-        <div class="back">dev</div>
+        <div class="front">
+          <span>g</span>
+        </div>
+        <div class="back">
+          <span>
+            <span>w</span>
+            <span>e</span>
+            <span>b</span>
+          </span>
+        </div>
         <div class="top"></div>
         <div class="bottom"></div>
-        <div class="left">G</div>
-        <div class="right">web</div>
+        <div class="left">
+          <span>G</span>
+        </div>
+        <div class="right">
+          <span>dev</span>
+        </div>
       </div>
     </div>
     <nav class="header__navBar switchLang__anim--opacity" @click="spinLogo">
@@ -55,7 +67,7 @@ export default {
   data() {
     return {
       cubeRender: 0 /* pour faire un re-render du cube avec :key */,
-      animCube: "spin 4s linear" /* anime par default au load */,
+      animCube: "spin 3s linear" /* anime par default au load */,
       lang: "en",
     };
   },
