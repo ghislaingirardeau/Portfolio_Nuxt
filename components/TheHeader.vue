@@ -8,11 +8,11 @@
         :key="cubeRender"
         :style="{ animation: animCube }"
       >
-        <div class="front">
+        <div class="front front-color">
           <span>g</span>
         </div>
-        <div class="back">
-          <span>
+        <div class="back back-color">
+          <span class="reverse-letter">
             <span>w</span>
             <span>e</span>
             <span>b</span>
@@ -20,10 +20,10 @@
         </div>
         <div class="top"></div>
         <div class="bottom"></div>
-        <div class="left">
+        <div class="left left-color">
           <span>G</span>
         </div>
-        <div class="right">
+        <div class="right right-color">
           <span>dev</span>
         </div>
       </div>

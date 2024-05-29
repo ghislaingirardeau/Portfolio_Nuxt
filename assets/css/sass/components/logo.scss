@@ -27,52 +27,77 @@
   & > span {
     position: absolute;
     top: 0px;
-    left: 15%;
+    left: 20%;
+    color: $color-dark;
     & span {
       letter-spacing: -0.25em;
     }
   }
 }
 .right {
-  border: $color-primary 2px solid;
+  border: $color-third 2px solid;
   transform: rotateY(-270deg) translateX(54px);
   transform-origin: top right;
   position: relative;
   & > span {
     position: absolute;
     top: 45px;
-    left: 20%;
+    left: 10%;
+    color: $color-dark;
   }
 }
 .left {
-  border: $color-third 2px solid;
+  border: $color-secondary 2px solid;
   transform: rotateY(270deg) translateX(-54px);
   transform-origin: center left;
   position: relative;
   & > span {
     position: absolute;
     top: 15px;
-    left: 40%;
+    left: 50%;
+    color: $color-dark;
   }
 }
 .top {
-  border: $color-third 2px solid;
+  border: $color-blue-mid 2px solid;
   transform: rotateX(-90deg) translateY(-50px);
   transform-origin: top center;
 }
 .bottom {
-  border: $color-secondary 2px solid;
+  border: $color-blue-mid 2px solid;
   transform: rotateX(90deg) translateY(50px);
   transform-origin: bottom center;
 }
 .front {
-  border: $color-secondary 2px solid;
+  border: $color-primary 2px solid;
   transform: translateZ(50px);
+
   position: relative;
   & > span {
     position: absolute;
     top: 30px;
     right: 28%;
+    color: $color-dark;
+  }
+}
+
+.reverse-letter {
+  animation: reverseWeb 3s ease both;
+  transform: rotateY(180deg);
+  display: inline-block;
+}
+@keyframes reverseWeb {
+  0% {
+    transform: rotateY(180deg);
+  }
+  45% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(180deg);
   }
 }
 
