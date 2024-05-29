@@ -101,7 +101,7 @@ export default {
       App permettant de traduire des mots ou expressions mais aussi de les organiser et archiver sous forme de carte. L'application permet de:
       <ul>
         <li>Réécouter 'mon vocabulaire' dans la langue choisie à différentes vitesses</li>
-        <li>offre une aide à la prononciation pour certaine langue comme le Khmer.</li>
+        <li>Offre une aide à la prononciation pour certaine langue comme le Khmer.</li>
         <li>Enregistrer le mot avec la voix ou le clavier</li>
       </ul>`,
       tech: "Typescript, Nuxt 3, PWA, i18n, Firebase GitHub",
@@ -114,6 +114,37 @@ export default {
         "carte_tuto3.png",
       ],
       link: "https://my-flashcard-lang.netlify.app",
+    },
+    {
+      id: "8",
+      date: "janvier 2022",
+      name: "PWA - Cartographie",
+      summary: "Création d'une application de mapping pour mobile",
+      mobileFirst: true,
+      description: `Développement d'un outil d'aide à la cartographie pour une chercheuse en sociologie. 
+        <ul>
+        <li>- Enregistrer une position</li>
+        <li>- Suivre ma position</li>
+        <li>- Possibilité d'ajouter des zones géographiques</li>
+        <li>- Large sélections de marqueurs parmis plus de 2500 icones</li>
+        <li>- Enregistrer et exporter les données</li>
+        <li>- Organiser les marqueurs dans des dossiers pour affichage dynamique</li>
+        <li>- Des données sauvegardées et sécurisées via Firebase</li>
+      </ul>
+      `,
+      tech: "Nuxt, vuetify, leaflet, Firebase, import GeoJson et export depuis fichier excel, netlify, GitHub",
+      imageURL: [
+        "mapping1.PNG",
+        "mapping2.PNG",
+        "mapping3.PNG",
+        "mapping4.PNG",
+        "mapping5.PNG",
+        "mapping6.PNG",
+        "mapping7.PNG",
+        "mapping8.PNG",
+        "mapping9.PNG",
+      ],
+      link: "https://map-tool-village.netlify.app/",
     },
     {
       id: "11",
@@ -153,28 +184,7 @@ export default {
       tech: "Node js, Express, Axios, Vue js, Nuxt js, i18n, Vuetify, Stripe, GitHub, Mysql workbench, railway",
       imageURL: ["e-commerce1.png", "e-commerce2.png"],
     }, */
-    {
-      id: "8",
-      date: "janvier 2022",
-      name: "PWA - Cartographie",
-      summary: "Création d'une application de mapping pour mobile",
-      mobileFirst: true,
-      description:
-        "Développement d'un outil d'aide à la cartographie pour une chercheuse en sociologie. Enregistrer une position, suivre ma position, créer des marqueurs personnalisable, enregistrer et exporter les données.",
-      tech: "Nuxt, vuetify, leaflet, Firebase, import GeoJson et export depuis fichier excel, netlify, GitHub",
-      imageURL: [
-        "mapping1.PNG",
-        "mapping2.PNG",
-        "mapping3.PNG",
-        "mapping4.PNG",
-        "mapping5.PNG",
-        "mapping6.PNG",
-        "mapping7.PNG",
-        "mapping8.PNG",
-        "mapping9.PNG",
-      ],
-      link: "https://map-tool-village.netlify.app/",
-    },
+
     {
       id: "7",
       date: "aout 2021",

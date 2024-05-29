@@ -12,7 +12,6 @@
         <p>{{ item.summary }}</p>
         <p class="projects_text-underline">
           {{ $t("projectsPage.dateCreation") }}: {{ item.date }}
-          {{ item.imageURL ? item.imageURL[0] : "" }}
         </p>
         <!-- <img
           :src="

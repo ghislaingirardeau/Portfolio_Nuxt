@@ -108,6 +108,36 @@ export default {
       link: "https://my-flashcard-lang.netlify.app/en",
     },
     {
+      id: "8",
+      date: "january 2022",
+      name: "PWA - Cartographie",
+      summary: "Mobile free Mapping App",
+      mobileFirst: true,
+      description: `Development of a mapping tool for a sociology researcher. 
+        <ul>
+        <li>- Save a position</li>
+        <li>- Track my position</li>
+        <li>- Ability to add geographical areas</li>
+        <li>Large selection of markers from over 2500 icons</li>
+        <li>- Save and export data</li>
+        <li>- Organize markers in folders for dynamic display</li>
+        <li>- Data backed up and secured via Firebase</li>
+      </ul>`,
+      tech: "Nuxt, vuetify, leaflet, Firebase, import et export from/to Excel file, netlify, GitHub",
+      imageURL: [
+        "mapping1.PNG",
+        "mapping2.PNG",
+        "mapping3.PNG",
+        "mapping4.PNG",
+        "mapping5.PNG",
+        "mapping6.PNG",
+        "mapping7.PNG",
+        "mapping8.PNG",
+        "mapping9.PNG",
+      ],
+      link: "https://map-tool-village.netlify.app/",
+    },
+    {
       id: "11",
       date: "january 2023",
       name: "Weather Mobile App",
@@ -134,35 +164,17 @@ export default {
         "community_tool4.png",
       ],
     },
-    {
-      id: "9",
-      date: "mai 2022",
-      name: "Multi languages e-commerce website",
-      summary: "E-commerce website template",
-      description:
-        "Understand how to integrate a dynamic database related to the user language, create a dynamic shopping table summary and add an API Stripe payment simulation, currency conversion feature",
-      tech: "Node js, Express, Axios, Vue js, Nuxt js, i18n, Vuetify, Stripe, GitHub, Mysql workbench, railway",
-      imageURL: ["e-commerce1.png", "e-commerce2.png"],
-    },
-    {
-      id: "8",
-      date: "january 2022",
-      name: "PWA - Cartographie",
-      summary: "Mobile free Mapping App",
-      mobileFirst: true,
-      description:
-        "Build a mapping tool for a sociologist researcher. Track and save my position, follow me, add or draw a location. Create custom markers, edit data, save and export data to Excel.",
-      tech: "Nuxt, vuetify, leaflet, Firebase, import et export from/to Excel file, netlify, GitHub",
-      imageURL: [
-        "map1.PNG",
-        "map2.PNG",
-        "map3.PNG",
-        "map4.PNG",
-        "map5.PNG",
-        "map6.PNG",
-      ],
-      link: "https://map-tool-village.netlify.app/",
-    },
+    // {
+    //   id: "9",
+    //   date: "mai 2022",
+    //   name: "Multi languages e-commerce website",
+    //   summary: "E-commerce website template",
+    //   description:
+    //     "Understand how to integrate a dynamic database related to the user language, create a dynamic shopping table summary and add an API Stripe payment simulation, currency conversion feature",
+    //   tech: "Node js, Express, Axios, Vue js, Nuxt js, i18n, Vuetify, Stripe, GitHub, Mysql workbench, railway",
+    //   imageURL: ["e-commerce1.png", "e-commerce2.png"],
+    // },
+
     {
       id: "7",
       date: "august 2021",
