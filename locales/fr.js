@@ -132,7 +132,7 @@ export default {
       name: "Web App - Collecte de données",
       summary:
         "Création d'une application de collecte et de traitement de données",
-        mobileFirst: false,
+      mobileFirst: false,
       description:
         "Mise en place d'un simulateur de financements avec son plan d'amortissement, élaboration du questionnaire pour la collecte de donnée avec authentification, une page administrateur pour le suivi et la synthèse des données",
       tech: "Nuxt, vuetify, firebase auth & store, moment JS, chart JS, notification par messagerie, export vers fichier excel, netlify, GitHub",
@@ -163,12 +163,15 @@ export default {
         "Développement d'un outil d'aide à la cartographie pour une chercheuse en sociologie. Enregistrer une position, suivre ma position, créer des marqueurs personnalisable, enregistrer et exporter les données.",
       tech: "Nuxt, vuetify, leaflet, Firebase, import GeoJson et export depuis fichier excel, netlify, GitHub",
       imageURL: [
-        "map1.PNG",
-        "map2.PNG",
-        "map3.PNG",
-        "map4.PNG",
-        "map5.PNG",
-        "map6.PNG",
+        "mapping1.PNG",
+        "mapping2.PNG",
+        "mapping3.PNG",
+        "mapping4.PNG",
+        "mapping5.PNG",
+        "mapping6.PNG",
+        "mapping7.PNG",
+        "mapping8.PNG",
+        "mapping9.PNG",
       ],
       link: "https://map-tool-village.netlify.app/",
     },
@@ -179,7 +182,7 @@ export default {
       summary:
         "Développement d'un siteweb fullstack de visualisation et de partage d'émotions",
 
-        mobileFirst: false,
+      mobileFirst: false,
       description:
         "Personnaliser et animer le rendu d'une image SVG, rendre dynamique une image en fonction de la base de donnée de l'utilisateur, Gérer et implémenter un stockage de données à l'aide de SQL, Déployer le site Netlify et le serveur Heroku",
       tech: "Node js, Express, Axios, bcrypt, Figma, bootstrap vue, Nuxt js, GitHub, Mysql workbench",
