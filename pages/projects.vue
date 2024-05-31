@@ -4,9 +4,11 @@
     @touchstart.passive="startDrag($event)"
     @touchend.passive="endDrag($event)"
   >
-    <h1>{{ $t("projectsPage.title") }}</h1>
-    <p class="projects_description">{{ $t("projectsPage.description") }}</p>
-    <div class="projects_swipe">
+    <h1 class="reveal-0">{{ $t("projectsPage.title") }}</h1>
+    <p class="projects_description reveal-0">
+      {{ $t("projectsPage.description") }}
+    </p>
+    <div class="projects_swipe reveal-0">
       <span> &lt;--- swipe ---&gt;</span>
     </div>
 
@@ -35,17 +37,6 @@
       <projet-slide
         :listsOfProject="listsOfProject"
         :animDirection="slideDirection"
-        v-if="slide === 0"
-      />
-      <projet-slide
-        :listsOfProject="listsOfProject"
-        :animDirection="slideDirection"
-        v-if="slide === 1"
-      />
-      <projet-slide
-        :listsOfProject="listsOfProject"
-        :animDirection="slideDirection"
-        v-if="slide === 2"
       />
       <!-- </transition> -->
     </projet-carrousel>
