@@ -18,12 +18,16 @@
 
       <div class="block__moi" :key="reloadMe">
         <h1 v-if="$i18n.locale === 'en'">
+          <!-- to avoid error empty title -->
+          <span style="display: none">a</span>
           <span class="block__moi--animation-en1"></span>
           <br />
           <span class="block__moi--animation-en2"></span><br />
           <span class="block__moi--animation-en3"></span>
         </h1>
         <h1 v-else>
+          <!-- to avoid error empty title -->
+          <span style="display: none">a</span>
           <span class="block__moi--animation-fr1"></span>
           <br />
           <span class="block__moi--animation-fr2"></span><br />
