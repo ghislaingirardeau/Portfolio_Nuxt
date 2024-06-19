@@ -21,7 +21,7 @@ export default {
     },
   },
   footer: {
-    title: "Follow me on :",
+    title: "Find me on :",
     contact: "My email :",
     animation: "Disable Animation",
     description: `

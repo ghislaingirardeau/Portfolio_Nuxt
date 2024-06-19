@@ -1,24 +1,39 @@
 .footer__layout {
   border-top: 3px solid $color-third;
   color: white;
+  margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 20px;
+  align-items: center;
+  & > h3 {
+    margin-block: 0.5rem;
+    width: 30%;
+  }
 
   & > ul {
+    width: 70%;
     font-size: 1.2rem;
     padding-left: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
     & > li {
-      display: inline-block;
-      margin-left: 30px;
-      margin-bottom: 5px;
-      & > a {
-        color: $color-secondary;
-        transition: all 0.3s ease;
-        text-decoration: underline;
-        &:hover {
-          text-shadow: 7px 15px $color-blue-mid;
+      & > div {
+        display: flex;
+        align-items: center;
+        & > span {
+          margin-left: 0.8rem;
+          color: $color-secondary;
+          transition: all 0.3s ease;
+          text-decoration: underline;
+        }
+        &.footer__layout_link {
+          cursor: pointer;
+        }
+        &.footer__layout_link:hover {
+          text-shadow: 7px 19px $color-blue-mid;
           text-decoration: none;
         }
       }
@@ -32,11 +47,11 @@
 }
 
 .footer_comment {
-  font-size: 14px;
-}
-
-.disable_stars {
-  font-size: 16px;
+  font-size: 0.9rem;
+  margin-top: 0.4rem;
+  & > label {
+    font-size: smaller;
+  }
 }
 input[type="checkbox" i] {
   appearance: none;
@@ -76,22 +91,20 @@ input[type="checkbox" i]:checked::before {
   .footer__layout {
     margin-top: 20px;
     margin-bottom: 20px;
+    & h3 {
+      width: 100%;
+      text-align: center;
+    }
     & > ul {
-      font-size: 1.2rem;
-      & > li {
-        margin-left: 0px;
-        display: block;
-        & > a {
-          &:hover {
-            text-shadow: none;
-          }
-        }
-      }
+      width: 100%;
     }
   }
   .date {
     text-align: center;
     text-shadow: 2px 1px black;
     margin-top: 40px;
+  }
+  .footer__layout_link > span {
+    display: none;
   }
 }
