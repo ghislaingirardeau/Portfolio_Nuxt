@@ -47,7 +47,10 @@ export default {
   },
   computed: {
     isMobile() {
-      return navigator.userAgentData.mobile;
+      return (
+        screen.orientation.angle !== 0 ||
+        screen.orientation.type !== "landscape-primary"
+      );
     },
     defineTouchStart() {
       return this.isMobile ? "touchstart" : null;

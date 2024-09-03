@@ -128,7 +128,10 @@ export default {
       // si image est en mode mobile
       if (this.detailProject.mobileFirst) {
         return "400px";
-      } else if (navigator.userAgentData.mobile) {
+      } else if (
+        screen.orientation.angle !== 0 ||
+        screen.orientation.type !== "landscape-primary"
+      ) {
         // si l'image est en mode desktop et que user est sur device mobile
         return "250px";
       } else {
