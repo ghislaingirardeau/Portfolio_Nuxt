@@ -7,7 +7,7 @@ export default {
   /* test sans sinon passer en ./ pour le deploy static */
 
   // Target: https://go.nuxtjs.dev/config-target
-  target: "static",
+  target: "server",
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   // head envoyé comme fonction dans le layout
