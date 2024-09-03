@@ -100,13 +100,15 @@ export default {
   },
   head() {
     return {
-      title: `Gg Web Dev - ${this.detailProject.name}`,
+      title: `Gg Web Dev - ${
+        this.detailProject.name ? this.detailProject.name : ""
+      }`,
     };
   },
   nuxtI18n: {
     paths: {
       en: "/works/:id",
-      fr: "/projets/:id",
+      fr: "/apps/:id",
     },
   },
   mounted() {
