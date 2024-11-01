@@ -41,7 +41,7 @@ export default {
   },
   data() {
     return {
-      isStarEnable: true,
+      isStarEnable: false,
       resetApp: 0,
     };
   },
