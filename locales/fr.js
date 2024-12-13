@@ -146,7 +146,7 @@ export default {
       ],
       link: "https://map-tool-village.netlify.app/",
     },
-    {
+    /* {
       id: "11",
       date: "janvier 2023",
       name: "Mobile App météo",
@@ -156,7 +156,7 @@ export default {
         "Découverte et intégration de composants React Native & Expo, mise en place d'une navigation, récupération de données API. Exploration d'autres composants: camera, store files, pickers, env, touche event, animation...",
       tech: "React native, Expo Go, Ionicons, AsyncStorage, GitHub",
       video: "reactNative.mp4",
-    },
+    }, */
     {
       id: "10",
       date: "juillet 2022",
@@ -174,16 +174,31 @@ export default {
         "community_tool4.png",
       ],
     },
-    /* {
+    {
       id: "9",
       date: "mai 2022",
-      name: "E-commerce multi langues",
-      summary: "Modèle d'un site e-commerce multi langues",
-      description:
-        "Comprendre comment intégré une base de données dynamique en fonction de la langue, création d'une page panier avec simulation de paiement via l'API Stripe, gérer la convertion de devise",
-      tech: "Node js, Express, Axios, Vue js, Nuxt js, i18n, Vuetify, Stripe, GitHub, Mysql workbench, railway",
-      imageURL: ["e-commerce1.png", "e-commerce2.png"],
-    }, */
+      name: "Création plateforme web de dons",
+      summary: "Création d'une application de simulation de dons",
+      description: `
+            <ul>
+          <li>
+            Création d'un site web représentant une maquette de simulation de don
+            (100% frontend) avec explication du concept
+          </li>
+          <li>
+            Conversion de la maquette en application web: base de donnée, API, rendu
+            frontend
+          </li>
+          <li>
+            Application 100% dynamique, suivant le contenu enregistrer dans la base
+            de donnée
+          </li>
+          <li>Intégration Stripe pour test de paiement</li>
+          <li>URL confidentiel</li>
+        </ul>
+      `,
+      tech: "Node js, Express, Axios, Vue js, Nuxt js, Vuetify, Stripe, GitHub, Mysql workbench, railway",
+    },
 
     {
       id: "7",
@@ -207,7 +222,7 @@ export default {
       ],
       link: "https://betofeel.netlify.app/",
     },
-    {
+    /* {
       id: "6",
       date: "mai 2021",
       name: "Groupomania",
@@ -267,7 +282,7 @@ export default {
       imageURL: ["ohmyfood.PNG", "ohmyfood_menu1.PNG"],
       loader: "true",
       link: "https://ghislaingirardeau.github.io/GirardeauGhislain_3_13012021/index.html",
-    },
+    }, */
     /* {
       id: "3",
       date: "février 2021",
