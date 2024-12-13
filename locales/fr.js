@@ -76,6 +76,25 @@ export default {
   projects: [
     {
       id: "13",
+      date: "Juillet 2024 - Aujourd'hui",
+      name: `Développeur Frontend: Saas Ubbik`,
+      summary:
+        "Développeur Vue js / Nuxt Js pour une application SaaS d'aide à la gestion managériale",
+      description: `
+      <ul>
+        <li>Amélioration de l’expérience utilisateur UX/UI</li>
+        Intégration de fonctionnalités de paiement : Stripe
+        <li>
+          Amélioration des performances (gestion d’état et trie des appels API)
+        </li>
+        <li>Maintenance, refactorisation du code et correction des bugs</li>
+        <li>Amélioration du drag & drop</li>
+      </ul>`,
+      tech: "Typescript, VueJs / Nuxt 2, Element, Stripe",
+      link: "https://ubbik.co/",
+    },
+    {
+      id: "13",
       date: "mars 2024 - Aujourd'hui",
       name: `Wordle Game`,
       summary: "Création d'un mini jeu (wordle) en Test-Driven-Development",
